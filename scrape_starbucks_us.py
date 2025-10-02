@@ -1,155 +1,192 @@
 # scrape_starbucks_us.py
-import os, csv, time, requests
-from typing import Dict, Any, List, Set, Tuple
+import os, time, csv, json, requests
+from typing import Dict, Any, Iterable, Tuple, List, Set
 
-COOKIE_FILE = "cookie.txt"
 BASE_URL = "https://www.starbucks.com/apiproxy/v1/locations"
 
-# ---------- load cookie ----------
-if not os.path.exists(COOKIE_FILE):
-    raise RuntimeError("cookie.txt not found. Paste the full `cookie:` header value into cookie.txt (single line).")
+# Optional: if you copied cookies out of DevTools (one long line), export them before running:
+#   export SB_COOKIE="$(cat cookie.txt)"
+SB_COOKIE = os.environ.get("SB_COOKIE", "").strip()
 
-with open(COOKIE_FILE, "r", encoding="utf-8") as f:
-    SB_COOKIE = f.read().strip()
-
-if not SB_COOKIE:
-    raise RuntimeError("cookie.txt is empty. Paste the full cookie header value into it (single line).")
-
-# ---------- headers (very close to browser) ----------
-COMMON_HEADERS = {
-    "accept": "application/json, text/plain, */*",
+HEADERS = {
+    "accept": "application/json",
     "accept-language": "en-US,en;q=0.9",
-    "referer": "https://www.starbucks.com/store-locator",
-    "origin": "https://www.starbucks.com",
-    "user-agent": "Mozilla/5.0",
+    "user-agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+    ),
     "x-requested-with": "XMLHttpRequest",
-    "sec-fetch-site": "same-origin",
-    "sec-fetch-mode": "cors",
-    "sec-fetch-dest": "empty",
-    "cookie": SB_COOKIE,        # <- copied from your browser
+    # A plain store-locator referer keeps the endpoint happy
+    "referer": "https://www.starbucks.com/store-locator",
 }
+if SB_COOKIE:
+    HEADERS["cookie"] = SB_COOKIE
 
-def us_grid(step_deg: float = 1.5) -> List[Tuple[float, float]]:
-    min_lat, max_lat = 24.5, 49.5
-    min_lng, max_lng = -124.8, -66.9
-    pts = []
+# =========  DENSE METRO SEEDS (fast, high-yield)  =========
+# (lat, lng, label) – tweak or add if you want
+SEEDS: List[Tuple[float, float, str]] = [
+    (40.7128, -74.0060,  "nyc"),
+    (34.0522, -118.2437, "la"),
+    (41.8781, -87.6298,  "chicago"),
+    (29.7604, -95.3698,  "houston"),
+    (33.7490, -84.3880,  "atlanta"),
+    (47.6062, -122.3321, "seattle"),
+    (37.7749, -122.4194, "sf"),
+    (32.7157, -117.1611, "sandiego"),
+    (39.7392, -104.9903, "denver"),
+    (25.7617, -80.1918,  "miami"),
+    (38.9072, -77.0369,  "dc"),
+    (42.3601, -71.0589,  "boston"),
+    (36.1627, -86.7816,  "nashville"),
+    (35.0844, -106.6504, "albuquerque"),
+    (36.1699, -115.1398, "vegas"),
+    (33.4484, -112.0740, "phoenix"),
+    (39.9526, -75.1652,  "philly"),
+    (32.7767, -96.7970,  "dallas"),
+    (29.4241, -98.4936,  "sanantonio"),
+    (30.2672, -97.7431,  "austin"),
+    (39.7684, -86.1581,  "indianapolis"),
+    (35.2271, -80.8431,  "charlotte"),
+    (35.1495, -90.0490,  "memphis"),
+    (45.5152, -122.6784, "portland"),
+    (44.9778, -93.2650,  "minneapolis"),
+]
+
+# =========  LOWER-48 GRID (coarse & wide)  =========
+def lower48_grid(step_deg: float = 0.5) -> Iterable[Tuple[float, float, str]]:
+    """
+    Coarse sweep over the continental US only (excludes Alaska/Hawaii/Puerto Rico).
+    Increase 'step_deg' for faster/looser, decrease for slower/tighter.
+    """
+    min_lat, max_lat = 24.0, 49.6
+    min_lng, max_lng = -125.5, -66.9
     lat = min_lat
     while lat <= max_lat + 1e-9:
         lng = min_lng
         while lng <= max_lng + 1e-9:
-            pts.append((round(lat,3), round(lng,3)))
+            yield (round(lat, 2), round(lng, 2), "lower48")
             lng += step_deg
         lat += step_deg
-    return pts
 
-def query_near(lat: float, lng: float, session: requests.Session):
+# =========  API CALL  =========
+session = requests.Session()
+session.headers.update(HEADERS)
+
+def fetch_near(lat: float, lng: float, limit: int = 50) -> List[Dict[str, Any]]:
+    """
+    Starbucks endpoint generally likes: lat, lng, place (any string is fine),
+    and limit. We avoid 'radius' because it often triggers 400s.
+    """
     params = {
         "lat": f"{lat:.6f}",
         "lng": f"{lng:.6f}",
-        # any string works for 'place'; we'll keep it simple
         "place": "United States",
-        # you can experiment with 'limit' or 'radius', but they’re not required
+        "limit": str(limit),
     }
-    r = session.get(BASE_URL, params=params, headers=COMMON_HEADERS, timeout=25)
-    r.raise_for_status()
-    data = r.json()
-    return data if isinstance(data, list) else []
+    r = session.get(BASE_URL, params=params, timeout=20)
+    if r.status_code != 200:
+        # Bubble the error for logging upstream
+        raise requests.HTTPError(f"{r.status_code} {r.text[:200]}")
+    return r.json()
 
-def normalize_row(item: Dict[str, Any]) -> Dict[str, Any]:
-    s = item.get("store", {}) or {}
-    a = s.get("address", {}) or {}
-    c = s.get("coordinates", {}) or {}
-    return {
-        "brand": "Starbucks",
-        "store_id": s.get("id") or s.get("storeNumber") or "",
-        "store_number": s.get("storeNumber") or "",
-        "name": s.get("name") or "",
-        "ownership": s.get("ownershipTypeCode") or "",
-        "phone": s.get("phoneNumber") or "",
-        "line1": a.get("streetAddressLine1") or "",
-        "line2": a.get("streetAddressLine2") or "",
-        "line3": a.get("streetAddressLine3") or "",
-        "city": a.get("city") or "",
-        "region": a.get("countrySubdivisionCode") or "",
-        "postalCode": (a.get("postalCode") or "")[:10],
-        "countryCode": a.get("countryCode") or "",
-        "lat": c.get("latitude"),
-        "lng": c.get("longitude"),
-        "open": s.get("open"),
-        "openStatusFormatted": s.get("openStatusFormatted") or "",
-        "hoursStatusFormatted": s.get("hoursStatusFormatted") or "",
-        "slug": s.get("slug") or "",
-    }
+# =========  NORMALIZE & FILTER  =========
+EXCLUDE_STATES = {"AK", "HI", "PR"}  # drop Alaska, Hawaii, Puerto Rico
 
-def sanity_check() -> bool:
-    """Make one known-good call (NYC). If this fails, your cookie/headers are bad."""
-    test_lat, test_lng = 40.7127753, -74.0059728
-    with requests.Session() as session:
+def extract_rows(payload: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    out: List[Dict[str, Any]] = []
+    for item in payload:
+        s = (item or {}).get("store") or {}
+        addr = s.get("address") or {}
+        tz = s.get("timeZone") or {}
+        coords = s.get("coordinates") or {}
+        state = addr.get("countrySubdivisionCode")
+        # filter out AK/HI/PR
+        if state in EXCLUDE_STATES:
+            continue
+        row = {
+            "id": s.get("id"),
+            "storeNumber": s.get("storeNumber"),
+            "name": s.get("name"),
+            "phone": s.get("phoneNumber"),
+            "open": s.get("open"),
+            "openStatusFormatted": s.get("openStatusFormatted"),
+            "hoursStatusFormatted": s.get("hoursStatusFormatted"),
+            "line1": addr.get("streetAddressLine1"),
+            "line2": addr.get("streetAddressLine2"),
+            "line3": addr.get("streetAddressLine3"),
+            "city": addr.get("city"),
+            "region": state,
+            "postalCode": (addr.get("postalCode") or "")[:10],
+            "country": addr.get("countryCode"),
+            "lat": coords.get("latitude"),
+            "lng": coords.get("longitude"),
+            "timezone": tz.get("timeZoneId"),
+            "slug": s.get("slug"),
+            "ownershipType": s.get("ownershipTypeCode"),
+        }
+        out.append(row)
+    return out
+
+# =========  CRAWLER  =========
+def crawl_us(step_deg: float = 0.5, rate_sec: float = 0.20) -> List[Dict[str, Any]]:
+    seen: Set[str] = set()
+    rows: List[Dict[str, Any]] = []
+
+    def add_batch(batch: List[Dict[str, Any]]) -> int:
+        new = 0
+        for r in batch:
+            k = str(r.get("id") or r.get("storeNumber"))
+            if not k:
+                continue
+            if k in seen:
+                continue
+            seen.add(k)
+            rows.append(r)
+            new += 1
+        return new
+
+    # 1) Dense metros first
+    for i, (lat, lng, label) in enumerate(SEEDS, 1):
         try:
-            data = query_near(test_lat, test_lng, session)
-            ok = bool(data)
-            print(f"Sanity check at NYC → {'OK' if ok else 'NO DATA'} ({len(data)} items).")
-            return ok
-        except requests.HTTPError as e:
-            txt = ""
-            try:
-                txt = e.response.text[:200]
-            except Exception:
-                pass
-            print(f"Sanity check failed: HTTP {getattr(e.response, 'status_code', '?')} → {txt}")
-            return False
+            data = fetch_near(lat, lng, limit=50)
+            added = add_batch(extract_rows(data))
+            print(f"[seeds]    {i:04d}/{len(SEEDS):<4} [{label:<9}] @ {lat:6.2f},{lng:7.2f}  +{added:<2}  (total {len(rows)})")
         except Exception as e:
-            print(f"Sanity check error: {e}")
-            return False
-
-def crawl_all(step_deg: float = 1.5, rate_sec: float = 0.35):
-    if not sanity_check():
-        print("\nYour cookie/headers are not being accepted. "
-              "Refresh the store locator, copy the full `cookie:` header again into cookie.txt, "
-              "save, and re-run.")
-        return []
-
-    session = requests.Session()
-    rows, seen = [], set()
-    pts = us_grid(step_deg=step_deg)
-
-    for i,(lat,lng) in enumerate(pts, 1):
-        try:
-            items = query_near(lat, lng, session)
-            added = 0
-            for it in items:
-                row = normalize_row(it)
-                sid = str(row["store_id"])
-                if not sid or sid in seen:
-                    continue
-                seen.add(sid)
-                rows.append(row)
-                added += 1
-            print(f"{i:03d}/{len(pts)}  @ {lat:5.1f},{lng:6.1f}  +{added}  (total {len(rows)})")
-        except requests.HTTPError as e:
-            msg = ""
-            try:
-                msg = e.response.text[:160]
-            except Exception:
-                msg = str(e)
-            print(f"HTTP {getattr(e.response, 'status_code','?')} @ {lat},{lng} → {msg}")
-        except Exception as e:
-            print(f"Error @ {lat},{lng}: {e}")
+            print(f"[seeds]    {i:04d}/{len(SEEDS):<4} [{label:<9}] @ {lat:6.2f},{lng:7.2f}  ERROR: {e}")
         time.sleep(rate_sec)
+
+    # 2) Continental grid (coarse)
+    grid_pts = list(lower48_grid(step_deg=step_deg))
+    n = len(grid_pts)
+    for i, (lat, lng, label) in enumerate(grid_pts, 1):
+        try:
+            data = fetch_near(lat, lng, limit=50)
+            added = add_batch(extract_rows(data))
+            if added:
+                print(f"[grid]     {i:04d}/{n:<5} [{label:<9}] @ {lat:6.2f},{lng:7.2f}  +{added:<2}  (total {len(rows)})")
+            elif i % 250 == 0:
+                # periodic heartbeat when nothing new found
+                print(f"[grid]     {i:04d}/{n:<5} [{label:<9}] @ {lat:6.2f},{lng:7.2f}  +0  (total {len(rows)})")
+        except Exception as e:
+            print(f"[grid]     {i:04d}/{n:<5} [{label:<9}] @ {lat:6.2f},{lng:7.2f}  ERROR: {e}")
+        time.sleep(rate_sec)
+
     return rows
 
-def save_csv(rows: List[Dict[str, Any]], out_path: str):
+# =========  MAIN  =========
+if __name__ == "__main__":
+    # You can make the grid coarser/faster (0.6–0.8) or finer/slower (0.4–0.3)
+    rows = crawl_us(step_deg=0.35, rate_sec=0.18)
+
     if not rows:
-        print("No rows to save.")
-        return
-    with open(out_path, "w", newline="", encoding="utf-8") as f:
-        cols = list(rows[0].keys())
-        w = csv.DictWriter(f, fieldnames=cols)
+        print("No rows collected. Try a larger step_deg (slower) or confirm headers/cookie.")
+        raise SystemExit(1)
+
+    # Save CSV
+    out = "starbucks_us_locations.csv"
+    with open(out, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         w.writeheader()
         w.writerows(rows)
-    print(f"Saved {len(rows)} rows → {out_path}")
 
-if __name__ == "__main__":
-    all_rows = crawl_all(step_deg=1.5, rate_sec=0.35)
-    if all_rows:
-        save_csv(all_rows, "starbucks_us_locations.csv")
+    print(f"Saved {len(rows)} rows → {out}")
