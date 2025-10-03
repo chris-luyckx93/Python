@@ -1,0 +1,606 @@
+stand_id,franchise_id,address,city,state_code,state,postal_code,country,phone,lat,lon,project_stage,open_date,google_review_link,stand_photo,notes
+001001,001,2101 S 52nd St,Rogers,AR,Arkansas,72758,USA,(479) 335-1905,36.317530,-94.186200,6-Open,2017-02-01,https://g.page/r/CUvZu7NK4GrbEBM/review,true,
+001002,001,2500 E Central Ave,Bentonville,AR,Arkansas,72712,USA,(479) 335-1945,36.371090,-94.182300,6-Open,2017-08-01,https://g.page/r/CeyvkYUT61asEBM/review,true,
+001003,001,4100 W Walnut St,Rogers,AR,Arkansas,72756,USA,(479) 335-5260,36.334370,-94.176100,6-Open,2017-11-01,https://g.page/r/CeHoMJnwtKlIEBM/review,true,
+001004,001,1195 W MLK Jr Blvd,Fayetteville,AR,Arkansas,72701,USA,(479) 358-9274,36.056770,-94.177700,6-Open,2018-09-10,https://g.page/r/CbZYhFVt86qIEBM/review,true,
+001005,001,2960 W Sunset Ave,Springdale,AR,Arkansas,72762,USA,(479) 396-3184,36.174970,-94.162700,6-Open,2018-12-17,https://g.page/r/Cco46Qips4gREBM/review,true,
+001006,001,500 S Bloomington St,Lowell,AR,Arkansas,72745,USA,(479) 396-3186,36.246480,-94.137800,6-Open,2019-10-14,https://g.page/r/CX5H9UOgQ6AgEBM/review,true,
+001007,001,1359 E Henri De Tonti Blvd,Springdale,AR,Arkansas,72762,USA,(479) 448-2066,36.175550,-94.212700,6-Open,2019-12-12,https://g.page/r/CXCgAye8xu2oEBM/review,true,
+001008,001,2503 N 2nd St,Rogers,AR,Arkansas,72756,USA,(479) 448-2067,36.355670,-94.115700,6-Open,2020-05-18,https://g.page/r/CeeBWhamaPsmEBM/review,true,
+002010,001,3347 S Rangeline Rd,Joplin,MO,Missouri,64804,USA,(479) 358-9274,37.052030,-94.478100,6-Open,2021-02-14,https://g.page/r/CWTJmXQ9Q6g6EBM/review,true,
+001011,001,2500 E US HWY 412,Siloam Springs,AR,Arkansas,72761,USA,(479) 448-2068,36.180720,-94.515800,6-Open,2021-05-07,https://g.page/r/CTcnUA6Pc6iPEBM/review,true,
+001009,001,2903 SW 14th St,Bentonville,AR,Arkansas,72712,USA,(479) 449-1364,36.357070,-94.245200,6-Open,2021-07-02,https://g.page/r/CREpIGzZ0r2pEBM/review,true,
+001012,001,900 Exchange Ave,Conway,AR,Arkansas,72032,USA,(501) 424-6637,35.061970,-92.418400,6-Open,2021-09-04,https://g.page/r/CZHh7bh-7bOCEBM/review,true,
+001013,001,3322 N College Ave,Fayetteville,AR,Arkansas,72703,USA,(479) 487-5001,36.111530,-94.144000,6-Open,2021-11-14,https://g.page/r/CUMSQePst0VhEBM/review,true,
+000015,011,2317 N Glenstone Ave,Springfield,MO,Missouri,65803,USA,(417) 290-1001,37.238520,-93.261400,6-Open,2021-12-04,https://g.page/r/CeBFtz5LPggSEBM/review,true,
+000016,087,1457 Woodruff Rd,Greenville,SC,South Carolina,29607,USA,(864) 999-4243,34.820830,-82.281400,6-Open,2022-01-21,https://g.page/r/CeWqoaU87QAfEBM/review,true,
+000014,001,1135 Skyline Dr,Conway,AR,Arkansas,72032,USA,(501) 443-2989,35.109460,-92.440000,6-Open,2022-02-07,https://g.page/r/Cb7kbtPca3jcEBM/review,true,
+000018,017,3611 McCann Rd,Longview,TX,Texas,75605,USA,(903) 803-4804,32.541700,-94.754700,6-Open,2022-02-20,https://g.page/r/CRHwuOHLvCQ5EBM/review,true,
+000017,071,1115 SW Wanamaker Rd,Topeka,KS,Kansas,66604,USA,(785) 592-7936,39.047670,-95.762100,6-Open,2022-02-21,https://g.page/r/CV2JdOPA2XejEBM/review,true,
+000019,011,1445 W Battlefield Rd,Springfield,MO,Missouri,65807,USA,(417) 290-1002,37.160350,-93.312200,6-Open,2022-03-21,https://g.page/r/CUKeqhDQmBQkEBM/review,true,
+000021,011,2970 E Sunshine St,Springfield,MO,Missouri,65804,USA,(417) 290-1003,37.179700,-93.235200,6-Open,2022-05-25,https://g.page/r/CaQG1_8TmIhjEBM/review,false,
+000020,087,2102 Wade Hampton Blvd,Greenville,SC,South Carolina,29615,USA,(864) 999-4268,34.884590,-82.353700,6-Open,2022-06-30,https://g.page/r/CRa7e3xvMCriEBM/review,false,
+000048,004,322 Weir Rd,Russellville,AR,Arkansas,72802,USA,(501) 462-3782,35.281720,-93.106500,6-Open,2022-07-18,https://g.page/r/Cc12CyYzDwc6EBM/review,true,
+000026,008,2208 W 76 Country Blvd,Branson,MO,Missouri,65616,USA,(417) 290-1004,36.640670,-93.260500,6-Open,2022-07-25,https://g.page/r/CYaLK6ufjSkhEBM/review,true,
+000049,011,1087 S Jefferson Ave,Lebanon,MO,Missouri,65536,USA,(417) 290-1005,37.670430,-92.651200,6-Open,2022-08-08,https://g.page/r/CZZNRzAYaNmEEBM/review,true,
+000025,011,7720 Rogers Ave,Fort Smith,AR,Arkansas,72903,USA,(479) 487-5002,35.351190,-94.347400,6-Open,2022-09-21,https://g.page/r/CdSvXjIPG82FEBM/review,true,
+000027,060,217 N Thompson Ln,Murfreesboro,TN,Tennessee,37129,USA,(615) 546-0140,35.851340,-86.430300,6-Open,2022-10-17,https://g.page/r/CW4OK0wOhOgFEBM/review,true,
+000023,017,101 Cambridge Rd,Tyler,TX,Texas,75703,USA,(903) 991-3929,32.264020,-95.306800,6-Open,2022-10-21,https://g.page/r/CUBQ_A4DDN8jEBM/review,true,
+000064,025,3201 S McKenzie St,Foley,AL,Alabama,36535,USA,(251) 263-7520,30.366510,-87.682300,6-Open,2022-10-25,https://g.page/r/CfjKayU9ixErEBM/review,true,
+000073,011,5997 Mid-Rivers Mall Dr,Cottleville,MO,Missouri,63376,USA,(618) 992-2893,38.749850,-90.635700,6-Open,2022-10-31,https://g.page/r/CcaHLgNiXGubEBM/review,true,
+000091,039,3545 E 10th St,Jeffersonville,IN,Indiana,47130,USA,(502) 901-2330,38.335760,-85.708100,6-Open,2022-10-31,https://g.page/r/CdAMeBN3g_ySEBM/review,true,
+000050,019,1020 E 1st St,Ankeny,IA,Iowa,50021,USA,(515) 304-5920,41.732290,-93.582500,6-Open,2022-11-07,https://g.page/r/CdOs-7Q1GlqdEBM/review,true,
+000030,010,3031 E Central Ave,Wichita,KS,Kansas,67214,USA,(316) 205-1070,37.693370,-97.300600,6-Open,2022-11-07,https://g.page/r/CbcMOLwaZb8sEBM/review,true,
+000051,052,2830 S State Hwy 161,Grand Prairie,TX,Texas,75052,USA,(469) 940-7346,32.704650,-97.024200,6-Open,2022-11-10,https://g.page/r/CVgWxoojRkhgEBM/review,true,
+000158,046,11921 Maumelle Blvd,North Little Rock,AR,Arkansas,72113,USA,(501) 642-2093,34.828790,-92.392400,6-Open,2022-11-30,https://g.page/r/CdM0AV-XCgiQEBM/review,true,
+000053,028,5655 O St,Lincoln,NE,Nebraska,68510,USA,(531) 530-3558,40.813070,-96.642700,6-Open,2022-12-05,https://g.page/r/CetGBKsHp6fDEBM/review,true,
+000029,052,1780 Highway 157,Mansfield,TX,Texas,76063,USA,(682) 710-7217,32.598680,-97.145700,6-Open,2022-12-05,https://g.page/r/CYNoAs4SJULLEBM/review,true,
+000081,025,1809 S Harbor City Blvd,Melbourne,FL,Florida,32901,USA,(321) 966-4908,28.081170,-80.603700,6-Open,2022-12-12,https://g.page/r/CQ1T-FFVQIC1EBM/review,true,
+000130,037,1336 E Stone Dr,Kingsport,TN,Tennessee,37660,USA,(479) 358-9274,36.550250,-82.524000,6-Open,2022-12-12,https://g.page/r/CZAQjwCWkzaaEBM/review,false,
+000068,015,1077 E Downing St,Tahlequah,OK,Oklahoma,74464,USA,(539) 234-6404,35.916170,-94.954800,6-Open,2022-12-29,https://g.page/r/Cee5px-1yTB-EBM/review,true,
+000043,015,1501 E Kenosha St,Broken Arrow,OK,Oklahoma,74012,USA,(539) 250-4502,36.060180,-95.810100,6-Open,2022-12-31,https://g.page/r/Cd4oGNl97329EBM/review,true,
+000122,005,5117 Essen Ln,Baton Rouge,LA,Louisiana,70809,USA,(225) 243-1820,30.401460,-91.105600,6-Open,2023-01-01,https://g.page/r/CRziOVzjJODTEBM/review,true,
+000096,015,1034 W Shawnee Ave,Muskogee,OK,Oklahoma,74401,USA,(539) 250-4503,35.770400,-95.372300,6-Open,2023-01-09,https://g.page/r/CbxWAWmHg_zGEBM/review,true,
+000082,025,5450 Murrell Rd,Rockledge,FL,Florida,32955,USA,(321) 977-6033,28.266490,-80.718800,6-Open,2023-01-09,https://g.page/r/CQjBV8VB9C0mEBM/review,true,
+000037,015,1104 W New Orleans St,Broken Arrow,OK,Oklahoma,74011,USA,(918) 578-0902,36.017410,-95.802300,6-Open,2023-01-10,https://g.page/r/CRypOEJX-OFJEBM/review,true,
+000079,015,200 S Bragg Blvd,Spring Lake,NC,North Carolina,28390,USA,(910) 930-0618,35.165020,-78.972800,6-Open,2023-01-11,https://g.page/r/CdszmIvJB9YUEBM/review,true,
+000028,071,15027 Metcalf Ave,Overland Park,KS,Kansas,66223,USA,(816) 300-3622,38.855700,-94.667800,6-Open,2023-01-12,https://g.page/r/Cb3vGlBqor0UEBM/review,true,
+000105,023,1101 S Jackson Rd,Pharr,TX,Texas,78577,USA,(479) 358-9274,26.186090,-98.205800,6-Open,2023-01-23,https://g.page/r/CXJAw2bgIb3hEBM/review,true,
+000054,008,2220 S M 291 Hwy,Independence,MO,Missouri,64057,USA,(816) 300-3624,39.060610,-94.371500,6-Open,2023-01-23,https://g.page/r/CXtPHjvw2GWCEBM/review,true,
+000166,068,13815 US-19,Thomasville,GA,Georgia,31792,USA,(850) 448-1785,30.838490,-83.944500,6-Open,2023-01-23,https://g.page/r/CbV58lS3jUOuEBM/review,true,
+000046,015,3307 Bragg Blvd,Fayetteville,NC,North Carolina,28303,USA,(910) 930-0619,35.076200,-78.934600,6-Open,2023-01-26,https://g.page/r/CTJDb-xngNQQEBM/review,true,
+000134,047,1415 University Ave,Lubbock,TX,Texas,79401,USA,(806) 699-6582,33.582000,-101.870000,6-Open,2023-01-30,https://g.page/r/CUKr55yF3OcuEBM/review,true,
+000042,011,1580 State Hwy K,O'Fallon,MO,Missouri,63366,USA,(636) 429-9590,38.788490,-90.698900,6-Open,2023-01-30,https://g.page/r/CRIrL18ecwb8EBM/review,true,
+000108,015,3602 Cougill Ln,Lafayette,IN,Indiana,47909,USA,(479) 358-9274,40.367550,-86.861400,6-Open,2023-02-03,https://g.page/r/CWYtoqAwRhi3EBM/review,false,
+000035,046,11100 N Rodney Parham Rd,Little Rock,AR,Arkansas,72212,USA,(501) 642-2094,34.771860,-92.396700,6-Open,2023-02-13,https://g.page/r/CaMiRIAprRlrEBM/review,true,
+000085,026,11001 Metcalf Ave,Overland Park,KS,Kansas,66211,USA,(816) 477-5542,38.929270,-94.667700,6-Open,2023-02-13,https://g.page/r/CWZziInF8bnBEBM/review,true,
+000044,015,2501 E Main St,Plainfield,IN,Indiana,46168,USA,(463) 258-0340,39.715290,-86.362100,6-Open,2023-02-14,https://g.page/r/CWjngeqMOLFzEBM/review,false,
+000127,015,961 Hwy 17 N,North Myrtle Beach,SC,South Carolina,29577,USA,(479) 358-9274,33.703480,-78.930700,6-Open,2023-02-15,https://g.page/r/CavwaAf7OhqHEBM/review,true,
+000038,015,4626 E County Line Rd,Indianapolis,IN,Indiana,46237,USA,(463) 258-0365,39.636770,-86.089900,6-Open,2023-02-20,https://g.page/r/CaMVjVvKTw8eEBM/review,true,
+000109,015,2424 IN-44,Shelbyville,IN,Indiana,46176,USA,(463) 271-4001,39.523710,-85.743700,6-Open,2023-02-24,https://g.page/r/CQXaWOl8nECiEBM/review,false,
+000189,023,200 Rocky Rd,Brownsville,TX,Texas,78526,USA,(479) 358-9274,25.954560,-97.486200,6-Open,2023-02-27,https://g.page/r/CY7GqW8FiubeEBM/review,false,
+000045,037,2206 Moody Pkwy,Moody,AL,Alabama,35004,USA,(659) 259-0015,33.572740,-86.518200,6-Open,2023-02-27,https://g.page/r/CaSrC7pkBaT2EBM/review,true,
+000175,037,1910 N Roan St,Johnson City,TN,Tennessee,37601,USA,(479) 358-9274,36.336860,-82.372200,6-Open,2023-02-27,https://g.page/r/CQfp7SKfGlibEBM/review,true,
+000076,005,1538 W Hwy 30,Gonzales,LA,Louisiana,70737,USA,(225) 800-9095,30.211380,-90.936600,6-Open,2023-03-01,https://g.page/r/CWUWvkE6GuyVEBM/review,true,
+000110,015,3710 S East St,Indianapolis,IN,Indiana,46227,USA,(463) 271-4002,39.713010,-86.149600,6-Open,2023-03-10,https://g.page/r/CUAXbpAjt-gGEBM/review,true,
+000086,015,3838 Grace St,Lafayette,IN,Indiana,47905,USA,(479) 358-9274,40.418550,-86.834400,6-Open,2023-03-17,https://g.page/r/CXRC7c3sV_ykEBM/review,false,
+000024,039,2962 Scottsville Rd,Bowling Green,KY,Kentucky,42104,USA,(270) 770-2351,36.944080,-86.422400,6-Open,2023-03-20,https://g.page/r/Cf0B32RSO_DYEBM/review,false,
+000182,046,8023 Cantrell Rd,Little Rock,AR,Arkansas,72227,USA,(501) 642-2095,34.775460,-92.362600,6-Open,2023-03-20,https://g.page/r/CW3DWKbJrgslEBM/review,true,
+000060,011,1807 Missouri Blvd,Jefferson City,MO,Missouri,65109,USA,(573) 691-4893,38.580490,-92.200200,6-Open,2023-03-20,https://g.page/r/Ccvcy6AUoH9MEBM/review,true,
+000062,037,5417 TN-153,Hixson,TN,Tennessee,37343,USA,(423) 805-1743,35.137910,-85.248200,6-Open,2023-03-20,https://g.page/r/CdIlrukRgQ6GEBM/review,true,
+000206,037,4709 University Dr,Huntsville,AL,Alabama,35816,USA,(256) 913-4738,34.735210,-86.648500,6-Open,2023-04-03,https://g.page/r/Cc5gMZYbM9wFEBM/review,true,
+000106,020,105 Charlestowne Way,Augusta,GA,Georgia,30907,USA,(706) 426-5530,33.512030,-82.048000,6-Open,2023-04-12,https://g.page/r/CUgKnmVYkCpnEBM/review,true,
+000172,046,3212 E Race St,Searcy,AR,Arkansas,72143,USA,(501) 642-2096,35.250910,-91.693400,6-Open,2023-04-17,https://g.page/r/CVsGSEm4V-uXEBM/review,true,
+000205,037,928 Beltline Rd,Decatur,AL,Alabama,35601,USA,(256) 973-0369,34.560300,-87.000700,6-Open,2023-04-17,https://g.page/r/CeM6_91LAI6HEBM/review,true,
+000075,026,5001 N Tarrant Pkwy,Fort Worth,TX,Texas,76244,USA,(682) 730-3644,32.894570,-97.275800,6-Open,2023-04-24,https://g.page/r/CUE6labI6eqLEBM/review,true,
+000224,004,650 Hwy 62 E,Mountain Home,AR,Arkansas,72653,USA,(417) 464-6250,36.345200,-92.376900,6-Open,2023-04-24,https://g.page/r/CUcofmSNuKY_EBM/review,false,
+000132,015,115 Petigru Dr,Pawleys Island,SC,South Carolina,29585,USA,(843) 829-1444,33.437410,-79.133500,6-Open,2023-04-27,https://g.page/r/CU67ZDg8KpnlEBM/review,true,
+000116,035,1010 S Moorland Rd,Brookfield,WI,Wisconsin,53005,USA,(262) 800-7729,43.020410,-88.107000,6-Open,2023-05-01,https://g.page/r/CaHVIWNQBhnxEBM/review,true,
+000100,023,6133 Saratoga Blvd,Corpus Christi,TX,Texas,78414,USA,(361) 929-3419,27.679900,-97.373700,6-Open,2023-05-01,https://g.page/r/CdvPc-vS2uzgEBM/review,true,
+000173,046,11418 W Markham St,Little Rock,AR,Arkansas,72211,USA,(501) 764-9139,34.754370,-92.403300,6-Open,2023-05-15,https://g.page/r/CVqtV-C_Fw1nEBM/review,true,
+000185,011,333 S Western Ave,Springfield,MO,Missouri,65802,USA,(417) 621-9873,37.207850,-93.347300,6-Open,2023-05-15,https://g.page/r/CShJ8h91Ncb1EBM/review,false,
+000056,008,1430 NE Douglas St,Lee's Summit,MO,Missouri,64086,USA,(816) 988-3991,38.937920,-94.379000,6-Open,2023-05-15,https://g.page/r/CRIWBbYJIXWnEBM/review,true,
+000070,005,28195 Walker South Rd,Walker,LA,Louisiana,70785,USA,(225) 243-1820,30.476430,-90.864000,6-Open,2023-05-18,https://g.page/r/CQ8OavPJNTGzEBM/review,false,
+000139,047,2541 S Ferdon Blvd,Crestview,FL,Florida,32536,USA,(251) 494-4010,30.734420,-86.565600,6-Open,2023-05-22,https://g.page/r/CYl0JmuqeoirEBM/review,true,
+000063,032,1625 Union Ave,Memphis,TN,Tennessee,38104,USA,(901) 698-5935,35.135690,-90.007400,6-Open,2023-05-22,https://g.page/r/CUmOOjQ_59JLEBM/review,true,
+000129,047,3838 Andrews Hwy,Odessa,TX,Texas,79762,USA,(432) 400-6787,31.882090,-102.384000,6-Open,2023-05-22,https://g.page/r/Cd_eOhLHoMDlEBM/review,true,
+000065,052,1780 N Hwy 77,Waxahachie,TX,Texas,76645,USA,(682) 868-4324,32.094120,-96.996700,6-Open,2023-05-22,https://g.page/r/CcZAuqC08nNjEBM/review,true,
+000176,039,4265 Harrodsburg Rd,Lexington,KY,Kentucky,40514,USA,(859) 682-5767,37.997570,-84.580800,6-Open,2023-05-22,https://g.page/r/CRb0FiIDOb3cEBM/review,true,
+000161,025,6325 N Wickham Rd,Melbourne,FL,Florida,32940,USA,(321) 977-6037,28.214490,-80.672400,6-Open,2023-05-22,https://g.page/r/CfgJA6YjLkKDEBM/review,true,
+000208,037,701 Pelham Rd S,Jacksonville,AL,Alabama,36265,USA,(659) 910-0389,33.808180,-85.761700,6-Open,2023-05-29,https://g.page/r/CWqq6aSXq_vwEBM/review,true,
+000188,015,3004 N Broadway St,Poteau,OK,Oklahoma,74953,USA,(479) 599-2086,35.089150,-94.630300,6-Open,2023-06-12,https://g.page/r/CSjZDcQI0RlhEBM/review,true,
+000121,047,4001 N Grandview Ave,Odessa,TX,Texas,79762,USA,(432) 444-5947,31.888260,-102.352000,6-Open,2023-06-12,https://g.page/r/CQB3yrTQwAaqEBM/review,true,
+000055,071,2021 E Santa Fe St,Olathe,KS,Kansas,66062,USA,(913) 407-7176,38.883370,-94.781900,6-Open,2023-06-12,https://g.page/r/CSOhf_3yUisAEBM/review,true,
+000174,037,1210 W Harris Dr,Johnson City,TN,Tennessee,37604,USA,(479) 358-9274,36.304030,-82.373100,6-Open,2023-06-12,https://g.page/r/CSS0YIC70Jd8EBM/review,true,
+000047,015,2435 N Lebanon St,Lebanon,IN,Indiana,46052,USA,(463) 275-9001,40.073260,-86.473000,6-Open,2023-06-12,https://g.page/r/CbWNvFAaomq8EBM/review,true,
+000077,025,1209 W Morton Ave,Jacksonville,IL,Illinois,62650,USA,(217) 281-0717,39.723220,-90.250800,6-Open,2023-06-19,https://g.page/r/CVqGuWH3BL_WEBM/review,true,
+000207,037,1615 E University Dr,Auburn,AL,Alabama,36830,USA,(479) 358-9274,32.617980,-85.447600,6-Open,2023-06-19,https://g.page/r/CdOMCI_QhfD6EBM/review,true,
+000078,001,1360 E Robinson Ave,Springdale,AR,Arkansas,72764,USA,(479) 770-5633,36.167460,-94.116200,6-Open,2023-06-26,https://g.page/r/CcooN2YzXl9cEBM/review,true,
+000170,034,2901 Pat Booker Rd,Universal City,TX,Texas,78148,USA,(210) 512-8619,29.557620,-98.321100,6-Open,2023-06-26,https://g.page/r/Ccyz4E-SvhddEBM/review,true,
+000099,025,1114 W S Airport Rd,Traverse City,MI,Michigan,49686,USA,(479) 358-9274,44.733650,-85.597800,6-Open,2023-06-26,https://g.page/r/CU0uAIH7hb3dEBM/review,true,
+000118,047,6821 Slide Rd,Lubbock,TX,Texas,79424,USA,(806) 758-3501,33.531620,-101.922000,6-Open,2023-06-29,https://g.page/r/CZdu4-83WInvEBM/review,true,
+000137,044,2904 Stallings Ln,Jonesboro,AR,Arkansas,72401,USA,(870) 641-4776,35.832200,-90.669500,6-Open,2023-07-10,https://g.page/r/CW6gF0I4h2Y2EBM/review,true,
+000097,023,3000 W Trenton Rd,Edinburg,TX,Texas,78539,USA,(479) 358-9274,26.265840,-98.203600,6-Open,2023-07-10,https://g.page/r/Ce4RwMHmdXAZEBM/review,true,
+000040,015,3264 Gerona Dr E,Jacksonville,FL,Florida,32224,USA,(904) 579-7235,30.288290,-81.456000,6-Open,2023-07-11,https://g.page/r/CUI7wXWer5iqEBM/review,true,
+000124,010,110 N Rock Rd,Wichita,KS,Kansas,67206,USA,(316) 205-1072,37.687010,-97.243800,6-Open,2023-07-19,https://g.page/r/CQNV6ANqWGPPEBM/review,true,
+000154,047,7403 Milwaukee Ave,Lubbock,TX,Texas,79424,USA,(806) 758-3504,33.526050,-101.956000,6-Open,2023-07-24,https://g.page/r/CS14dAXMboPMEBM/review,true,
+000145,025,2019 Okeechobee Blvd,West Palm Beach,FL,Florida,33409,USA,(561) 925-8442,26.706320,-80.080600,6-Open,2023-07-24,https://g.page/r/Cf62mCvQbrPyEBM/review,true,
+000178,039,2895 Richmond Rd,Lexington,KY,Kentucky,40509,USA,(859) 810-2891,38.006950,-84.450900,6-Open,2023-07-24,https://g.page/r/CXrgdRrEHGebEBM/review,true,
+000187,024,5018 W Mercury Blvd,Newport News,VA,Virginia,23605,USA,(948) 666-2195,37.023480,-76.437400,6-Open,2023-07-26,https://g.page/r/CV-75Ci7XAnbEBM/review,true,
+000115,047,923 NW Sheridan Rd,Lawton,OK,Oklahoma,73505,USA,(479) 358-9274,34.618390,-98.422000,6-Open,2023-07-31,https://g.page/r/CZbJOR1Ez6dEEBM/review,true,
+000084,052,3040 E Hebron Pkwy,Carrollton,TX,Texas,75010,USA,(940) 557-5645,33.025610,-96.853100,6-Open,2023-07-31,https://g.page/r/CY2y56ncGOu0EBM/review,true,
+000223,026,604 S Saginaw Blvd,Saginaw,TX,Texas,76179,USA,(945) 234-3957,32.852750,-97.361200,6-Open,2023-07-31,https://g.page/r/CUFWuz2XyYsQEBM/review,true,
+000102,020,2915 Peach Orchard Rd,Augusta,GA,Georgia,30906,USA,(706) 426-5585,33.417620,-82.023500,6-Open,2023-08-02,https://g.page/r/CWkOnUMiFJvbEBM/review,true,
+000057,025,4104 E Lincolnway,Sterling,IL,Illinois,61081,USA,(479) 358-9274,41.791420,-89.747300,6-Open,2023-08-07,https://g.page/r/CTwuup7ZEmUwEBM/review,true,
+000183,046,918 W Main St,Cabot,AR,Arkansas,72023,USA,(501) 764-9692,34.976470,-92.025300,6-Open,2023-08-14,https://g.page/r/CV9HOTckx2ejEBM/review,true,
+000136,037,1302 Blowing Rock Rd,Boone,NC,North Carolina,28607,USA,(980) 323-9290,36.202860,-81.665300,6-Open,2023-08-18,https://g.page/r/Caw0Iz-ZaxLPEBM/review,false,
+000098,015,1940 S 14th St,Fernandina Beach,FL,Florida,32034,USA,(904) 582-8695,30.640090,-81.455500,6-Open,2023-08-19,https://g.page/r/CW4bEcvCdZmvEBM/review,true,
+000061,019,15610 Hickman Rd,Clive,IA,Iowa,50325,USA,(515) 304-5923,41.614670,-93.834300,6-Open,2023-08-21,https://g.page/r/Cen-FQdV-D1WEBM/review,true,
+000164,025,111 Valor Dr SE,Palm Bay,FL,Florida,32909,USA,(321) 977-6038,27.998250,-80.644200,6-Open,2023-08-21,https://g.page/r/CfGprwxv1NJDEBM/review,true,
+000151,047,2730 SW Pkwy,Wichita Falls,TX,Texas,76308,USA,(479) 358-9274,33.858110,-98.535200,6-Open,2023-08-26,https://g.page/r/CX9IYw5WqMQSEBM/review,true,
+000211,037,2803 W Andrew Johnson Hwy,Morristown,TN,Tennessee,37814,USA,(479) 358-9274,36.201110,-83.333500,6-Open,2023-08-28,https://g.page/r/CYN_x6vvY1M3EBM/review,true,
+000255,052,2530 Lincoln Way E,Massillon,OH,Ohio,44646,USA,(234) 348-3657,40.798110,-81.486900,6-Open,2023-08-28,https://g.page/r/Cef7fLCV3tXeEBM/review,true,
+000240,048,100 Plaza Dr,Vestal,NY,New York,13850,USA,(607) 658-8764,42.093150,-75.954900,6-Open,2023-08-28,https://g.page/r/CZ16Lf3-bVtIEBM/review,true,
+000112,022,2405 N Clairemont Ave,Eau Claire,WI,Wisconsin,54703,USA,(715) 727-5982,44.824250,-91.543700,6-Open,2023-09-04,https://g.page/r/CQPXgXNYjM1jEBM/review,true,
+000300,032,2019 Whitten Rd,Memphis,TN,Tennessee,38133,USA,(901) 698-7247,35.180460,-89.836900,6-Open,2023-09-04,https://g.page/r/CavBYLc4xintEBM/review,true,
+000111,015,7450 E County Rd 700 N,Brownsburg,IN,Indiana,46112,USA,(463) 583-5335,39.865830,-86.393100,6-Open,2023-09-06,https://g.page/r/CY4Ni4UYwQ3WEBM/review,true,
+000101,015,2597 S Woodland Blvd,DeLand,FL,Florida,32720,USA,(321) 977-6047,28.983080,-81.299400,6-Open,2023-09-08,https://g.page/r/CZk7C43F9fPPEBM/review,true,
+000036,010,11465 E 21st St N,Wichita,KS,Kansas,67206,USA,(316) 895-7953,37.723100,-97.205000,6-Open,2023-09-11,https://g.page/r/Cfi6YZZKIljoEBM/review,true,
+000169,025,2816 Joseph Cannon Way,Marion,IL,Illinois,62959,USA,(479) 358-9274,37.743460,-88.973900,6-Open,2023-09-11,https://g.page/r/Cf60AuaNjZO6EBM/review,true,
+000135,011,354 W Buena Vista St,Springfield,MO,Missouri,65810,USA,(417) 657-3201,37.131080,-93.295600,6-Open,2023-09-11,https://g.page/r/CdYsJ-vE7BWOEBM/review,true,
+000299,039,101 Crossfield Dr,Versailles,KY,Kentucky,40383,USA,(859) 810-2892,38.053880,-84.716600,6-Open,2023-09-11,https://g.page/r/Ca_VyLwp0NagEBM/review,true,
+000192,047,1201 N Commerce St,Ardmore,OK,Oklahoma,73401,USA,(479) 358-9274,34.188110,-97.143600,6-Open,2023-09-18,https://g.page/r/CTP-atuZ8VoNEBM/review,true,
+000072,034,6202 I-35,San Antonio,TX,Texas,78218,USA,(210) 512-8621,29.484800,-98.402200,6-Open,2023-09-18,https://g.page/r/CWBg8dhQxlifEBM/review,true,
+000282,046,2630 Richmond Rd,Texarkana,TX,Texas,75503,USA,(479) 358-9274,33.458980,-94.089300,6-Open,2023-09-18,https://g.page/r/CQ-uoxE0EyYuEBM/review,true,
+000067,003,3700 Buford Dr,Buford,GA,Georgia,30519,USA,(678) 621-7801,34.082940,-83.988600,6-Open,2023-09-18,https://g.page/r/CXO3FikiDsWaEBM/review,true,
+000120,025,2016 Mt Zion Rd,Decatur,IL,Illinois,62521,USA,(217) 800-4391,39.817630,-88.877900,6-Open,2023-09-25,https://g.page/r/CXNpWcZ2wJd3EBM/review,true,
+000269,052,3121 Maple Ave,Zanesville,OH,Ohio,43701,USA,(479) 358-9274,39.979170,-82.017100,6-Open,2023-09-25,https://g.page/r/Ccorsm4UIbEfEBM/review,true,
+000266,020,7234 Garners Ferry Rd,Columbia,SC,South Carolina,29209,USA,(839) 895-5029,33.971530,-80.949400,6-Open,2023-09-27,https://g.page/r/CZm_zMas3kFUEBM/review,false,
+000258,015,619 NC-24,Albemarle,NC,North Carolina,28001,USA,(980) 431-5774,35.344140,-80.177500,6-Open,2023-10-02,https://g.page/r/CWSVBE7fRAqsEBM/review,true,
+000171,034,21410 Kuykendahl Rd,Spring,TX,Texas,77379,USA,(346) 589-8099,30.079080,-95.518000,6-Open,2023-10-03,https://g.page/r/CWW9UeQsKFT3EBM/review,true,
+000032,045,509 N Cambell St,Rapid City,SD,South Dakota,57701,USA,(479) 358-9274,44.086430,-103.192000,6-Open,2023-10-09,https://g.page/r/CXhiF61MI5mpEBM/review,true,
+000194,047,1617 Garth Brooks Blvd,Yukon,OK,Oklahoma,73099,USA,(405) 870-7584,35.481790,-97.759500,6-Open,2023-10-09,https://g.page/r/CY-w-TUEUm0OEBM/review,true,
+000191,047,2110 S Western St,Amarillo,TX,Texas,79109,USA,(479) 358-9274,35.189440,-101.884000,6-Open,2023-10-09,https://g.page/r/CWc4J7fwLw_MEBM/review,true,
+000059,008,2505 NE Vivion Rd,Kansas City,MO,Missouri,64118,USA,(913) 407-7178,39.185680,-94.549600,6-Open,2023-10-09,https://g.page/r/CYB13bSdF4_tEBM/review,true,
+000270,015,4845 S Memorial Dr,Tulsa,OK,Oklahoma,74145,USA,(918) 840-5299,36.092980,-95.886000,6-Open,2023-10-16,https://g.page/r/CSgk59aM93t9EBM/review,true,
+000147,047,1480 Knickerbocker Rd,San Angelo,TX,Texas,76904,USA,(479) 358-9274,31.431490,-100.454000,6-Open,2023-10-16,https://g.page/r/CcA74KFs19h8EBM/review,true,
+000066,025,3202 Vermilion St,Danville,IL,Illinois,61832,USA,(217) 800-4394,40.175130,-87.630800,6-Open,2023-10-23,https://g.page/r/CawQrxq0Ve9WEBM/review,true,
+000163,025,1165 Palm Bay Rd NE,Melbourne,FL,Florida,32904,USA,(321) 977-6229,28.035730,-80.640100,6-Open,2023-10-23,https://g.page/r/CRQBfT-Zjp_yEBM/review,true,
+000165,057,220 N Comrie Ave,Johnstown,NY,New York,12095,USA,(479) 358-9274,43.014820,-74.360500,6-Open,2023-10-23,https://g.page/r/CdOXCvXmASscEBM/review,true,
+000177,039,12525 Shelbyville Rd,Middletown,KY,Kentucky,40243,USA,(502) 901-2330,38.245310,-85.523600,6-Open,2023-10-23,https://g.page/r/CZcWfHY3bfa6EBM/review,true,
+000149,074,3582 Penn Ave,Sinking Spring,PA,Pennsylvania,19608,USA,(862) 354-9278,40.324770,-76.013300,6-Open,2023-10-23,https://g.page/r/CbYdCPHHyx2bEBM/review,true,
+000197,047,1433 Encanto Pl,Montrose,CO,Colorado,81401,USA,(479) 358-9274,38.462920,-107.866000,6-Open,2023-10-30,https://g.page/r/CUy59iirnjWcEBM/review,true,
+000317,028,5302 S 56th St,Lincoln,NE,Nebraska,68516,USA,(531) 530-3558,40.759460,-96.643600,6-Open,2023-11-06,https://g.page/r/CQGljDbQRIRPEBM/review,false,
+000184,046,1415 Military Rd,Benton,AR,Arkansas,72015,USA,(501) 424-6637,34.577390,-92.575900,6-Open,2023-11-06,https://g.page/r/CY8P9d6qEV4sEBM/review,true,
+000180,074,1746 E Market St,Harrisonburg,VA,Virginia,22801,USA,(479) 358-9274,38.432650,-78.843400,6-Open,2023-11-06,https://g.page/r/CXjDhal2fGXOEBM/review,true,
+000123,020,2230 N Beltline Blvd,Columbia,SC,South Carolina,29204,USA,(839) 895-5037,34.018690,-80.989200,6-Open,2023-11-06,https://g.page/r/CfS1SzHh_FopEBM/review,false,
+000301,076,137 E Pineview Dr,Flowood,MS,Mississippi,39232,USA,(769) 770-6597,32.355720,-90.021500,6-Open,2023-11-10,https://g.page/r/CdOIGq7b4yCKEBM/review,true,
+000298,025,4105 Broadway St,Mount Vernon,IL,Illinois,62864,USA,(479) 358-9274,38.313950,-88.941200,6-Open,2023-11-13,https://g.page/r/CeuuT_AfWAzUEBM/review,true,
+000148,025,2537 N US-31 S,Traverse City,MI,Michigan,49684,USA,(479) 358-9274,44.724030,-85.646800,6-Open,2023-11-13,https://g.page/r/Cf2qvbkvp0pZEBM/review,true,
+000312,052,1637 N Memorial Dr,Lancaster,OH,Ohio,43130,USA,(740) 562-6325,39.731020,-82.615400,6-Open,2023-11-13,https://g.page/r/CSxmWbA9lv6iEBM/review,true,
+000213,037,1200 Interstate Dr,Cookeville,TN,Tennessee,38501,USA,(931) 401-4655,36.137530,-85.506700,6-Open,2023-11-16,https://g.page/r/CV5CMbwpXdKZEBM/review,false,
+000267,011,700 N Bishop Ave,Rolla,MO,Missouri,65401,USA,(636) 542-8973,37.949420,-91.776800,6-Open,2023-11-20,https://g.page/r/CVZXJjl-Rg6EEBM/review,true,
+000265,037,5065 US-31,Calera,AL,Alabama,35040,USA,(659) 259-0015,33.148340,-86.748700,6-Open,2023-11-27,https://g.page/r/CfvVwRpFRU0REBM/review,true,
+000193,047,3655 NW 39th St,Oklahoma City,OK,Oklahoma,73112,USA,(572) 522-4226,35.511840,-97.583000,6-Open,2023-12-04,https://g.page/r/CWHn6Umd2Y9qEBM/review,true,
+000233,025,410 N Broadway Ave,Urbana,IL,Illinois,61801,USA,(217) 859-7686,40.116110,-88.207100,6-Open,2023-12-04,https://g.page/r/CVdsmHcjNFBREBM/review,true,
+000262,011,3600 Monticello Plaza Dr,O'Fallon,MO,Missouri,63366,USA,(636) 685-2747,38.801280,-90.695900,6-Open,2023-12-04,https://g.page/r/Cd4x1uesnkNVEBM/review,true,
+000201,015,3453 Dr. M.L.K. Jr Blvd,New Bern,NC,North Carolina,28562,USA,(252) 772-0027,35.098740,-77.098000,6-Open,2023-12-04,https://g.page/r/Cfi8hxytEfzqEBM/review,true,
+000119,015,2207 Sagamore Pkwy,Lafayette,IN,Indiana,47905,USA,(479) 358-9274,40.395290,-86.855300,6-Open,2023-12-08,https://g.page/r/CddDWm1AzWJNEBM/review,false,
+000304,076,5758 US-80,Pearl,MS,Mississippi,39208,USA,(769) 770-6597,32.284700,-90.042000,6-Open,2023-12-11,https://g.page/r/CXLbywtHCX6hEBM/review,true,
+000218,047,402 N Bryant Blvd,San Angelo,TX,Texas,76903,USA,(479) 358-9274,31.465850,-100.445000,6-Open,2023-12-11,https://g.page/r/Cd_JaZMFSCCmEBM/review,false,
+000220,047,4010 W Owen K Garriott Rd,Enid,OK,Oklahoma,73703,USA,(405) 870-7584,36.392660,-97.927100,6-Open,2023-12-11,https://g.page/r/Cef2W9d8t2sDEBM/review,true,
+000310,039,1626 Veterans Pkwy,Jeffersonville,IN,Indiana,47130,USA,(502) 901-2330,38.328770,-85.743400,6-Open,2023-12-11,https://g.page/r/CVKSQ-ijoksLEBM/review,true,
+000313,052,6675 Pearl Rd,Parma Heights,OH,Ohio,44130,USA,(234) 348-3657,41.381250,-81.782800,6-Open,2023-12-11,https://g.page/r/CSezs6PhuYKFEBM/review,true,
+000287,023,1501 E Olive St,Laredo,TX,Texas,78041,USA,(956) 586-5621,27.531030,-99.481000,6-Open,2023-12-13,https://g.page/r/CUDDI5mQK-2zEBM/review,true,
+000140,046,4900 John F Kennedy Blvd,North Little Rock,AR,Arkansas,72116,USA,(501) 443-2989,34.800650,-92.254700,6-Open,2023-12-18,https://g.page/r/CTbfnSG23lQ_EBM/review,true,
+000210,037,1102 6th Ave SE,Decatur,AL,Alabama,35601,USA,(938) 867-4517,34.591150,-86.979900,6-Open,2023-12-18,https://g.page/r/CYPS2YagXl6YEBM/review,true,
+000138,044,700 N 12th St,Murray,KY,Kentucky,42071,USA,(479) 358-9274,36.622630,-88.313100,6-Open,2023-12-18,https://g.page/r/CcxRAnjnu3AdEBM/review,true,
+000254,001,411 SE Walton Blvd,Bentonville,AR,Arkansas,72712,USA,(479) 770-5670,36.335730,-94.205100,6-Open,2023-12-23,https://g.page/r/CVYEANMHB3bTEBM/review,true,
+000274,015,807 S Reed St,Kokomo,IN,Indiana,46901,USA,(463) 766-0617,40.477470,-86.108400,6-Open,2023-12-26,https://g.page/r/Cf-ImQsXoEuOEBM/review,false,
+000330,004,1230 N Main St,Miami,OK,Oklahoma,74354,USA,(479) 358-9274,36.889730,-94.877100,6-Open,2023-12-31,https://g.page/r/CbjY4Sy1Fs8gEBM/review,true,
+000309,025,5422 Okeechobee Rd,Fort Pierce,FL,Florida,34947,USA,(561) 925-8442,27.418800,-80.379600,6-Open,2023-12-31,https://g.page/r/CYM94FA5qx7gEBM/review,true,
+000290,011,200 E Nifong Blvd,Columbia,MO,Missouri,65203,USA,(573) 691-4893,38.909360,-92.337700,6-Open,2024-01-08,https://g.page/r/CZYufyXUksCHEBM/review,true,
+000283,037,415 W Elk St,Elizabethton,TN,Tennessee,37643,USA,(479) 358-9274,36.351810,-82.232200,6-Open,2024-01-08,https://g.page/r/CW7x5kE2-IZCEBM/review,true,
+000336,001,1828 US-421,Wilkesboro,NC,North Carolina,28697,USA,(479) 358-9274,36.150730,-81.194800,6-Open,2024-01-08,https://g.page/r/CbVd1VA6paCkEBM/review,true,
+000291,011,5400 Rogers Ave,Fort Smith,AR,Arkansas,72903,USA,(479) 974-4169,35.361830,-94.372400,6-Open,2024-01-15,https://g.page/r/CSkQOE0YcrduEBM/review,true,
+000215,047,612 E Villa Maria Rd,Bryan,TX,Texas,77802,USA,(479) 358-9274,30.644390,-96.353100,6-Open,2024-01-15,https://g.page/r/CUeg_R6CKmevEBM/review,false,
+000272,015,1805 E Fire Tower Rd,Greenville,NC,North Carolina,27858,USA,(828) 832-9736,35.565740,-77.358900,6-Open,2024-01-15,https://g.page/r/Cai2bwPhK5NtEBM/review,true,
+000285,011,1540 Wentzville Pkwy,Wentzville,MO,Missouri,63385,USA,(618) 992-2893,38.824430,-90.874600,6-Open,2024-01-22,https://g.page/r/CbAw4EcAhy61EBM/review,true,
+000226,009,3806 Maizeland Rd,Colorado Springs,CO,Colorado,80909,USA,(719) 937-7450,38.867860,-104.756000,6-Open,2024-01-29,https://g.page/r/CcFqZaiqEDf1EBM/review,false,
+000181,025,201 McMeans Ave,Bay Minette,AL,Alabama,36507,USA,(251) 263-7520,30.878620,-87.783900,6-Open,2024-01-29,https://g.page/r/CeQKUiRRSL4aEBM/review,true,
+000314,039,2625 S Hurstbourne Pkwy,Louisville,KY,Kentucky,40220,USA,(502) 901-2330,38.212590,-85.593900,6-Open,2024-01-29,https://g.page/r/CcMTFJJj0b4XEBM/review,true,
+000331,004,2817 N Broadway St,Pittsburg,KS,Kansas,66762,USA,(479) 358-9274,37.436040,-94.705300,6-Open,2024-02-05,https://g.page/r/CSHQqtERB22tEBM/review,true,
+000133,015,3460 US-27,Clermont,FL,Florida,34711,USA,(352) 805-1940,28.517290,-81.727400,6-Open,2024-02-06,https://g.page/r/CbyMEdrz_azkEBM/review,true,
+000022,015,3104 Raeford Rd,Fayetteville,NC,North Carolina,28303,USA,(910) 930-0620,35.045150,-78.930800,6-Open,2024-02-10,https://g.page/r/CRZ7ykzYejTzEBM/review,true,
+000271,015,308 S Tillotson Ave,Muncie,IN,Indiana,47304,USA,(765) 767-5431,40.191680,-85.418800,6-Open,2024-02-19,https://g.page/r/CRUCJkvR-sgzEBM/review,false,
+000302,076,107 Hwy 80 W,Clinton,MS,Mississippi,39056,USA,(769) 770-6597,32.334870,-90.325400,6-Open,2024-02-26,https://g.page/r/CeF_K3R10Y7KEBM/review,true,
+000324,046,7001 N John F Kenedy Blvd,North Little Rock,AR,Arkansas,72116,USA,(501) 462-3782,34.819490,-92.236400,6-Open,2024-02-26,https://g.page/r/CfC8PgApyVpKEBM/review,true,
+000128,047,2201 W Texas Ave,Midland,TX,Texas,79701,USA,(432) 444-6643,31.994240,-102.099000,6-Open,2024-02-26,https://g.page/r/CTHjqH-2OaQDEBM/review,true,
+000263,037,1514 Decatur Pike,Athens,TN,Tennessee,37303,USA,(423) 830-8974,35.450330,-84.619900,6-Open,2024-02-26,https://g.page/r/CfyQnrQgw1IfEBM/review,false,
+000232,047,800 N 14th St,Leesburg,FL,Florida,34748,USA,(386) 507-0629,28.819620,-81.887100,6-Open,2024-02-26,https://g.page/r/CZh3QvlDb8b5EBM/review,true,
+000235,025,1703 W Springfield Ave,Champaign,IL,Illinois,61821,USA,(217) 920-4468,40.112560,-88.275400,6-Open,2024-03-04,https://g.page/r/CdXG0PMSi4kMEBM/review,true,
+000167,034,14118 Culebra Rd,San Antonio,TX,Texas,78254,USA,(210) 512-8625,29.518160,-98.777100,6-Open,2024-03-04,https://g.page/r/CTLJJ0AfksuOEBM/review,false,
+000273,015,4708 E 21st St,Tulsa,OK,Oklahoma,74114,USA,(918) 995-6141,36.132930,-95.924300,6-Open,2024-03-11,https://g.page/r/CbGBuw_MEHOUEBM/review,false,
+000276,015,2900 US-52,West Lafayette,IN,Indiana,47906,USA,(479) 358-9274,40.467420,-86.960100,6-Open,2024-03-11,https://g.page/r/CZ8emTs1IuTgEBM/review,false,
+000203,015,6883 US-36,Avon,IN,Indiana,46123,USA,(765) 767-5447,39.762060,-86.401800,6-Open,2024-03-11,https://g.page/r/CWc2Wo0fL8D0EBM/review,false,
+000074,015,502 Pooler Pkwy,Pooler,GA,Georgia,31322,USA,(912) 712-9661,32.134690,-81.255800,6-Open,2024-03-11,https://g.page/r/CfHXRQmZqW3ZEBM/review,false,
+000196,047,2209 Main St,Alamosa,CO,Colorado,81101,USA,(720) 983-1120,37.473990,-105.891000,6-Open,2024-03-18,https://g.page/r/CURr23HnJM1CEBM/review,true,
+000219,047,3316 W Loop 250 N,Midland,TX,Texas,79707,USA,(432) 400-6787,32.033800,-102.131000,6-Open,2024-03-18,https://g.page/r/Cd5FFurgu74HEBM/review,true,
+000168,034,2630 SE Military Dr,San Antonio,TX,Texas,78235,USA,(210) 512-8628,29.351110,-98.452000,6-Open,2024-03-25,https://g.page/r/CSeyRa61iI4NEBM/review,true,
+000200,015,2901 N Monroe St,Tallahassee,FL,Florida,32303,USA,(850) 801-4004,30.481600,-84.304600,6-Open,2024-03-25,https://g.page/r/Cb9oL6BAx0kBEBM/review,false,
+000322,039,7609 Bardstown Rd,Louisville,KY,Kentucky,40291,USA,(502) 901-2330,38.136510,-85.580000,6-Open,2024-03-25,https://g.page/r/CXZvv37EjKE1EBM/review,true,
+000230,068,4050 Watson Blvd,Warner Robins,GA,Georgia,31093,USA,(478) 758-4162,32.616260,-83.700600,6-Open,2024-03-25,https://g.page/r/CQv1QpdUHq_OEBM/review,true,
+000338,017,914 N Kilgore St,Kilgore,TX,Texas,75662,USA,(903) 803-4804,32.390430,-94.869700,6-Open,2024-04-01,https://g.page/r/Cbxz-36_Q1eHEBM/review,true,
+000320,025,198 Palm Bay Rd NE,Palm Bay,FL,Florida,32905,USA,(386) 888-8056,28.034450,-80.665300,6-Open,2024-04-01,https://g.page/r/CQ2uvRP6wbMLEBM/review,true,
+000251,015,621 W Oglethorpe Hwy,Hinesville,GA,Georgia,31313,USA,(912) 742-1949,31.831050,-81.598100,6-Open,2024-04-01,https://g.page/r/CbB09k6kelxuEBM/review,true,
+000288,037,1775 Fort Henry Blvd,Kingsport,TN,Tennessee,37664,USA,(479) 358-9274,36.530660,-82.526300,6-Open,2024-04-08,https://g.page/r/CczNqrjz36oeEBM/review,true,
+000204,015,3030 Western Blvd,Jacksonville,NC,North Carolina,28546,USA,(252) 772-0027,34.794350,-77.408100,6-Open,2024-04-15,https://g.page/r/CYI6QhOCpzk9EBM/review,false,
+000228,068,1667 Bass Rd,Macon,GA,Georgia,31210,USA,(478) 910-0029,32.932880,-83.726000,6-Open,2024-04-15,https://g.page/r/Cbuo9s0lFfNVEBM/review,true,
+000354,011,1903 Fayetteville Rd,Van Buren,AR,Arkansas,72956,USA,(479) 335-1905,35.464550,-94.356900,6-Open,2024-04-22,https://g.page/r/CdYRRN6QohbQEBM/review,true,
+000318,011,404 E Sunshine St,Springfield,MO,Missouri,65807,USA,(417) 290-1001,37.181890,-93.290100,6-Open,2024-04-22,https://g.page/r/CTKkPPIYnHpHEBM/review,false,
+000321,039,7700 Laurel Ridge Rd,Louisville,KY,Kentucky,40219,USA,(502) 901-2330,38.137660,-85.674100,6-Open,2024-04-22,https://g.page/r/CXZvv37EjKE1EBM/review,true,
+000103,052,15707 N Coit Rd,Dallas,TX,Texas,75248,USA,(945) 292-1095,32.962580,-96.769400,6-Open,2024-05-06,https://g.page/r/Ce87DLhGJONIEBM/review,true,
+000325,047,2840 NW 178th St,Edmond,OK,Oklahoma,73012,USA,(572) 522-4226,35.653070,-97.566100,6-Open,2024-05-13,https://g.page/r/CRm6GIdQd_OJEBM/review,true,
+000034,008,300 E Russell Ave,Warrensburg,MO,Missouri,64093,USA,(913) 489-0904,38.772620,-93.734800,6-Open,2024-05-13,https://g.page/r/CVo-cqhP-RMBEBM/review,false,
+000248,017,1812 E SE Loop 323,Tyler,TX,Texas,75703,USA,(903) 991-3929,32.309530,-95.278400,6-Open,2024-05-20,https://g.page/r/CUsZk-KatU9qEBM/review,false,
+000365,046,703 S Jackson St,Jacksonville,TX,Texas,75766,USA,(903) 803-4804,31.958290,-95.268500,6-Open,2024-05-20,https://g.page/r/CTuL-yCX7J39EBM/review,false,
+000401,011,8310 Old Hwy N,Lake St Louis,MO,Missouri,63367,USA,(636) 429-9590,38.764510,-90.779800,6-Open,2024-05-20,https://g.page/r/CSCk5SmXO3wKEBM/review,true,
+000360,037,50 N Rufe Taylor Rd,Greeneville,TN,Tennessee,37745,USA,(479) 358-9274,36.183260,-82.771500,6-Open,2024-05-20,https://g.page/r/CUnlDjnX0BfxEBM/review,false,
+000069,025,10024 Papa George St,Daphne,AL,Alabama,36526,USA,(251) 494-4010,30.659400,-87.851600,6-Open,2024-05-21,https://g.page/r/CVd1SBEG3L9OEBM/review,false,
+000114,035,4706 75th St,Kenosha,WI,Wisconsin,53142,USA,(262) 999-2072,42.566610,-87.865300,6-Open,2024-05-27,https://g.page/r/CYHT__KAlF4pEBM/review,false,
+000264,047,1162 John Sims Pkwy,Niceville,FL,Florida,32578,USA,(251) 263-7520,30.515630,-86.464100,6-Open,2024-06-03,https://g.page/r/CV_O6-J7D0KQEBM/review,false,
+000238,023,1723 W University Dr,Edinburg,TX,Texas,78539,USA,(479) 358-9274,26.304610,-98.181100,6-Open,2024-06-03,https://g.page/r/CQnxH3-Lw1i7EBM/review,true,
+000280,045,3950 Denis Dr,Casper,WY,Wyoming,82604,USA,(479) 358-9274,42.820140,-106.368000,6-Open,2024-06-10,https://g.page/r/CUhz86_s5nHMEBM/review,true,
+000386,028,909 S Dewey St,North Platte,NE,Nebraska,69101,USA,(479) 358-9274,41.125980,-100.762000,6-Open,2024-06-10,https://g.page/r/CVLG_3EBxNnNEBM/review,true,
+000268,076,2307 W Thomas St,Hammond,LA,Louisiana,70401,USA,(985) 272-1399,30.500410,-90.487400,6-Open,2024-06-17,https://g.page/r/Ce9BJZLmgbTxEBM/review,true,
+000307,034,7071 Hwy 6 N,Houston,TX,Texas,77095,USA,(346) 589-8099,29.889950,-95.642500,6-Open,2024-06-17,https://g.page/r/CSFFF1Glh31eEBM/review,true,
+000385,039,4217 Shelbyville Rd,Louisville,KY,Kentucky,40207,USA,(502) 901-2330,38.251970,-85.637700,6-Open,2024-06-17,https://g.page/r/CUhz86_s5nHMEBM/review,true,
+000229,068,3253 Stone Mountain Hwy,Snellville,GA,Georgia,30078,USA,(943) 202-5346,33.850880,-84.046100,6-Open,2024-06-17,https://g.page/r/CUkodpPYeIZKEBM/review,false,
+000408,075,4796 Commercial Dr,New Hartford,NY,New York,13413,USA,(479) 358-9274,43.095310,-75.305100,6-Open,2024-06-24,https://g.page/r/Cf6shzJCIQxOEBM/review,false,
+000326,052,1137 W Pleasant Valley Rd,Parma,OH,Ohio,44134,USA,(234) 348-3657,41.360610,-81.687700,6-Open,2024-06-24,https://g.page/r/CdrIyCOl2vnnEBM/review,true,
+000247,034,2130 E Palm Valley Blvd,Round Rock,TX,Texas,78665,USA,(479) 358-9274,30.519040,-97.652600,6-Open,2024-07-01,https://g.page/r/CUBiZfEkqpuEEBM/review,false,
+000231,047,1364 E 8th St,Odessa,TX,Texas,79761,USA,(432) 444-5947,31.858590,-102.356000,6-Open,2024-07-01,https://g.page/r/CfXAuOy5wCihEBM/review,true,
+000315,037,5982 Chalkville Mountain Rd,Trussville,AL,Alabama,35235,USA,(659) 910-0389,33.640140,-86.622300,6-Open,2024-07-01,https://g.page/r/CSxqHMwlOIzcEBM/review,true,
+000031,013,4331 Wyoming Blvd NE,Albuquerque,NM,New Mexico,87109,USA,(479) 358-9274,35.129320,-106.552000,6-Open,2024-07-08,https://g.page/r/CYNUmT5EAY4vEBM/review,true,
+000468,037,406 15th St,Tuscaloosa,AL,Alabama,35401,USA,(659) 259-0015,33.198910,-87.540600,6-Open,2024-07-08,https://g.page/r/Ccb-IWKXp3-jEBM/review,true,
+000329,017,129 E Ovilla Rd,Red Oak,TX,Texas,75154,USA,(945) 292-1097,32.531250,-96.814500,6-Open,2024-07-08,https://g.page/r/Cf_6_ppMn3U8EBM/review,true,
+000239,023,202 W Del Mar Blvd,Laredo,TX,Texas,78041,USA,(956) 663-4614,27.568000,-99.499000,6-Open,2024-07-15,https://g.page/r/CVAMfI41m499EBM/review,false,
+000409,046,1711 TX-256 Loop,Palestine,TX,Texas,75801,USA,(945) 523-2894,31.738070,-95.607400,6-Open,2024-07-15,https://g.page/r/CVO0vwMjxZZjEBM/review,true,
+000435,074,4050 Robert C Byrd Dr,Beckley,WV,West Virginia,25801,USA,(479) 358-9274,37.807510,-81.184600,6-Open,2024-07-15,https://g.page/r/CdFgF8oc4ZS9EBM/review,true,
+000357,056,2001 E Main St,Springfield,OH,Ohio,45503,USA,(580) 490-4085,39.923020,-83.779300,6-Open,2024-07-15,https://g.page/r/CYw-00okfbUQEBM/review,true,
+000202,052,17900 Bagley Rd,Middleburg Heights,OH,Ohio,44130,USA,(234) 348-3657,41.371920,-81.825600,6-Open,2024-07-15,https://g.page/r/CStoQq94fAD3EBM/review,true,
+000088,012,959 N Riverside Dr,Clarksville,TN,Tennessee,37040,USA,(931) 754-3741,36.538990,-87.366070,6-Open,2024-07-22,https://g.page/r/CYEmbQRrx7inEBM/review,true,
+000260,035,6031 Regency W Dr,Mount Pleasant,WI,Wisconsin,53406,USA,(262) 800-7729,42.701240,-87.853900,6-Open,2024-07-22,https://g.page/r/CakxrQtZvy2xEBM/review,false,
+000423,011,1312 S Madison St,Webb City,MO,Missouri,64870,USA,(479) 358-9274,37.131810,-94.475800,6-Open,2024-07-22,https://g.page/r/CcZaowac71_cEBM/review,true,
+000146,015,1120 N State Rd 135,Greenwood,IN,Indiana,46142,USA,(765) 978-5968,39.632680,-86.159000,6-Open,2024-07-22,https://g.page/r/CZSqqGOlXflvEBM/review,true,
+000295,040,11 Le Gordon Dr,Midlothian,VA,Virginia,23114,USA,(479) 358-9274,37.505600,-77.662000,6-Open,2024-07-29,https://g.page/r/CRG3lhK9SeoKEBM/review,false,
+000328,017,4020 S Broadway Ave,Tyler,TX,Texas,75701,USA,(903) 991-3929,32.306080,-95.299900,6-Open,2024-08-05,https://g.page/r/CYe7M3cDE3RfEBM/review,true,
+000041,015,7788 Normandy Blvd,Jacksonville,FL,Florida,32221,USA,(904) 893-3782,30.294410,-81.776900,6-Open,2024-08-05,https://g.page/r/CU01kEkWFhckEBM/review,false,
+000453,044,2312 W Kingshighway,Paragould,AR,Arkansas,72450,USA,(870) 706-2697,36.059450,-90.517000,6-Open,2024-08-19,https://g.page/r/Cd-JUb93z7U-EBM/review,false,
+000278,047,44 Eglin Pkwy NE,Fort Walton Beach,FL,Florida,32548,USA,(251) 494-4010,30.414380,-86.606200,6-Open,2024-08-19,https://g.page/r/CT_fUFmUmSwlEBM/review,false,
+000237,025,550 E Pershing Rd,Decatur,IL,Illinois,62526,USA,(447) 610-0618,39.877280,-88.951300,6-Open,2024-08-19,https://g.page/r/CajbRLVc8K3bEBM/review,false,
+000303,076,1604 SW Railroad Ave,Hammond,LA,Louisiana,70403,USA,(985) 272-1399,30.487420,-90.457400,6-Open,2024-08-19,https://g.page/r/CVPmiHPzzkkxEBM/review,true,
+000454,004,803 US-62 65 N,Harrison,AR,Arkansas,72601,USA,(417) 290-1002,36.252160,-93.119500,6-Open,2024-08-19,https://g.page/r/CZNDL4LA4x3NEBM/review,false,
+000153,034,3830 W Davis St,Conroe,TX,Texas,77304,USA,(346) 589-8099,30.327990,-95.497200,6-Open,2024-08-19,https://g.page/r/CbBOGWdvJl8uEBM/review,false,
+000246,011,6536 Chippewa St,St. Louis,MO,Missouri,63109,USA,(636) 542-8973,38.591270,-90.303500,6-Open,2024-08-19,https://g.page/r/CT-28rMp-2XxEBM/review,false,
+000292,039,5000 Maple Spring Dr,Louisville,KY,Kentucky,40229,USA,(502) 901-2330,38.099300,-85.670500,6-Open,2024-08-19,https://g.page/r/CdPuY_CAL1KiEBM/review,true,
+000421,037,15383 Flinders Ln,Athens,AL,Alabama,35611,USA,(256) 913-4738,34.781120,-86.934200,6-Open,2024-08-26,https://g.page/r/CfS6E5Y5og_9EBM/review,false,
+000297,074,3140 Cape Horn Rd,Red Lion,PA,Pennsylvania,17356,USA,(479) 358-9274,39.916910,-76.631000,6-Open,2024-09-02,https://g.page/r/CegEu2_wML6PEBM/review,false,
+000126,015,1553 Fording Island Rd,Hilton Head Island,SC,South Carolina,29926,USA,(912) 712-9661,32.236550,-80.806600,6-Open,2024-09-06,https://g.page/r/CV0LOsLDVK4tEBM/review,false,
+000422,061,905 N Colony Rd,Wallingford,CT,Connecticut,06492,USA,(479) 358-9274,41.482980,-72.810500,6-Open,2024-09-09,https://g.page/r/CUkOqqiiL4-hEBM/review,true,
+000358,075,1893 Central Ave,Colonie,NY,New York,12205,USA,(479) 358-9274,42.735800,-73.852400,6-Open,2024-09-09,https://g.page/r/Cf6OhDzQz_WAEBM/review,false,
+000094,013,2010 Southern Blvd SE,Rio Rancho,NM,New Mexico,87124,USA,(479) 358-9274,35.241060,-106.696000,6-Open,2024-09-16,https://g.page/r/CSw9VVDhDriIEBM/review,false,
+000455,004,770 S St Louis St,Batesville,AR,Arkansas,72501,USA,(501) 642-2093,35.771830,-91.641400,6-Open,2024-09-16,https://g.page/r/CUV9LI66Oyb5EBM/review,false,
+000471,011,1521 E Battlefield Rd,Springfield,MO,Missouri,65804,USA,(417) 290-1003,37.160250,-93.269100,6-Open,2024-09-16,https://g.page/r/CQ4q-zfCjuxGEBM/review,true,
+000107,010,325 S Ridge Rd,Wichita,KS,Kansas,67209,USA,(316) 205-1070,37.679400,-97.426000,6-Open,2024-09-23,https://g.page/r/CeV_jZLq_1PsEBM/review,false,
+000245,047,1639 Hwy 351,Abilene,TX,Texas,79601,USA,(479) 358-9274,32.477520,-99.697000,6-Open,2024-09-23,https://g.page/r/CSMDmWtAcRAKEBM/review,false,
+000343,047,960 N Loop 340,Bellmead,TX,Texas,76705,USA,(479) 358-9274,31.604350,-97.103800,6-Open,2024-09-23,https://g.page/r/CcWoafg5Jh4aEBM/review,false,
+000433,074,2124 5th Ave,Huntington,WV,West Virginia,25703,USA,(479) 358-9274,38.423880,-82.420000,6-Open,2024-09-30,https://g.page/r/CehL2tpZ_pabEBM/review,false,
+000236,025,638 E 16th St,Holland,MI,Michigan,49423,USA,(231) 454-2011,42.782910,-86.079700,6-Open,2024-09-30,https://g.page/r/CbXNWzpeTSUxEBM/review,false,
+000323,049,2298 N University Pkwy,Provo,UT,Utah,84604,USA,(479) 358-9274,40.265280,-111.670000,6-Open,2024-10-14,https://g.page/r/CZubIIOovkQ7EBM/review,false,
+000289,011,8180 N Lindbergh Blvd,Florissant,MO,Missouri,63031,USA,(636) 685-2747,38.789470,-90.346400,6-Open,2024-10-14,https://g.page/r/Cde_jJipxLtbEBM/review,true,
+000368,060,1203 Iroqouis Ave,Naperville,IL,Illinois,60563,USA,(479) 358-9274,41.795030,-88.124300,6-Open,2024-10-14,https://g.page/r/CethO_yIVeqYEBM/review,true,
+000319,034,13353 FM 1488,Magnolia,TX,Texas,77354,USA,(346) 589-8099,30.224330,-95.685800,6-Open,2024-10-21,https://g.page/r/Cba2IrURK6rpEBM/review,false,
+000293,039,5340 Bardstown Rd,Louisville,KY,Kentucky,40291,USA,(502) 901-2330,38.167440,-85.603600,6-Open,2024-10-21,https://g.page/r/CUo1yeXoEIpwEBM/review,false,
+000087,047,2200 S Gregg St,Big Spring,TX,Texas,79720,USA,(432) 444-6643,32.232940,-101.472000,6-Open,2024-10-28,https://g.page/r/CQSPxNQmBMprEBM/review,false,
+000436,046,1110 Cooktown Rd,Ruston,LA,Louisiana,71270,USA,(479) 358-9274,32.538110,-92.652700,6-Open,2024-10-28,https://g.page/r/CZZS_M4QMuyDEBM/review,true,
+000450,056,2550 N Fairfield Rd,Beavercreek,OH,Ohio,45431,USA,(580) 771-4798,39.765130,-84.050100,6-Open,2024-10-28,https://g.page/r/CdukiRju6U9rEBM/review,false,
+000498,052,1355 N 21st St,Newark,OH,Ohio,43055,USA,(740) 562-6325,40.084810,-82.428100,6-Open,2024-10-28,https://g.page/r/CQZnZ6D0vi-6EBM/review,false,
+000370,028,1480 Diers Ave,Grand Island,NE,Nebraska,68803,USA,(531) 530-3558,40.933980,-98.384500,6-Open,2024-11-04,https://g.page/r/CTpoDMixCVCpEBM/review,false,
+000033,025,5508 S Harvey St,Muskegon,MI,Michigan,49444,USA,(231) 454-2012,43.151500,-86.205100,6-Open,2024-11-04,https://g.page/r/CWPgKCKM4nRwEBM/review,true,
+000469,052,4266 Cemetery Rd,Hilliard,OH,Ohio,43026,USA,(740) 562-6325,40.032840,-83.130300,6-Open,2024-11-04,https://g.page/r/CXgp_4ndPOV1EBM/review,false,
+000349,015,4420 S Emerson Ave,Indianapolis,IN,Indiana,46203,USA,(463) 258-0340,39.702270,-86.083200,6-Open,2024-11-04,https://g.page/r/Ca1JSqsTRKAWEBM/review,false,
+000143,048,1322 Front St,Binghamton,NY,New York,13901,USA,(862) 354-9275,42.162170,-75.892700,6-Open,2024-11-11,https://g.page/r/CfDMXlyVYjeHEBM/review,false,
+000335,049,877 E 4500 S,Millcreek,UT,Utah,84107,USA,(479) 358-9274,40.674600,-111.866000,6-Open,2024-11-18,https://g.page/r/CY52fofl0WtUEBM/review,false,
+000227,001,3224 Lusk Dr,Neosho,MO,Missouri,64850,USA,(479) 358-9274,36.838670,-94.394800,6-Open,2024-11-18,https://g.page/r/CR540mQ9Q77iEBM/review,false,
+000294,074,2200 N Franklin St,Christiansburg,VA,Virginia,24073,USA,(479) 358-9274,37.159230,-80.421600,6-Open,2024-11-18,https://g.page/r/Cf8xgLQNKGKKEBM/review,false,
+000242,025,3220 Airport Blvd,Mobile,AL,Alabama,36606,USA,(251) 263-7520,30.676320,-88.119600,6-Open,2024-11-25,https://g.page/r/CWgoD_chUMlwEBM/review,false,
+000461,015,600 SE Washington Blvd,Bartlesville,OK,Oklahoma,74006,USA,(539) 234-6404,36.746810,-95.934400,6-Open,2024-11-25,https://g.page/r/CUuML6qQNeMhEBM/review,false,
+000418,052,9201 Fields Ertel Rd,Cincinnati,OH,Ohio,45249,USA,(479) 358-9274,39.290980,-84.304200,6-Open,2024-11-25,https://g.page/r/CXvJviTXmxwtEBM/review,false,
+000561,052,1515 N Main St,North Canton,OH,Ohio,44720,USA,(234) 348-3657,40.893250,-81.407000,6-Open,2024-11-25,https://g.page/r/CW3IxFcOwTtSEBM/review,false,
+000499,052,699 Howe Ave,Cuyahoga Falls,OH,Ohio,44221,USA,(234) 348-3657,41.119500,-81.474200,6-Open,2024-11-27,https://g.page/r/CTeH3P7CVwhyEBM/review,false,
+000458,047,4458 Buffalo Gap Rd,Abilene,TX,Texas,79606,USA,(479) 358-9274,32.396210,-99.762000,6-Open,2024-12-02,https://g.page/r/Cfx6PatBnGYwEBM/review,false,
+000500,052,785 W Central Ave,Springboro,OH,Ohio,45066,USA,(479) 358-9274,39.562110,-84.260500,6-Open,2024-12-02,https://g.page/r/CSgTzH7Hu8LMEBM/review,false,
+000071,039,1555 Campbell Ln,Bowling Green,KY,Kentucky,42104,USA,(270) 992-9285,36.950340,-86.440500,6-Open,2024-12-09,https://g.page/r/CTM1AO5TAEeKEBM/review,false,
+000437,046,3820 Central Ave,Hot Springs,AR,Arkansas,71913,USA,(501) 642-2094,34.461750,-93.062100,6-Open,2024-12-09,https://g.page/r/CZf_NXf-pPoQEBM/review,false,
+000528,035,2162 Monroe Rd,Bellevue,WI,Wisconsin,54115,USA,(479) 358-9274,44.462410,-87.986300,6-Open,2024-12-09,https://g.page/r/CUdvkER7sJN4EBM/review,false,
+000475,011,203 S Providence Rd,Columbia,MO,Missouri,65203,USA,(573) 691-4893,38.948880,-92.334600,6-Open,2024-12-09,https://g.page/r/CURqUidd4IwAEBM/review,false,
+000442,056,3194 Elida Rd,Lima,OH,Ohio,45805,USA,(479) 358-9274,40.768920,-84.161000,6-Open,2024-12-09,https://g.page/r/CV8aYi8YbvB9EBM/review,false,
+000472,057,879 NY-13,Cortland,NY,New York,13045,USA,(479) 358-9274,42.574830,-76.217400,6-Open,2024-12-09,https://g.page/r/CXRjNaTuOdJOEBM/review,false,
+000569,052,5321 Detroit Rd,Sheffield Village,OH,Ohio,44054,USA,(234) 348-3657,41.425890,-82.079600,6-Open,2024-12-09,https://g.page/r/CX0q80HHtmlzEBM/review,false,
+000374,043,4295 Firestone Blvd,Firestone,CO,Colorado,80504,USA,(970) 880-8025,40.161515,-104.974180,6-Open,2024-12-16,https://g.page/r/CTT8AoiDrXMWEBM/review,false,
+000375,022,3976 Mormon Coulee Rd,La Crosse,WI,Wisconsin,54601,USA,(715) 727-5982,43.773860,-91.220800,6-Open,2024-12-16,https://g.page/r/CbEA_E-4IS6mEBM/review,false,
+000462,015,540 S Kerr Blvd,Sallisaw,OK,Oklahoma,74955,USA,(479) 335-1945,35.454100,-94.806100,6-Open,2024-12-16,https://g.page/r/CWZNsZUvTUcEEBM/review,false,
+000413,060,1815 N Main St,Shelbyville,TN,Tennessee,37160,USA,(615) 546-0140,35.513120,-86.456300,6-Open,2024-12-16,https://g.page/r/CT6rMNtyOLbEEBM/review,false,
+000257,001,12430 Tomball Pkwy,Houston,TX,Texas,77086,USA,(346) 589-8099,29.911010,-95.478800,6-Open,2024-12-16,https://g.page/r/CeNbHeDCvqupEBM/review,false,
+000157,015,104 S Riverfront Dr,Jenks,OK,Oklahoma,74037,USA,(539) 250-4502,36.024170,-95.959700,6-Open,2024-12-20,https://g.page/r/CTsE88wcL0t0EBM/review,false,
+000373,052,8380 N High St,Columbus,OH,Ohio,43235,USA,(740) 562-6325,40.134180,-83.016100,6-Open,2024-12-23,https://g.page/r/CVDwsX_fJBAsEBM/review,false,
+000565,052,1560 Marion Mt Gilead Rd,Marion,OH,Ohio,43302,USA,(740) 562-6325,40.581770,-83.087900,6-Open,2024-12-23,https://g.page/r/CV0B3sarin5REBM/review,false,
+000456,037,344 Cox Creek Pkwy,Florence,AL,Alabama,35630,USA,(256) 973-0369,34.838140,-87.632200,6-Open,2024-12-30,https://g.page/r/CXhaHmlELrZdEBM/review,false,
+000523,004,3009 7th St,Bay City,TX,Texas,77414,USA,(346) 589-8099,28.983800,-95.958900,6-Open,2024-12-30,https://g.page/r/CbeyE73A2rZZEBM/review,false,
+000198,047,2813 N Main St,Roswell,NM,New Mexico,88201,USA,(479) 358-9274,33.428880,-104.523000,6-Open,2025-01-06,https://g.page/r/Cei1hFLvE2bTEBM/review,false,
+000406,034,156 El Dorado Blvd,Webster,TX,Texas,77598,USA,(346) 589-8099,29.554630,-95.151400,6-Open,2025-01-06,https://g.page/r/CaNkVei9Eqs5EBM/review,false,
+000464,015,3804 N Monroe St,Tallahassee,FL,Florida,32303,USA,(850) 448-1785,30.501170,-84.329000,6-Open,2025-01-06,https://g.page/r/CewT7VOiumD0EBM/review,false,
+000460,015,1776 E Dixon Blvd,Shelby,NC,North Carolina,28152,USA,(980) 323-9290,35.271980,-81.497700,6-Open,2025-01-06,https://g.page/r/Cem9TvQ6m0E8EBM/review,false,
+000162,015,1441 S Nova Rd,Daytona Beach,FL,Florida,32114,USA,(689) 407-6640,29.178070,-81.027200,6-Open,2025-01-08,https://g.page/r/CdjHOzmFAExMEBM/review,false,
+000425,047,5305 N Davis Hwy,Pensacola,FL,Florida,32503,USA,(251) 494-4010,30.474540,-87.225400,6-Open,2025-01-13,https://g.page/r/CWLDZjd1QzNEEBM/review,false,
+000092,068,1379 US-82,Leesburg,GA,Georgia,31763,USA,(229) 579-3997,29.734930,-95.639300,6-Open,2025-01-13,https://g.page/r/CSBMobKxoEUgEBM/review,false,
+000917,074,2577 N Susquehanna Trail,Selinsgrove,PA,Pennsylvania,17876,USA,(479) 358-9274,40.841002,-76.828104,6-CONSTRUCTION,2025-01-15,,false,
+000397,045,1821 Dell Range Blvd,Cheyenne,WY,Wyoming,82009,USA,(479) 358-9274,41.159960,-104.797000,6-Open,2025-01-20,https://g.page/r/CRH0oHnluUm0EBM/review,false,
+000530,046,2006 N Reynolds Rd,Bryant,AR,Arkansas,72022,USA,(501) 642-2095,34.614850,-92.497900,6-Open,2025-01-20,https://g.page/r/CTQcqXHVb9IcEBM/review,false,
+000391,047,523 E Commerce St,Brownwood,TX,Texas,76801,USA,(479) 358-9274,31.731270,-98.972100,6-Open,2025-01-20,https://g.page/r/CTVsb0AM_lglEBM/review,false,
+000398,076,8111 W Judge Perez Dr,Chalmette,LA,Louisiana,70043,USA,(985) 272-1399,29.955990,-89.985000,6-Open,2025-01-20,https://g.page/r/CVtDbndGENCdEBM/review,false,
+000508,060,853 E Rollins Rd,Round Lake Beach,IL,Illinois,60073,USA,(479) 358-9274,42.380770,-88.060600,6-Open,2025-01-20,https://g.page/r/CdWvYMOwLV8bEBM/review,false,
+000195,039,1025 Fairview Ave,Bowling Green,KY,Kentucky,42103,USA,(270) 770-2351,36.990440,-86.427300,6-Open,2025-01-27,https://g.page/r/CWu-QVj61wUzEBM/review,false,
+000489,066,1709 Paul Bunyon Dr NW,Bemidji,MN,Minnesota,56601,USA,(479) 358-9274,47.494540,-94.904800,6-Open,2025-01-27,https://g.page/r/CZyuEas2dmvlEBM/review,false,
+000447,011,1147 S Kirkwood Rd,Kirkwood,MO,Missouri,63122,USA,(618) 992-2893,38.563490,-90.407000,6-Open,2025-01-27,https://g.page/r/Cc-Aw9GH1ucoEBM/review,false,
+000339,074,7719 Timberlake Rd,Lynchburg,VA,Virginia,24502,USA,(479) 358-9274,37.353740,-79.224900,6-Open,2025-01-27,https://g.page/r/CbJQBqwxvd_TEBM/review,false,
+000179,057,201 Erie Blvd W,Rome,NY,New York,13440,USA,(479) 358-9274,43.211550,-75.461800,6-Open,2025-02-03,https://g.page/r/CUJcrExj_W2mEBM/review,false,
+000522,028,1201 2nd Ave,Kearney,NE,Nebraska,68847,USA,(531) 530-3558,40.686190,-99.084800,6-Open,2025-02-10,https://g.page/r/CefBTlqoJAkYEBM/review,false,
+000478,037,1715 Cherokee Ave SW,Cullman,AL,Alabama,35055,USA,(659) 910-0389,34.156930,-86.840700,6-Open,2025-02-10,https://g.page/r/CXhDap-d1UAfEBM/review,false,
+000507,060,880 S Rand Rd,Lake Zurich,IL,Illinois,60047,USA,(479) 358-9274,42.184010,-88.086500,6-Open,2025-02-10,https://g.page/r/Cd0SlwaYFSTcEBM/review,false,
+000344,015,3814 S Memorial Dr,Greenville,NC,North Carolina,28590,USA,(828) 832-9736,35.560200,-77.406200,6-Open,2025-02-10,https://g.page/r/CdBv4rQrEZrIEBM/review,false,
+000419,052,5096 Mayfield Rd,Lyndhurst,OH,Ohio,44124,USA,(234) 348-3657,41.519770,-81.496300,6-Open,2025-02-10,https://g.page/r/CX2tcLK8LNDjEBM/review,false,
+000216,047,627 SW Wilshire Blvd,Burleson,TX,Texas,76028,USA,(945) 600-1628,32.534632,-97.335147,6-Open,2025-02-17,https://g.page/r/CUC7IXVGx9UxEBM/review,,
+000510,017,615 W 7th Ave,Corsicana,TX,Texas,75110,USA,(945) 677-2338,32.088359,-96.469262,6-Open,2025-02-17,https://g.page/r/CbmWj3KOQU8CEBM/review,,
+000337,010,110 N Perkins Rd,Stillwater,OK,Oklahoma,74075,USA,(405) 870-7584,36.123960,-97.051887,6-Open,2025-03-03,https://g.page/r/CbK73mfG0SnuEBM/review,true,
+000557,023,81 Alton Gloor Blvd,Brownsville,TX,Texas,78526,USA,(479) 358-9274,25.979796,-97.501585,6-Open,2025-03-03,https://g.page/r/CaL4Ih6Gl-t_EBM/review,,
+000473,046,200 Keyser Ave,Natchitoches,LA,Louisiana,71457,USA,(479) 358-9274,31.753396,-93.084513,6-Open,2025-03-03,https://g.page/r/CV7mQ3ie5m2DEBM/review,true,
+000558,060,900 Joliet St,Dyer,IN,Indiana,46311,USA,(479) 358-9274,41.492581,-87.505781,6-Open,2025-03-03,https://g.page/r/CZ1Trrv7c12hEBM/review,true,
+000058,025,6206 S Cedar St,Lansing,MI,Michigan,48911,USA,(479) 358-9274,42.667798,-84.543692,6-Open,2025-03-03,https://g.page/r/CYgReoLzIv0iEBM/review,true,
+000457,037,7920 Hwy 72,Madison,AL,Alabama,35758,USA,(938) 867-4517,34.755173,-86.745137,6-Open,2025-03-10,https://g.page/r/CZjuHORzIGq9EBM/review,,
+000415,060,552 Island Ford Rd,Madisonville,KY,Kentucky,42431,USA,(812) 924-3194,37.351751,-87.487567,6-Open,2025-03-10,https://g.page/r/CZL5FRV5-CdWEBM/review,,
+000488,028,1304 W Omaha Ave,Norfolk,NE,Nebraska,68701,USA,(479) 358-9274,42.018583,-97.427209,6-Open,2025-03-10,https://g.page/r/CZD3UDgZE7wEEBM/review,,
+000125,015,2079 LPGA Blvd,Daytona Beach,FL,Florida,32117,USA,(321) 966-4908,29.224042,-81.091381,6-Open,2025-03-10,https://g.page/r/CaL-hHEWkPgxEBM/review,,
+000353,030,13792 E Mississippi Ave,Aurora,CO,Colorado,80203,USA,(720) 983-1120,39.696260,-104.831202,6-Open,2025-03-17,https://g.page/r/CefLNkQ-IsqGEBM/review,,
+000487,047,1102 W Pierce St,Carlsbad,NM,New Mexico,88220,USA,(479) 358-9274,32.436279,-104.239235,6-Open,2025-03-24,https://g.page/r/CbTgbuJHQxmfEBM/review,,
+000209,039,2855 Nashville Rd,Bowling Green,KY,Kentucky,42101,USA,(270) 992-9285,36.953357,-86.475021,6-Open,2025-03-24,https://g.page/r/CdKwhBOT-ltNEBM/review,,
+000430,076,340 US-90,Waveland,MS,Mississippi,39576,USA,(985) 272-1399,30.308810,-89.377437,6-Open,2025-03-24,https://g.page/r/CZzDFMFYi5mHEBM/review,true,
+000505,060,12980 IL-47,Huntley,IL,Illinois,60142,USA,(479) 358-9274,42.142064,-88.431781,6-Open,2025-03-24,https://g.page/r/CaIuNQqAxkiIEBM/review,,
+000560,023,3245 S Alameda St,Corpus Christi,TX,Texas,78404,USA,(361) 929-3419,27.754865,-97.389096,6-Open,2025-03-24,https://g.page/r/Cff_S0lSIJVEEBM/review,,
+000474,074,6469 Carlisle Pike,Mechanicsburg,PA,Pennsylvania,17072,USA,(479) 358-9274,40.234026,-77.085038,6-Open,2025-03-24,https://g.page/r/CRR1XayFhKiEEBM/review,,
+000346,015,602 Bacons Bridge Rd,Summerville,SC,South Carolina,29483,USA,(843) 894-0870,33.000801,-80.184504,6-Open,2025-03-24,https://g.page/r/CRdT0IfTLgrHEBM/review,,
+000513,047,2801B US-180,Mineral Wells,TX,Texas,76067,USA,(945) 899-6955,32.803318,-98.148253,6-Open,2025-03-31,https://g.page/r/CXfC7e9SxugBEBM/review,,No Reviews
+000531,011,1698 Country Club Plaza Dr,St. Charles,MO,Missouri,63303,USA,(636) 429-9590,38.768568,-90.522994,6-Open,2025-03-31,https://g.page/r/CX9IQHKQ2balEBM/review,false,No Reviews
+000252,015,701 Champions Dr,Davenport,FL,Florida,33897,USA,(479) 358-9274,28.271516,-81.660559,6-Open,2025-03-31,https://g.page/r/CeBhDoWCtwI_EBM/review,,No Reviews
+000281,068,1801 N Columbia St,Milledgeville,GA,Georgia,31061,USA,(862) 354-9276,33.102166,-83.248728,6-Open,2025-03-31,https://g.page/r/CY-8YhXmz9isEAE/review,true,No Reviews
+000459,019,6001 SE 14th St,Des Moines,IA,Iowa,50320,USA,(515) 304-5920,41.530562,-93.595917,6-Open,2025-04-07,https://g.page/r/CWrTx47WEWP5EBM/review,,No Reviews
+000199,049,4004 13400 S,Riverton,UT,Utah,84096,USA,(479) 358-9274,40.508026,-111.986373,6-Open,2025-04-14,https://g.page/r/CUkceDWFnuHAEBM/review,true,
+000559,001,501 Slack St,Pea Ridge,AR,Arkansas,72751,USA,(479) 335-5260,36.442043,-94.122669,6-Open,2025-04-14,https://g.page/r/Cb6oKA1OPQ7sEBM/review,,No Reviews
+000052,001,2004 S Pleasant St (Walmart),Springdale,AR,Arkansas,72764,USA,(479) 358-9274,36.166297,-94.146747,6-Open,2025-04-14,https://g.page/r/CSvSqgv846TWEBM/review,false,No Reviews
+000752,037,1353 Montclair Rd,Birmingham,AL,Alabama,35210,USA,(659) 259-0015,33.522212,-86.728724,6-Open,2025-04-14,https://g.page/r/CX8a9TxSXjPfEBM/review,,No Reviews
+000535,040,11601 Midlothian Tpke,Midlothian,VA,Virginia,23113,USA,(479) 358-9274,37.443184,-77.581164,6-Open,2025-04-14,https://g.page/r/CYFqC2tIosHvEBM/review,false,No Reviews
+000546,003,3449 Winder Hwy,Flowery Branch,GA,Georgia,30542,USA,(678) 621-7801,34.218915,-83.861008,6-Open,2025-04-14,https://g.page/r/CX0UlINWVCMeEBM/review,false,No Reviews
+000481,019,4341 Merle Hay Rd,Des Moines,IA,Iowa,50310,USA,(515) 304-5923,41.637417,-93.697086,6-Open,2025-04-21,https://g.page/r/CSiGEyFXFy3EEBM/review,,No Reviews
+000564,023,6410 N Navarro St,Victoria,TX,Texas,77904,USA,(479) 358-9274,28.855313,-96.996771,6-Open,2025-04-21,https://g.page/r/CR92H3vnznIkEBM/review,,No Reviews
+000477,046,1980 Airline Dr,Bossier,LA,Louisiana,71112,USA,(479) 358-9274,32.527106,-93.700228,6-Open,2025-04-21,https://g.page/r/CUz-A1Gc6WsREBM/review,true,
+000369,039,7 Carothers Rd,Newport,KY,Kentucky,41071,USA,(479) 358-9274,39.084527,-84.483532,6-Open,2025-04-21,https://g.page/r/CQHePEtujaZTEBM/review,false,No Reviews
+000552,054,5200 Route 42,Turnersville,NJ,New Jersey,08012,USA,(862) 354-9278,39.753933,-75.045821,6-Open,2025-04-21,https://g.page/r/CdUfBsFQHYgmEBM/review,false,No Reviews
+000490,071,1804 E Kansas Ave,Garden City,KS,Kansas,67846,USA,(316) 205-1072,37.974535,-100.850217,6-Open,2025-04-28,https://g.page/r/CR59XLWomJACEBM/review,false,No Reviews
+000532,011,8688 Olive Blvd,University City,MO,Missouri,63114,USA,(636) 542-8973,38.673427,-90.361094,6-Open,2025-04-28,https://g.page/r/Cbg-H02X05AwEBM/review,false,No Reviews
+000733,074,3403 Candlers Mountain Rd,Lynchburg,VA,Virginia,24502,USA,(479) 358-9274,37.366646,-79.174888,6-Open,2025-04-28,https://g.page/r/CefIlUS3W8QREBM/review,,No Reviews
+000568,061,35 Talcottville Rd,Vernon,CT,Connecticut,06066,USA,(479) 358-9274,41.826313,-72.497683,6-Open,2025-04-28,https://g.page/r/CQwA4_RYiGYGEBM/review,true,
+000089,068,306 Hwy 53 East,Calhoun,GA,Georgia,30701,USA,(943) 202-5346,34.477379,-84.931269,6-Open,2025-04-28,https://g.page/r/CbHSorUfQnTfEBM/review,false,No Reviews
+000362,028,3703 S Louise Ave,Sioux Falls,SD,South Dakota,57106,USA,(605) 981-2229,43.510053,-96.771560,6-Open,2025-05-05,https://g.page/r/CVDQTvGtLQucEBM/review,false,No Reviews
+000701,037,42 Kelley Blvd,Millbrook,AL,Alabama,36054,USA,(334) 752-7621,32.494140,-86.402931,6-Open,2025-05-05,https://g.page/r/CahgJR717m0WEBM/review,true,
+000486,047,2525 N Prince St,Clovis,NM,New Mexico,88101,USA,(479) 358-9274,34.424250,-103.194816,6-Open,2025-05-05,https://g.page/r/CeTZiRxjDFJ4EBM/review,false,No Reviews
+000702,056,876 W Market St,Tiffin,OH,Ohio,44883,USA,(479) 358-9274,41.110815,-83.210990,6-Open,2025-05-05,https://g.page/r/CTT3t69AIF3mEBM/review,false,No Reviews
+000117,030,4789 N Airport Way,Denver,CO,Colorado,80239,USA,(970) 880-8025,39.783140,-104.794821,6-Open,2025-05-12,https://g.page/r/CXi4-iJOujsFEBM/review,false,No Reviews
+000534,005,5821 Creek Centre Dr,Baton Rouge,LA,Louisiana,70820,USA,(225) 800-9095,30.390070,-91.160416,6-Open,2025-05-12,https://g.page/r/CccMg45HioYGEBM/review,false,No Reviews
+000479,001,1005 US 64,Conway,AR,Arkansas,72032,USA,(501) 642-2096,35.091042,-92.416398,6-Open,2025-05-12,https://g.page/r/CQKd5e4emSHlEBM/review,false,No Reviews
+000529,035,W3236 County Hwy KK,Appleton,WI,Wisconsin,54915,USA,(479) 358-9274,44.244854,-88.351344,6-Open,2025-05-12,https://g.page/r/CYED0XI2AlmbEBM/review,false,No Reviews
+000511,047,104 S Tyndall Pkwy,Panama City,FL,Florida,32404,USA,(479) 358-9274,30.145652,-85.591142,6-Open,2025-05-12,https://g.page/r/CaB8T_d5Dj_1EBM/review,false,No Reviews
+000214,046,2100 N West Ave,El Dorado,AR,Arkansas,71730,USA,(479) 358-9274,33.232754,-92.665968,6-Open,2025-05-12,https://g.page/r/CUitvsE0kvVQEBM/review,false,No Reviews
+000095,052,4525 S Preston Rd,Celina,TX,Texas,75009,USA,(945) 910-3597,33.262575,-96.784393,6-Open,2025-05-12,https://g.page/r/CaSzNjDeAAVjEBM/review,false,No Reviews
+000400,076,7100 Veterans Memorial Blvd,Metairie,LA,Louisiana,70003,USA,(985) 272-1399,30.004818,-90.218580,6-Open,2025-05-12,https://g.page/r/CRj56edoGcOeEBM/review,true,No Reviews
+000501,017,1753 South SW Loop 323,Tyler,TX,Texas,75701,USA,(903) 803-4804,32.330424,-95.341570,6-Open,2025-05-19,https://g.page/r/CcnfutklLsgKEBM/review,false,No Reviews
+000563,034,28435 TX-249,Tomball,TX,Texas,77375,USA,(346) 589-8099,30.087816,-95.632341,6-Open,2025-05-19,https://g.page/r/CXRf4ZsnIRLdEBM/review,false,No Reviews
+000470,025,4669 Hypoluxo Rd,Lake Worth,FL,Florida,33463,USA,(561) 925-8442,26.573060,-80.116363,6-Open,2025-05-19,https://g.page/r/CW0f7Clf0ZOrEBM/review,false,No Reviews
+000429,076,3546 Sangani Blvd,D'Iberville,MS,Mississippi,39540,USA,(479) 358-9274,30.459510,-88.892171,6-Open,2025-05-26,https://g.page/r/CXfS1I9X_42jEBM/review,false,No Reviews
+000744,046,2100 W Center St,Beebe,AR,Arkansas,72012,USA,(501) 764-9139,35.068778,-91.906551,6-Open,2025-05-26,https://g.page/r/CctE8AI_cUyaEBM/review,false,No Reviews
+000524,071,1930 N Kansas Ave,Liberal,KS,Kansas,67901,USA,(316) 895-7953,37.059551,-100.923329,6-Open,2025-05-26,https://g.page/r/CdfZAjMajBUeEBM/review,false,No Reviews
+000750,044,1067 Mineral Wells Ave,Paris,TN,Tennessee,38242,USA,(931) 401-4655,36.286147,-88.309242,6-Open,2025-05-26,https://g.page/r/Cd09Or7SRFJ1EBM/review,false,No Reviews
+000491,032,5879 Stage Rd,Bartlett,TN,Tennessee,38134,USA,(901) 698-5935,35.204256,-89.866723,6-Open,2025-05-26,https://g.page/r/CX5TW9ior4a-EBM/review,false,No Reviews
+000732,011,1320 S Main St,Sikeston,MO,Missouri,63801,USA,(479) 358-9274,36.857909,-89.582613,6-Open,2025-05-26,https://g.page/r/CaDaBtBf49b-EBM/review,false,No Reviews
+000482,047,1918 S 31st St,Temple,TX,Texas,76504,USA,(479) 358-9274,31.081709,-97.365157,6-Open,2025-05-26,https://g.page/r/Caa2w4aOQmwLEBM/review,false,No Reviews
+000476,075,3906 Brewerton Rd,North Syracuse,NY,New York,13212,USA,(479) 358-9274,43.120940,-76.142090,6-Open,2025-05-26,https://g.page/r/CbFXIqeGQDd5EBM/review,false,No Reviews
+000155,015,12199 E Colonial Dr,Orlando,FL,Florida,32826,USA,(321) 977-6033,28.566512,-81.199307,6-Open,2025-05-26,https://g.page/r/Ca2nFb0QDhH8EBM/review,false,No Reviews
+000567,028,2504 O St,Lincoln,NE,Nebraska,68510,USA,(531) 530-3558,40.813786,-96.684734,6-Open,2025-06-02,https://g.page/r/CTz_C6kvrF2pEBM/review,false,No Reviews
+000387,047,6556 Caroline St,Milton,FL,Florida,32570,USA,(251) 263-7520,30.618160,-87.053340,6-Open,2025-06-02,https://g.page/r/CYklWwR7nDCoEBM/review,false,No Reviews
+000497,012,305 Long Hollow Pike,Goodlettsville,TN,Tennessee,37072,USA,(931) 754-3741,36.325383,-86.700917,6-Open,2025-06-02,https://g.page/r/CcYjlMTmWi-qEBM/review,false,No Reviews
+000496,019,"155 1/2, Collins Rd NE",Cedar Rapids,IA,Iowa,52402,USA,(479) 358-9274,42.027290,-91.624692,6-Open,2025-06-02,https://g.page/r/Cd-2-X8Y809DEBM/review,false,No Reviews
+000217,074,1255 E DuBois Ave,DuBois,PA,Pennsylvania,15801,USA,(479) 358-9274,41.123232,-78.730594,6-Open,2025-06-02,https://g.page/r/CQvXF1T4N4VYEBM/review,false,No Reviews
+000448,039,9489 Westport Rd,Louisville,KY,Kentucky,40241,USA,(502) 901-2330,38.286818,-85.575541,6-Open,2025-06-02,https://g.page/r/Cbj6-cvdyEpAEBM/review,false,No Reviews
+000728,066,3341 32nd Ave S,Grand Forks,ND,North Dakota,58201,USA,(479) 358-9274,47.888887,-97.076480,6-Open,2025-06-09,https://g.page/r/CXfp9p60uul6EBM/review,false,No Reviews
+000755,037,1404 Skyland E Blvd,Tuscaloosa,AL,Alabama,35405,USA,(659) 910-0389,33.169733,-87.500139,6-Open,2025-06-09,https://g.page/r/CUDsYXDd7fgnEBM/review,false,No Reviews
+000113,068,36 Timberbrook Dr,Sharpsburg,GA,Georgia,30277,USA,(678) 621-7801,33.407635,-84.672670,6-Open,2025-06-09,https://g.page/r/Cc__ckvjGUtjEBM/review,false,No Reviews
+000083,015,2155 Ashley Phosphate Rd,North Charleston,SC,South Carolina,29406,USA,(854) 504-4982,32.936063,-80.041561,6-Open,2025-06-09,https://g.page/r/CfXGRi8tkEiLEBM/review,false,No Reviews
+000352,034,11830 E US-290,Manor,TX,Texas,78653,USA,(479) 358-9274,30.350730,-97.525227,6-Open,2025-06-16,https://g.page/r/CYkwva2ZPPBIEBM/review,false,No Reviews
+000515,047,2761 W Washington St,Stephenville,TX,Texas,76401,USA,(469) 940-7346,32.205499,-98.235811,6-Open,2025-06-16,https://g.page/r/CTYoJwxr1JJuEBM/review,false,No Reviews
+000371,017,100 E End Blvd S,Marshall,TX,Texas,75670,USA,(479) 358-9274,32.545223,-94.350510,6-Open,2025-06-16,https://g.page/r/CeJfnSLFzN_3EBM/review,false,No Reviews
+000306,020,3600 Walton Wy Ext,Augusta,GA,Georgia,30909,USA,(762) 800-9145,33.487810,-82.073537,6-Open,2025-06-16,https://g.page/r/CYmU6Ru5GJs3EBM/review,false,No Reviews
+000093,015,2500 N Main St,High Point,NC,North Carolina,27262,USA,(479) 358-9274,35.989921,-80.026902,6-Open,2025-06-16,https://g.co/kgs/SLZ5HoJ,false,No Reviews
+000427,047,2224 W Main St,Norman,OK,Oklahoma,73069,USA,(572) 522-4226,35.218126,-97.474805,6-Open,2025-06-23,https://g.page/r/CW-gjJP34VzKEBM/review,false,No Reviews
+000359,037,9207 Hwy 119,Alabaster,AL,Alabama,35007,USA,(659) 259-0015,33.215710,-86.826220,6-Open,2025-06-23,https://g.page/r/Cd9oMO2svZwdEBM/review,false,No Reviews
+000350,015,3301 S Western Ave,Marion,IN,Indiana,46953,USA,(463) 258-0365,40.529874,-85.673295,6-Open,2025-06-23,https://g.page/r/CYdw5lyCGuJOEBM/review,false,No Reviews
+000773,019,3615 Lincoln Way,Ames,IA,Iowa,50014,USA,(515) 304-5920,42.022675,-93.665265,6-Open,2025-06-30,https://g.page/r/CQ8Z8oAQnNugEBM/review,false,No Reviews
+000843,060,22 Kimberly Ln,Manchester,TN,Tennessee,37355,USA,(615) 546-0140,35.454834,-86.043336,6-Open,2025-06-30,https://g.page/r/CYkBvwjLw1APEBM/review,false,No Reviews
+000533,005,991 Grand Caillou Rd,Houma,LA,Louisiana,70363,USA,(985) 272-1399,29.581768,-90.693052,6-Open,2025-06-30,https://g.page/r/CcDvoAEsvBQ5EBM/review,false,No Reviews
+000434,056,10359 Fremont Pike,Perrysburg,OH,Ohio,43551,USA,(479) 358-9274,41.544190,-83.595390,6-Open,2025-06-30,https://g.page/r/CTpwO6buaQizEBM/review,false,No Reviews
+000545,028,3619 S Lincoln Ave,York,NE,Nebraska,68467,USA,(531) 530-3558,40.827219,-97.596330,6-Open,2025-07-07,https://g.page/r/Ca98Psh72T_yEBM/review,false,No Reviews
+000931,037,9 Stanley Dr,Chelsea,AL,Alabama,35043,USA,(659) 910-0389,33.349122,-86.630522,6-Open,2025-07-07,https://g.page/r/Cb1DfiNro7wJEBM/review,false,No Reviews
+000730,046,2401 Louisville Ave,Monroe,LA,Louisiana,71201,USA,(479) 358-9274,32.523380,-92.098643,6-Open,2025-07-07,https://g.page/r/CUUoZpPx2xfcEBM/review,false,No Reviews
+000705,047,2406 Piedmont Pl,Wichita Falls,TX,Texas,76308,USA,(479) 358-9274,33.882283,-98.528206,6-Open,2025-07-07,https://g.page/r/CeR0cBluFn2HEBM/review,false,No Reviews
+000776,025,100 SE 8th Ave,Okeechobee,FL,Florida,34974,USA,(561) 925-8442,27.243524,-80.821751,6-Open,2025-07-07,https://g.page/r/CZf2PDBkJ8V4EBM/review,false,No Reviews
+000742,039,1708 W KY 192,London,KY,Kentucky,40741,USA,(859) 810-5631,37.112060,-84.094350,6-Open,2025-07-07,https://g.page/r/CWbHdYb7-FPGEBM/review,false,No Reviews
+000771,035,1680 S Main St,West Bend,WI,Wisconsin,53095,USA,(262) 999-2072,43.400419,-88.181550,6-Open,2025-07-14,https://g.page/r/CWEz4tl3E13kEBM/review,false,No Reviews
+000727,052,1312 East-West Connector,Mableton,GA,Georgia,30106,USA,(943) 202-5346,33.856698,-84.597320,6-Open,2025-07-14,https://g.page/r/CZNooiTBwzbEEBM/review,false,No Reviews
+000932,037,7915 Vaughn Rd,Montgomery,AL,Alabama,36117,USA,(334) 956-6056,32.340205,-86.177125,6-Open,2025-07-21,https://g.page/r/Cf6f48HkkTG5EBM/review,false,No Reviews
+000484,047,3876 Gulf Breeze Pkwy,Gulf Breeze,FL,Florida,32563,USA,(251) 494-4010,30.391085,-87.061557,6-Open,2025-07-21,https://g.page/r/CR3K_agdeRXZEBM/review,false,No Reviews
+000722,065,2405 8th St S,Moorhead,MN,Minnesota,56560,USA,(479) 358-9274,46.851028,-96.768896,6-Open,2025-07-28,https://g.page/r/CXFd8V-bFPdjEBM/review,false,No Reviews
+000707,047,1330 S FM 51,Decatur,TX,Texas,76234,USA,(682) 710-7217,33.225243,-97.594847,6-Open,2025-07-28,https://g.page/r/CYUmySyiCXqBEBM/review,false,No Reviews
+000467,015,4631 Factory Stores Blvd,Myrtle Beach,SC,South Carolina,29579,USA,(479) 358-9274,33.751423,-78.959006,6-Open,2025-07-28,https://g.page/r/CesRfxwZJUQPEBM/review,false,No Reviews
+000760,075,2410 Watts St,Schenectady,NY,New York,12304,USA,(479) 358-9274,42.783719,-73.918344,6-Open,2025-07-28,https://g.page/r/CalUJwSWI6BoEBM/review,false,No Reviews
+000540,032,6893 Goodman Road East,Olive Branch,MS,Mississippi,38654,USA,(901) 698-7247,34.961344,-89.867600,6-Open,2025-08-04,https://g.page/r/Cbvk0MXOffoVEBM/review,false,No Reviews
+000431,076,1417 W Airline Hwy,LaPlace,LA,Louisiana,70068,USA,(985) 272-1399,30.071922,-90.494813,6-Open,2025-08-04,https://g.page/r/CVDqyD4AeU7eEBM/review,false,No Reviews
+000439,039,2568 S HWY 27,Somerset,KY,Kentucky,42501,USA,(859) 682-5767,37.057063,-84.623529,6-Open,2025-08-04,https://g.page/r/CbUhF_gWG1t1EBM/review,false,No Reviews
+000446,037,1385 Volunteer Pkwy,Bristol,TN,Tennessee,37620,USA,(479) 358-9274,36.558440,-82.211100,6-Open,2025-08-04,https://g.page/r/CXuS1smR3PrEEBM/review,false,No Reviews
+000392,047,910 Lonnie Abbott Blvd,Ada,OK,Oklahoma,74820,USA,(479) 358-9274,34.790327,-96.667188,6-Open,2025-08-11,https://g.page/r/CZQmAYTzgpj2EBM/review,false,No Reviews
+000311,034,19386 Ronald Reagan Blvd,Leander,TX,Texas,78641,USA,(479) 358-9274,30.637966,-97.825896,6-Open,2025-08-11,https://g.page/r/Caux7Pivp3VeEBM/review,false,No Reviews
+000802,046,1301 Albert Pike Rd,Hot Springs,AR,Arkansas,71913,USA,(501) 764-9692,34.492660,-93.083151,6-Open,2025-08-11,https://g.page/r/CZAXu9U5eczSEBM/review,false,No Reviews
+000774,019,2350 Edgewood Rd SW,Cedar Rapids,IA,Iowa,52404,USA,(479) 358-9274,41.954816,-91.716597,6-Open,2025-08-11,https://g.page/r/CXRB3RVKk3TwEBM/review,false,No Reviews
+000556,060,11385 W Lincoln Highway,Mokena,IL,Illinois,60448,USA,(479) 358-9274,41.503173,-87.890826,6-Open,2025-08-11,https://g.page/r/CcRRs0oOvyVuEBM/review,false,No Reviews
+000480,040,10200 Hull Street Rd,Midlothian,VA,Virginia,23112,USA,(479) 358-9274,37.442877,-77.584871,6-Open,2025-08-11,https://g.page/r/Cfh_ktQoyJrnEBM/review,false,No Reviews
+000697,047,1002 W Broadway Ave,Enid,OK,Oklahoma,73703,USA,(405) 870-7584,36.397014,-97.890421,6-Open,2025-08-18,https://g.page/r/CXZve5C6i6WgEBM/review,false,No Reviews
+000190,043,5002 Kipling St,Wheat Ridge,CO,Colorado,80033,USA,(720) 983-1120,39.787765,-105.109154,6-Open,2025-08-18,https://g.page/r/Cdxm91-lu9jKEBM/review,false,No Reviews
+000367,074,3079 N 5th St,Reading,PA,Pennsylvania,19601,USA,(862) 354-9278,40.381276,-75.926904,6-Open,2025-08-18,https://g.page/r/CWNeAcUY778UEBM/review,false,No Reviews
+000704,047,2302 Main St,Gatesville,TX,Texas,76528,USA,(479) 358-9274,31.433751,-97.731623,6-Open,2025-08-18,https://g.page/r/CY2ELKB5fPGpEBM/review,false,No Reviews
+000794,060,1830 Oakland Ave,Indiana,PA,Pennsylvania,15701,USA,(479) 358-9274,40.613152,-79.175853,6-Open,2025-08-18,https://g.page/r/CRamV0kglkQ3EBM/review,false,No Reviews
+000850,060,1960 N Locust Ave,Lawrenceburg,TN,Tennessee,38464,USA,(931) 401-4655,35.266011,-87.322152,6-Open,2025-08-18,https://g.page/r/CW1GfX9_ePtREBM/review,false,No Reviews
+000405,047,1425 N Turner St,Hobbs,NM,New Mexico,88240,USA,(479) 358-9274,32.714701,-103.138382,6-Open,2025-08-18,https://g.page/r/CegDOANkEdcpEBM/review,false,No Reviews
+000743,011,606 S Truman Blvd,Festus,MO,Missouri,63828,USA,(479) 358-9274,38.214441,-90.387722,6-Open,2025-08-18,https://g.page/r/CR1uzBQL7qUREBM/review,false,No Reviews
+000525,044,1615 University Ave,Oxford,MS,Mississippi,38655,USA,(901) 698-5935,34.363828,-89.513373,6-Open,2025-08-18,https://g.page/r/CTyvs3K4oowMEBM/review,false,No Reviews
+000694,015,3492 S US Hwy 41,Terre Haute,IN,Indiana,47802,USA,(479) 358-9274,39.425311,-87.415563,6-Open,2025-08-25,https://g.page/r/CeugRBIexLE4EBM/review,false,No Reviews
+000244,001,4800 Fairmont Pkwy,Pasadena,TX,Texas,77505,USA,(346) 589-8099,29.648323,-95.170700,6-Open,2025-08-25,https://g.page/r/CTKw93lJfc4QEBM/review,false,No Reviews
+000152,013,3835 Coors Blvd NW,Albuquerque,NM,New Mexico,87120,USA,(479) 358-9274,35.127935,-106.701570,6-Open,2025-08-25,https://g.page/r/CWFIkbdp6cyTEBM/review,false,No Reviews
+000831,028,3440 Elk Ln,Fremont,NE,Nebraska,68025,USA,(479) 358-9274,41.450741,-96.452520,6-Open,2025-09-01,https://g.page/r/CVW0jhYA6gR_EBM/review,false,No Reviews
+000399,076,1645 Barataria Blvd,Marrero,LA,Louisiana,70072,USA,(985) 272-1399,29.880619,-90.098616,6-Open,2025-09-01,https://g.page/r/CRRZ5_e38Y_IEBM/review,false,No Reviews
+000832,023,1172 E Main St,Alice,TX,Texas,78332,USA,(361) 929-3419,27.752509,-98.061720,6-Open,2025-09-01,https://share.google/AeSnxf07DQD6xuSyn,false,No Reviews
+000715,015,4530 Main St,Shallotte,NC,North Carolina,28470,USA,(479) 358-9274,33.982155,-78.373591,6-Open,2025-09-01,https://g.page/r/CU1152e_OWY_EBM/review,false,No Reviews
+000737,039,4501 Charlestown Rd,New Albany,IN,Indiana,47150,USA,(502) 901-2330,38.354738,-85.792158,6-Open,2025-09-01,https://g.page/r/CZUy-DOUDMEjEBM/review,false,No Reviews
+000554,020,3435 Wrightsboro Rd,Augusta,GA,Georgia,30909,USA,(706) 426-5530,33.469591,-82.082418,6-Open,2025-09-01,https://g.page/r/CY0_iukoj196EBM/review,false,No Reviews
+000835,022,3702 Gateway Dr,Eau Claire,WI,Wisconsin,54701,USA,(715) 727-5982,44.777797,-91.432270,6-Open,2025-09-01,https://g.page/r/CcKrpqHHEhqREBM/review,false,No Reviews
+000805,074,1251 W Main St,Salem,VA,Virginia,24153,USA,(479) 358-9274,37.290295,-80.077547,6-Open,2025-09-01,https://g.page/r/CdUnXGSZhx3XEBM/review,false,No Reviews
+000765,011,4930 Frederica St,Owensboro,KY,Kentucky,42301,USA,(812) 924-3194,37.721470,-87.124984,6-Open,2025-09-08,https://g.page/r/CX1kHYVxHaRmEBM/review,false,No Reviews
+000915,046,4211 E McCain Blvd,North Little Rock,AR,Arkansas,72117,USA,(501) 424-6637,34.791171,-92.221312,6-Open,2025-09-08,https://g.page/r/CUd_vT1Wu1N2EBM/review,false,No Reviews
+000761,056,2665 Navarre Ave,Oregon,OH,Ohio,43616,USA,(479) 358-9274,41.637113,-83.484618,6-Open,2025-09-08,https://g.page/r/CczqOOnLPWzHEBM/review,false,No Reviews
+000745,017,227 W State Hwy 243,Canton,TX,Texas,75103,USA,(682) 730-3644,32.543927,-95.864818,6-Open,2025-09-08,https://g.page/r/CdX-G6ihM1aYEBM/review,false,No Reviews
+000980,052,2118 N High St,Columbus,OH,Ohio,43201,USA,(740) 562-6325,40.005593,-83.008796,6-Open,2025-09-08,https://g.page/r/CSCZmt6rPftXEBM/review,false,No Reviews
+000845,060,16355 W 159th St,Lockport,IL,Illinois,60441,USA,(479) 358-9274,41.597290,-88.016180,6-Open,2025-09-08,https://g.page/r/Cf6dX52Ug-emEBM/review,false,No Reviews
+000514,047,3209 US-81,Duncan,OK,Oklahoma,73533,USA,(479) 358-9274,34.525047,-97.967485,6-Open,2025-09-08,https://g.page/r/Ceus50GfuM3QEBM/review,false,No Reviews
+000549,052,35403 Euclid Ave,Willoughby,OH,Ohio,44094,USA,(234) 348-3657,41.625507,-81.439342,6-Open,2025-09-15,https://g.page/r/CTdl8InCZjhBEBM/review,false,No Reviews
+000793,060,545 W Main Street,Uniontown,PA,Pennsylvania,15401,USA,(479) 358-9274,39.909516,-79.744925,6-Open,2025-09-15,https://g.page/r/CY8tir-Ic5RzEBM/review,false,No Reviews
+000708,047,9033 Benbrook Blvd,Benbrook,TX,Texas,76126,USA,(682) 868-4324,32.673639,-97.468659,6-Open,2025-09-15,https://g.page/r/CX9CdgHDCooZEBM/review,false,No Reviews
+000792,052,10505 Brookpark Rd,Parma,OH,Ohio,44130,USA,(234) 348-3657,41.418106,-81.758211,6-Open,2025-09-22,https://g.page/r/CTSqNGDgYiUFEBM/review,false,No Reviews
+000736,076,5032 US-98,Hattiesburg,MS,Mississippi,39402,USA,(479) 358-9274,31.321998,-89.370688,6-Open,2025-09-22,https://g.page/r/CauFFCVzEerNEBM/review,false,No Reviews
+000790,071,4433 Bauer Farm Dr,Lawrence,KS,Kansas,66049,USA,(816) 300-3622,38.971920,-95.297852,6-Open,2025-09-22,https://g.page/r/CZ3C_xbAdF8-EBM/review,false,No Reviews
+000763,074,6517 Brockport Spencerport Rd,Brockport,NY,New York,14420,USA,(479) 358-9274,43.198178,-77.943259,6-Open,2025-09-22,https://g.page/r/CXU8q7REVEDOEBM/review,false,No Reviews
+000333,047,4275 Tamiami Trail,Port Charlotte,FL,Florida,33980,USA,(479) 358-9274,26.966470,-82.080419,6-Open,2025-09-29,https://g.page/r/CQhZsYgAi_NgEBM/review,false,No Reviews
+000724,066,4149 Division St,St Cloud,MN,Minnesota,56301,USA,(479) 358-9274,45.554059,-94.210571,6-Open,2025-09-29,https://g.page/r/Cc7QgkUkYw0kEBM/review,false,No Reviews
+000962,037,9039 Lee Hwy,Ooltewah,TN,Tennessee,37363,USA,(423) 880-0002,35.085836,-85.065301,6-Open,2025-09-29,https://g.page/r/CSZZoOpDG0GgEBM/review,false,No Reviews
+000849,060,2421 W Jefferson Street,Joliet,IL,Illinois,60435,USA,(479) 358-9274,41.522576,-88.142819,6-Open,2025-09-29,https://g.page/r/CWPZnVUvM6piEBM/review,false,No Reviews
+000806,039,4023 Poplar Level Rd,Louisville,KY,Kentucky,40213,USA,(502) 901-2330,38.200826,-85.708553,6-Open,2025-09-29,https://g.page/r/CRcirt4befs5EBM/review,false,No Reviews
+000941,046,721 Fairpark Dr,Henderson,TX,Texas,75652,USA,(903) 991-3929,32.149390,-94.787944,6-Open,2025-09-29,https://g.page/r/CRIIBCVsIxTIEBM/review,false,No Reviews
+000976,011,475 US-54,Camdenton,MO,Missouri,65020,USA,(417) 290-1004,38.014050,-92.739386,6-Open,2025-09-29,https://g.page/r/CfJxk80s2nLsEBM/review,false,No Reviews
+000829,025,705 Boll Weevil Cir,Enterprise,AL,Alabama,36330,USA,(479) 358-9274,31.325198,-85.833298,6-Open,2025-09-29,https://g.page/r/CeQCe64ovbr5EBM/review,false,No Reviews
+000495,008,960 E Tucson Marketplace Blvd,Tucson,AZ,Arizona,85713,USA,(479) 358-9274,32.186035,-110.956652,6-Open,2025-09-29,https://g.page/r/CT1l2L7IOuTiEBM/review,false,No Reviews
+000695,015,2322 SR 46,Terre Haute,IN,Indiana,47803,USA,(479) 358-9274,39.438508,-87.332259,7-BUILDING DROP,2025-10-06,,false,
+000356,047,617 Cortez Rd W,Bradenton,FL,Florida,34207,USA,(479) 358-9274,27.462054,-82.569405,7-BUILDING DROP,2025-10-06,,false,
+000825,025,1922 N Henderson St,Galesburg,IL,Illinois,61401,USA,(479) 358-9274,40.971410,-90.383603,7-BUILDING DROP,2025-10-06,,false,
+000492,047,3603 W Hillsborough Ave,Tampa Bay,FL,Florida,33614,USA,(479) 358-9274,27.997067,-82.501971,7-BUILDING DROP,2025-10-06,https://g.page/r/Cf5m7cA0DfvKEBM/review,false,
+000284,047,14511 State Road 70 E,Bradenton,FL,Florida,34202,USA,(479) 358-9274,27.433739,-82.393898,7-BUILDING DROP,2025-10-06,,false,
+000493,008,135 E Speedway Blvd,Tucson,AZ,Arizona,85705,USA,(479) 358-9274,32.236102,-110.968979,7-BUILDING DROP,2025-10-06,,false,
+000847,060,603 President Place,Smyrna,TN,Tennessee,37167,USA,(931) 754-3741,35.981877,-86.554105,7-BUILDING DROP,2025-10-06,,false,
+000463,015,1527 SW 13th St,Gainesville,FL,Florida,32608,USA,(479) 358-9274,29.636829,-82.338988,6-CONSTRUCTION,2025-10-06,,false,
+000517,047,6881 N 9th Ave,Pensacola,FL,Florida,32504,USA,(251) 263-7520,30.493872,-87.192024,6-CONSTRUCTION,2025-10-06,,false,
+000394,047,5787 Manatee Ave W,Bradenton,FL,Florida,34209,USA,(479) 358-9274,27.495641,-82.619552,7-BUILDING DROP,2025-10-06,,false,
+000570,047,5530 SE Abshier Blvd,Belleview,FL,Florida,34420,USA,(321) 977-6037,29.059290,-82.056688,6-CONSTRUCTION,2025-10-06,,false,
+000420,001,7 W Main St,Farmington,AR,Arkansas,72730,USA,(479) 396-3184,36.042057,-94.241097,6-CONSTRUCTION,2025-10-06,,false,
+000361,015,4445 South Scatterfield Rd,Anderson,IN,Indiana,46013,USA,(463) 271-4001,40.068444,-85.653205,6-CONSTRUCTION,2025-10-06,,false,
+000853,060,189 Old Mill Boulevard,Washington,PA,Pennsylvania,15301,USA,(479) 358-9274,40.189361,-80.219363,7-BUILDING DROP,2025-10-06,,false,
+000541,013,4109 E Main St,Farmington,NM,New Mexico,87402,USA,(479) 358-9274,36.758067,-108.155396,6-CONSTRUCTION,2025-10-06,,false,
+000756,047,1102 W Main St.,Artesia,NM,New Mexico,88210,USA,(479) 358-9274,32.842516,-104.409921,6-CONSTRUCTION,2025-10-06,,false,
+000778,025,1805 South Neil St,Champaign,IL,Illinois,61820,USA,(217) 281-0717,40.094146,-88.245724,6-CONSTRUCTION,2025-10-06,,false,
+000739,076,1637 MS-1,Greenville,MS,Mississippi,38701,USA,(479) 358-9274,33.374875,-91.040323,6-CONSTRUCTION,2025-10-06,,false,
+000104,015,6730 103rd St,Jacksonville,FL,Florida,32210,USA,(904) 893-3783,30.248371,-81.754365,6-CONSTRUCTION,2025-10-06,,false,
+000767,040,680 Southpark Blvd,Colonial Heights,VA,Virginia,23834,USA,(479) 358-9274,37.246864,-77.389975,6-CONSTRUCTION,2025-10-06,,false,
+000543,025,1907 SW Gatlin Blvd,Port St. Lucie,FL,Florida,34953,USA,(561) 925-8442,27.264942,-80.407098,6-CONSTRUCTION,2025-10-06,,false,
+000782,075,2833 West Ridge Road,Greece,NY,New York,14626,USA,(479) 358-9274,43.209879,-77.703873,7-BUILDING DROP,2025-10-06,,false,
+000445,056,847 W Alexis Rd,Toledo,OH,Ohio,43613,USA,(479) 358-9274,41.721310,-83.564790,6-CONSTRUCTION,2025-10-06,,false,
+000572,047,10625 US 441,Leesburg,FL,Florida,34788,USA,(321) 977-6038,28.822074,-81.780985,6-CONSTRUCTION,2025-10-06,,false,
+000844,060,3001 Gallatin Pike,Nashville,TN,Tennessee,37216,USA,(615) 546-0140,36.203918,-86.738676,6-CONSTRUCTION,2025-10-06,,false,
+000279,015,1694 Blanding Blvd,Middleburg,FL,Florida,32068,USA,(904) 579-7235,30.109471,-81.822383,6-CONSTRUCTION,2025-10-06,,false,
+000972,037,2777 Zelda Rd,Montgomery,AL,Alabama,36106,USA,(334) 752-7621,32.362300,-86.265582,6-CONSTRUCTION,2025-10-06,,false,
+000867,003,5815 States Bridge Rd,Johns Creek,GA,Georgia,30097,USA,(678) 621-7801,34.016827,-84.186879,6-CONSTRUCTION,2025-10-07,,false,
+000676,049,790 S 930 W St,Payson,UT,Utah,84651,USA,(479) 358-9274,40.031902,-111.748795,6-CONSTRUCTION,2025-10-08,,false,
+000080,034,16968 Concord Dr,Conroe,TX,Texas,77385,USA,(346) 589-8099,30.208247,-95.423000,6-CONSTRUCTION,2025-10-09,,false,
+000952,025,3488 Ross Clark Circle,Dothan,AL,Alabama,36303,USA,(479) 358-9274,31.218820,-85.359791,6-CONSTRUCTION,2025-10-13,,false,
+000839,061,116 Boston Post Rd,Orange,CT,Connecticut,06477,USA,(479) 358-9274,41.275771,-72.990109,6-CONSTRUCTION,2025-10-13,,false,
+000785,054,1350 Hooper Ave,Tom's River,NJ,New Jersey,08753,USA,(479) 358-9274,39.990823,-74.177893,6-CONSTRUCTION,2025-10-13,,false,
+001044,039,1120 Bypass Rd,Winchester,KY,Kentucky,40391,USA,(859) 810-2891,37.998140,-84.214069,6-CONSTRUCTION,2025-10-13,,false,
+000548,052,3701 Massillon Rd,Uniontown,OH,Ohio,44685,USA,(234) 348-3657,40.960797,-81.464888,6-CONSTRUCTION,2025-10-13,,false,
+000876,047,3209 Olton Rd,Plainview,TX,Texas,79072,USA,(806) 853-6303,34.185813,-101.745071,6-CONSTRUCTION,2025-10-13,,false,
+000944,025,102 W Lincoln Ave,Charleston,IL,Illinois,61920,USA,(217) 800-4391,39.484082,-88.183298,6-CONSTRUCTION,2025-10-20,,false,
+000731,074,14 W. Mosby Road,Harrisonburg,VA,Virginia,22801,USA,(479) 358-9274,38.420046,-78.894606,6-CONSTRUCTION,2025-10-20,,false,
+000212,052,12909 Main Street,Frisco,TX,Texas,75035,USA,(940) 557-5645,33.152007,-96.766416,6-CONSTRUCTION,2025-10-20,,false,
+000943,011,1234 US-60,Republic,MO,Missouri,65738,USA,(417) 290-1005,37.129999,-93.458907,6-CONSTRUCTION,2025-10-20,,false,
+000827,025,1051 Ross Clark Cir,Dothan,AL,Alabama,36303,USA,(479) 358-9274,31.218820,-85.359791,6-CONSTRUCTION,2025-10-27,,false,
+000777,025,1203 S Mission St,Mount Pleasant,MI,Michigan,48858,USA,(479) 358-9274,43.590995,-84.767119,6-CONSTRUCTION,2025-10-27,,false,
+000938,001,1343 Southern Hills Center,West Plains,MO,Missouri,65775,USA,(417) 464-6250,36.716661,-91.872955,6-CONSTRUCTION,2025-10-27,,false,
+000703,047,8534 Navarre Pkwy,Navarre,FL,Florida,32566,USA,(251) 494-4010,30.401986,-86.865827,6-CONSTRUCTION,2025-10-27,,false,
+000813,069,14800 Southfield Rd,Allen Park,MI,Michigan,48101,USA,(862) 354-9279,42.257238,-83.198757,6-CONSTRUCTION,2025-10-27,,false,
+000992,052,2180 S Main St,Bellefontaine,OH,Ohio,43311,USA,(580) 490-4085,40.330008,-83.761612,6-CONSTRUCTION,2025-10-27,,false,
+000706,047,323 Hwy 114,Levelland,TX,Texas,79336,USA,(806) 699-6582,33.594292,-102.363077,6-CONSTRUCTION,2025-10-27,,false,
+000949,047,1800 S Main St,Weatherford,TX,Texas,76086,USA,(945) 234-3957,32.735745,-97.796279,6-CONSTRUCTION,2025-10-27,,false,
+001028,039,1031 N. Main Street,Nicholasville,KY,Kentucky,40356,USA,(859) 810-2892,37.900210,-84.565252,6-CONSTRUCTION,2025-10-27,,false,
+000811,011,1275 Jeffco Blvd,Arnold,MO,Missouri,63010,USA,(636) 685-2747,38.439166,-90.373627,6-CONSTRUCTION,2025-11-03,,false,
+000345,015,3300 Margaritaville Blvd,Kissimmee,FL,Florida,34747,USA,(321) 977-6047,28.346618,-81.608550,6-CONSTRUCTION,2025-11-03,,false,
+000904,015,130 US-75,Okmulgee,OK,Oklahoma,74447,USA,(539) 250-4503,35.622699,-95.960708,6-CONSTRUCTION,2025-11-03,,false,
+000781,074,1923 S Atherton St,State College,PA,Pennsylvania,16801,USA,(479) 358-9274,40.785235,-77.830617,6-CONSTRUCTION,2025-11-03,,false,
+000734,039,8111 US 42,Florence,KY,Kentucky,41042,USA,(479) 358-9274,38.982236,-84.645869,6-CONSTRUCTION,2025-11-03,,false,
+001033,081,4707 Main Street,Bridgeport,CT,Connecticut,06606,USA,(479) 358-9274,41.223791,-73.218524,6-CONSTRUCTION,2025-11-10,,false,
+000862,001,Hwy 32 & Walton Dr,Farmington,MO,Missouri,63640,USA,(618) 992-2893,37.791484,-90.435528,6-CONSTRUCTION,2025-11-10,,false,
+000826,025,1261 US-231,Troy,AL,Alabama,36081,USA,(334) 956-6056,31.748891,-85.870994,6-CONSTRUCTION,2025-11-17,,false,
+000857,060,2805 Calumet Ave,Valparaiso,IN,Indiana,46383,USA,(479) 358-9274,41.493866,-87.046348,6-CONSTRUCTION,2025-11-17,,false,
+000830,028,18236 Evans St.,Omaha,NE,Nebraska,68022,USA,(479) 358-9274,41.291566,-96.200706,6-CONSTRUCTION,2025-11-17,,false,
+000942,011,15444-A Manchester Rd,Ellisville,MO,Missouri,63011,USA,(636) 429-9590,38.592630,-90.564731,6-CONSTRUCTION,2025-11-17,,false,
+000922,052,5600 N Henry Blvd,Stockbridge,GA,Georgia,30281,USA,(943) 202-5346,33.553708,-84.257383,6-CONSTRUCTION,2025-11-17,,false,
+000978,011,1630 W South St,Ozark,MO,Missouri,65721,USA,(417) 621-9873,37.004253,-93.221400,6-CONSTRUCTION,2025-11-17,,false,
+000948,047,2128 US-190 BUS,Copperas Cove,TX,Texas,76522,USA,(479) 358-9274,31.120106,-97.880357,6-CONSTRUCTION,2025-11-17,,false,
+000837,022,1600 N Central Ave,Marshfield,WI,Wisconsin,54449,USA,(479) 358-9274,44.681719,-90.163762,6-CONSTRUCTION,2025-11-24,,false,
+000979,035,1738 E Geneva St,Delevan,WI,Wisconsin,53115,USA,(262) 800-7729,42.626938,-88.614414,6-CONSTRUCTION,2025-11-24,,false,
+000854,060,898 S James M Campbell Boulevard,Columbia,TN,Tennessee,38401,USA,(931) 401-4655,35.598862,-87.057863,6-CONSTRUCTION,2025-11-24,,false,
+000860,060,5690 University Boulevard,Moon Township,PA,Pennsylvania,15108,USA,(479) 358-9274,40.521180,-80.218175,6-CONSTRUCTION,2025-11-24,,false,
+000841,073,927 Riverdale St,West Springfield,MA,Massachusetts,01089,USA,(479) 358-9274,42.128921,-72.626097,6-CONSTRUCTION,2025-11-24,,false,
+001036,052,1000 St Augustine Rd,Valdosta,GA,Georgia,31601,USA,(850) 801-4004,30.836989,-83.317656,6-CONSTRUCTION,2025-11-24,,false,
+000965,047,1324 S Dumas Ave,Dumas,TX,Texas,79029,USA,(479) 358-9274,35.852673,-101.973753,6-CONSTRUCTION,2025-11-24,,false,
+000855,060,10671 Broadway,Crown Point,IN,Indiana,46307,USA,(479) 358-9274,41.424494,-87.334773,6-CONSTRUCTION,2025-12-01,,false,
+000920,056,310 Springboro Pike,Miamisburg,OH,Ohio,45449,USA,(580) 771-4798,39.644016,-84.224060,6-CONSTRUCTION,2025-12-01,,false,
+000833,034,564 S Bibb Ave Ste C,Eagle Pass,TX,Texas,78852,USA,(210) 512-8629,28.699686,-100.483493,6-CONSTRUCTION,2025-12-01,,false,
+000947,072,2733 Dorchester Square,Cambridge,MD,Maryland,21613,USA,(479) 358-9274,38.555340,-76.055041,6-CONSTRUCTION,2025-12-01,,false,
+000090,071,400 NW HWY 7,Blue Springs,MO,Missouri,64015,USA,(816) 300-3624,39.021816,-94.271574,6-CONSTRUCTION,2025-12-01,,false,
+000872,047,9225 N May Ave,Oklahoma City,OK,Oklahoma,73120,USA,(572) 522-4226,35.564455,-97.567582,6-CONSTRUCTION,2025-12-01,,false,
+000551,072,2912 Emmorton Rd,Abingdon,MD,Maryland,21009,USA,(479) 358-9274,38.940975,-76.563756,6-CONSTRUCTION,2025-12-08,,false,
+000799,005,371 N Canal Blvd,Thibodaux,LA,Louisiana,70301,USA,(985) 272-1399,29.804279,-90.816212,6-CONSTRUCTION,2025-12-08,,false,
+000940,047,1314 N Main St,Andrews,TX,Texas,79714,USA,(432) 400-6787,32.333018,-102.550685,6-CONSTRUCTION,2025-12-08,,false,
+000241,074,222 E Main Street,Collegeville,PA,Pennsylvania,19426,USA,(862) 354-9278,40.182627,-75.451280,6-CONSTRUCTION,2025-12-08,,false,
+000823,012,1808 Gallatin Pike N,Madison,TN,Tennessee,37115,USA,(931) 754-3741,36.298936,-86.698541,6-CONSTRUCTION,2025-12-08,,false,
+001108,004,3011 FM1764,La Marque,TX,Texas,77568,USA,(346) 589-8099,29.399642,-95.035962,6-CONSTRUCTION,2025-12-08,,false,
+000856,060,4000 Fort Campbell Boulevard,Hopkinsville,KY,Kentucky,42240,USA,0,36.835026,-87.473855,6-CONSTRUCTION,2025-12-08,,false,
+000768,087,1409 W Wade Hampton Blvd,Greer,SC,South Carolina,29650,USA,(864) 999-4243,34.937897,-82.269235,6-CONSTRUCTION,2025-12-15,,false,
+000788,077,3100 N Montana Ave,Helena,MT,Montana,59602,USA,(479) 358-9274,46.616883,-112.021695,6-CONSTRUCTION,2025-12-15,,false,
+000789,071,3231 Iowa Street,Lawrence,KS,Kansas,66046,USA,(816) 477-5542,38.925374,-95.261143,6-CONSTRUCTION,2025-12-15,,false,
+001020,037,1075 N US-321 Hwy,Lenoir City,TN,Tennessee,37771,USA,(479) 358-9274,35.826964,-84.276033,6-CONSTRUCTION,2025-12-15,,false,
+001058,037,1200 Walker Chapel Rd,Fultondale,AL,Alabama,35068,USA,(659) 259-0015,33.608741,-86.800929,6-CONSTRUCTION,2025-12-15,,false,
+000984,037,2633 Helena Rd,Helena,AL,Alabama,35080,USA,(659) 910-0389,33.284438,-86.852260,6-CONSTRUCTION,2025-12-15,,false,
+001061,004,3131 N 16th St,Orange,TX,Texas,77630,USA,(479) 358-9274,30.119711,-93.747825,6-CONSTRUCTION,2025-12-15,,false,
+001031,076,1648 Gause Blvd,Slidell,LA,Louisiana,70458,USA,(985) 272-1399,30.285181,-89.752876,6-CONSTRUCTION,2025-12-15,,false,
+000946,060,2551 Plainfield Road,Joliet,IL,Illinois,60435,USA,0,41.571948,-88.149894,6-CONSTRUCTION,2025-12-15,,false,
+000981,060,18285 Conneaut Lake Road,Meadville,PA,Pennsylvania,16335,USA,0,41.620744,-80.171361,6-CONSTRUCTION,2025-12-15,,false,
+000818,010,3380 Vine St,Hays,KS,Kansas,67601,USA,0,38.894345,-99.317138,6-CONSTRUCTION,2025-12-15,,false,
+000574,070,3999 Maple Rd,Amherst,NY,New York,14226,USA,(479) 358-9274,42.990498,-78.814888,6-CONSTRUCTION,2025-12-22,,false,
+001019,037,202 E Meighan Blvd,Gadsden,AL,Alabama,35903,USA,(659) 259-0015,34.010972,-85.989893,6-CONSTRUCTION,2025-12-22,,false,
+000836,022,225419 Rib Mountain Dr,Wausau,WI,Wisconsin,54401,USA,(479) 358-9274,44.913021,-89.647907,6-CONSTRUCTION,2025-12-29,,false,
+000908,035,2435 W. Mason St.,Green Bay,WI,Wisconsin,54303,USA,(479) 358-9274,44.522994,-88.089879,6-CONSTRUCTION,2025-12-29,,false,
+001018,037,11610 Memorial Pkwy,Hunstville,AL,Alabama,35803,USA,(256) 913-4738,34.615772,-86.567860,6-CONSTRUCTION,2025-12-29,,false,
+000960,052,3805 Anderson Farm Rd,Marietta,GA,Georgia,30064,USA,(678) 621-7801,33.864726,-84.632582,6-CONSTRUCTION,2026-01-05,,false,
+001133,052,1704 Hudson Bridge Rd,Stockbridge,GA,Georgia,30281,USA,(943) 202-5346,33.502407,-84.243202,6-CONSTRUCTION,2026-01-17,,false,
+001052,085,706 N Berkeley Blvd,Goldsboro,NC,North Carolina,27534,USA,(910) 930-0618,35.376338,-77.939904,6-CONSTRUCTION,2026-01-26,,false,
+000575,070,10506 Bennett Rd,Dunkirk,NY,New York,14048,USA,(479) 358-9274,42.458438,-79.311513,6-CONSTRUCTION,2026-02-02,,false,
+000751,066,W Central Entrance,Duluth,MN,Minnesota,55811,USA,(479) 358-9274,46.800577,-92.144451,6-CONSTRUCTION,2026-02-02,,false,
+000812,070,5770 S. Transit Rd,Lockport,NY,New York,14094,USA,(479) 358-9274,43.145706,-78.697820,6-CONSTRUCTION,2026-02-16,,false,
+001024,078,15440 English Ave,Apple Valley,MN,Minnesota,55124,USA,(479) 358-9274,44.725115,-93.177779,6-CONSTRUCTION,2026-03-27,,false,
+001025,078,855 East Co Rd E,Vadnais Heights,MN,Minnesota,55127,USA,(479) 358-9274,,,6-CONSTRUCTION,5018-05-10,,false,
+000783,020,2223 Whiskey Rd,Aiken,SC,South Carolina,29801,USA,(706) 426-5585,33.514070,-81.714859,6-CONSTRUCTION,,,false,
+000364,005,4310 Ambassador Caffery Pkwy,Lafayette,LA,Louisiana,70508,USA,(479) 358-9274,30.158436,-92.051315,6-CONSTRUCTION,,,false,
+000895,054,3402 Rte 9 S,Rio Grande,NJ,New Jersey,08242,USA,(862) 354-9278,,,6-CONSTRUCTION,,,false,

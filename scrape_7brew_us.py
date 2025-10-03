@@ -1,140 +1,114 @@
-# scrape_7brew_us.py
-import csv, json, time, re
-from urllib.parse import urljoin, urlparse
+import csv
+import datetime as dt
+from typing import Dict, Any, List
+
 import requests
-from bs4 import BeautifulSoup
 
-BASE = "https://7brew.com"
-LIST_URL = "https://7brew.com/find-a-7-brew/"
+URL = "https://7brew.com/data/locations.json"
+OUT = "7brew_us_locations.csv"
 
-HEADERS = {
-    "user-agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    ),
-    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-}
+# Excel serial date 1 == 1899-12-31, but Excel also treats 1900 as leap year.
+# The easiest correct base for modern serials is 1899-12-30.
+EXCEL_BASE = dt.date(1899, 12, 30)
 
-session = requests.Session()
-session.headers.update(HEADERS)
+def excel_serial_to_date(value: Any) -> str:
+    """Convert an Excel serial (string or number) to YYYY-MM-DD; return '' if blank/invalid."""
+    if value is None or str(value).strip() == "":
+        return ""
+    try:
+        n = float(value)
+        # Some rows might have decimals; floor is usually fine for opening-day
+        d = EXCEL_BASE + dt.timedelta(days=int(n))
+        return d.isoformat()
+    except Exception:
+        return ""
 
-def get_soup(url: str) -> BeautifulSoup:
-    r = session.get(url, timeout=30)
+def fetch() -> Dict[str, Any]:
+    r = requests.get(URL, timeout=30)
     r.raise_for_status()
-    return BeautifulSoup(r.text, "html.parser")
+    return r.json()
 
-def pick_jsonld(soup: BeautifulSoup):
-    """Return the first JSON-LD blob that looks like a place/business."""
-    for tag in soup.find_all("script", attrs={"type": "application/ld+json"}):
-        try:
-            data = json.loads(tag.string or tag.text or "")
-        except Exception:
-            continue
-        # Some pages wrap JSON-LD in a list
-        objs = data if isinstance(data, list) else [data]
-        for obj in objs:
-            t = obj.get("@type", "")
-            # Accept common types that contain address/geo
-            if isinstance(t, list):
-                types = [x.lower() for x in t]
-            else:
-                types = [str(t).lower()]
-            if any(x in ("place", "localbusiness", "organization", "restaurant") for x in types):
-                return obj
-    return None
+def norm_float(x: Any) -> str:
+    try:
+        return f"{float(str(x).strip()):.6f}"
+    except Exception:
+        return ""
 
-def text_or(d, *keys, default=""):
-    v = d
-    for k in keys:
-        if not isinstance(v, dict):
-            return default
-        v = v.get(k)
-    return v if v is not None else default
+def normalize(row: Dict[str, Any]) -> Dict[str, Any]:
+    # Raw keys from their JSON
+    stand_id   = row.get("Stand Id")
+    frac_id    = row.get("Franchise Id")
+    address    = row.get("Site Address")
+    city       = row.get("City")
+    state_code = row.get("State Code")
+    state_name = row.get("State")
+    zip_code   = row.get("Zip Code")
+    country    = row.get("Country")
+    phone      = row.get("Contact Phone Number")
+    lat        = norm_float(row.get("Latitude"))
+    lon        = norm_float(row.get("Longitude"))
+    stage      = row.get("Project Stage")
+    open_date  = excel_serial_to_date(row.get("Open Date"))
+    g_review   = row.get("Google Review Link")
+    notes      = row.get("Notes")
+    photo_flag = row.get("Stand Photo")
 
-def parse_detail(url: str) -> dict:
-    soup = get_soup(url)
-    data = pick_jsonld(soup) or {}
-
-    # Prefer JSON-LD fields; fall back to scraping visible text if needed
-    addr = data.get("address", {}) if isinstance(data.get("address"), dict) else {}
-    geo = data.get("geo", {}) if isinstance(data.get("geo"), dict) else {}
-
-    # Try to pick a readable name and slug
-    name = data.get("name") or soup.find("h1").get_text(strip=True) if soup.find("h1") else ""
-    slug = urlparse(url).path.rstrip("/").split("/")[-1]
-
-    row = {
-        "brand": "7 Brew",
-        "name": name,
-        "slug": slug,
-        "url": url,
-        "line1": text_or(addr, "streetAddress", default=""),
-        "city": text_or(addr, "addressLocality", default=""),
-        "region": text_or(addr, "addressRegion", default=""),   # state (e.g., TX)
-        "postalCode": text_or(addr, "postalCode", default=""),
-        "country": text_or(addr, "addressCountry", default=""),
-        "lat": text_or(geo, "latitude", default=""),
-        "lon": text_or(geo, "longitude", default=""),
+    return {
+        "stand_id": stand_id or "",
+        "franchise_id": frac_id or "",
+        "address": address or "",
+        "city": city or "",
+        "state_code": (state_code or "").upper(),
+        "state": state_name or "",
+        "postal_code": str(zip_code or "").strip(),
+        "country": (country or "").upper(),
+        "phone": phone or "",
+        "lat": lat,
+        "lon": lon,  # you asked for lon here instead of lng
+        "project_stage": stage or "",
+        "open_date": open_date,
+        "google_review_link": g_review or "",
+        "stand_photo": str(photo_flag or "").lower(),
+        "notes": notes or "",
     }
 
-    # If country missing, try to infer from visible address block (optional)
-    if not row["country"]:
-        addr_block = soup.find(text=re.compile(r"\bUSA\b")) or soup.find(text=re.compile(r"\bUnited States\b"))
-        if addr_block:
-            row["country"] = "US"
+def main():
+    payload = fetch()
+    data = payload.get("data") or []
 
-    return row
-
-def scrape_listing() -> list[dict]:
-    soup = get_soup(LIST_URL)
-
-    # Grab every “View” button/link; dedupe by href
-    links = []
+    rows: List[Dict[str, Any]] = []
     seen = set()
-    for a in soup.find_all("a"):
-        label = (a.get_text() or "").strip().lower()
-        if label == "view":
-            href = a.get("href") or ""
-            if not href:
-                continue
-            url = urljoin(BASE, href)
-            if url not in seen:
-                seen.add(url)
-                links.append(url)
 
-    print(f"Found {len(links)} store detail links")
+    for item in data:
+        if not isinstance(item, dict):
+            continue
 
-    rows = []
-    for i, url in enumerate(links, 1):
-        try:
-            row = parse_detail(url)
-            # keep only US locations
-            if (row.get("country") or "").upper() == "US":
-                rows.append(row)
-                print(f"{i:04d}/{len(links)}  {row.get('city','')}, {row.get('region','')}  -> ok")
-            else:
-                print(f"{i:04d}/{len(links)}  (non-US, skipped)  {url}")
-        except Exception as e:
-            print(f"{i:04d}/{len(links)}  ERROR  {e}  {url}")
-        time.sleep(0.2)  # be polite
+        # Only US
+        country = str(item.get("Country") or "").strip().upper()
+        if country not in {"US", "USA", "UNITED STATES"}:
+            continue
 
-    return rows
+        out = normalize(item)
+        key = (out["stand_id"] or f"{out['address']}|{out['city']}|{out['state_code']}|{out['postal_code']}").lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        rows.append(out)
+
+    if not rows:
+        print("No rows parsed from 7brew — check the endpoint or JSON keys.")
+        return
+
+    fieldnames = [
+        "stand_id","franchise_id","address","city","state_code","state","postal_code","country",
+        "phone","lat","lon","project_stage","open_date","google_review_link","stand_photo","notes"
+    ]
+    with open(OUT, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=fieldnames)
+        w.writeheader()
+        w.writerows(rows)
+
+    print(f"Saved {len(rows)} US locations → {OUT}")
 
 if __name__ == "__main__":
-    rows = scrape_listing()
-    if not rows:
-        print("No rows scraped. The page layout might have changed.")
-    else:
-        out = "7brew_us_locations.csv"
-        with open(out, "w", newline="", encoding="utf-8") as f:
-            w = csv.DictWriter(
-                f,
-                fieldnames=[
-                    "brand","name","slug","url",
-                    "line1","city","region","postalCode","country",
-                    "lat","lon"
-                ],
-            )
-            w.writeheader()
-            w.writerows(rows)
-        print(f"Saved {len(rows)} rows → {out}")
+    main()
