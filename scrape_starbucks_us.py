@@ -1,13 +1,10 @@
-# scrape_starbucks_us.py
-import os, time, csv, json, requests
-from typing import Dict, Any, Iterable, Tuple, List, Set
+# scrape_starbucks_us_expand.py
+import os, time, csv, json, math, requests
+from collections import deque
 
 BASE_URL = "https://www.starbucks.com/apiproxy/v1/locations"
 
-# Optional: if you copied cookies out of DevTools (one long line), export them before running:
-#   export SB_COOKIE="$(cat cookie.txt)"
 SB_COOKIE = os.environ.get("SB_COOKIE", "").strip()
-
 HEADERS = {
     "accept": "application/json",
     "accept-language": "en-US,en;q=0.9",
@@ -16,94 +13,114 @@ HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
     ),
     "x-requested-with": "XMLHttpRequest",
-    # A plain store-locator referer keeps the endpoint happy
     "referer": "https://www.starbucks.com/store-locator",
 }
 if SB_COOKIE:
     HEADERS["cookie"] = SB_COOKIE
 
-# =========  DENSE METRO SEEDS (fast, high-yield)  =========
-# (lat, lng, label) – tweak or add if you want
-SEEDS: List[Tuple[float, float, str]] = [
-    (40.7128, -74.0060,  "nyc"),
-    (34.0522, -118.2437, "la"),
-    (41.8781, -87.6298,  "chicago"),
-    (29.7604, -95.3698,  "houston"),
-    (33.7490, -84.3880,  "atlanta"),
-    (47.6062, -122.3321, "seattle"),
-    (37.7749, -122.4194, "sf"),
-    (32.7157, -117.1611, "sandiego"),
-    (39.7392, -104.9903, "denver"),
-    (25.7617, -80.1918,  "miami"),
-    (38.9072, -77.0369,  "dc"),
-    (42.3601, -71.0589,  "boston"),
-    (36.1627, -86.7816,  "nashville"),
-    (35.0844, -106.6504, "albuquerque"),
-    (36.1699, -115.1398, "vegas"),
-    (33.4484, -112.0740, "phoenix"),
-    (39.9526, -75.1652,  "philly"),
-    (32.7767, -96.7970,  "dallas"),
-    (29.4241, -98.4936,  "sanantonio"),
-    (30.2672, -97.7431,  "austin"),
-    (39.7684, -86.1581,  "indianapolis"),
-    (35.2271, -80.8431,  "charlotte"),
-    (35.1495, -90.0490,  "memphis"),
-    (45.5152, -122.6784, "portland"),
-    (44.9778, -93.2650,  "minneapolis"),
+# ——————————————————————————————
+# Smart seeds = state capitals + a few dense metros
+# (lat, lon)
+STATE_CAPS = [
+    (32.3777, -86.3000), # AL Montgomery
+    (58.3019, -134.4197),# AK Juneau (we will exclude AK later)
+    (33.4484, -112.0740),# AZ Phoenix
+    (34.7465, -92.2896), # AR Little Rock
+    (38.5750, -121.4900),# CA Sacramento
+    (39.7392, -104.9903),# CO Denver
+    (41.7640, -72.6820), # CT Hartford
+    (39.1582, -75.5244), # DE Dover
+    (30.4383, -84.2807), # FL Tallahassee
+    (33.7490, -84.3880), # GA Atlanta
+    (21.3099, -157.8581),# HI Honolulu (we will exclude HI)
+    (43.6178, -116.2156),# ID Boise
+    (39.7980, -89.6440), # IL Springfield
+    (39.7684, -86.1581), # IN Indianapolis
+    (41.5911, -93.6037), # IA Des Moines
+    (39.0473, -95.6752), # KS Topeka
+    (38.2009, -84.8733), # KY Frankfort
+    (30.4571, -91.1874), # LA Baton Rouge
+    (44.3106, -69.7806), # ME Augusta
+    (38.9784, -76.4922), # MD Annapolis
+    (42.3601, -71.0589), # MA Boston
+    (42.7335, -84.5555), # MI Lansing
+    (44.9551, -93.1022), # MN St Paul
+    (32.2988, -90.1848), # MS Jackson
+    (38.5767, -92.1735), # MO Jefferson City
+    (46.5857, -112.0184),# MT Helena
+    (40.8136, -96.7026), # NE Lincoln
+    (39.1638, -119.7674),# NV Carson City
+    (43.2072, -71.5376), # NH Concord
+    (40.2206, -74.7597), # NJ Trenton
+    (35.6870, -105.9378),# NM Santa Fe
+    (42.6526, -73.7562), # NY Albany
+    (35.7796, -78.6382), # NC Raleigh
+    (46.8209, -100.7837),# ND Bismarck
+    (39.9623, -83.0007), # OH Columbus
+    (35.4676, -97.5164), # OK Oklahoma City
+    (44.9429, -123.0351),# OR Salem
+    (40.2698, -76.8756), # PA Harrisburg
+    (41.8236, -71.4222), # RI Providence
+    (34.0007, -81.0348), # SC Columbia
+    (44.3668, -100.3538),# SD Pierre
+    (36.1627, -86.7816), # TN Nashville
+    (30.2747, -97.7404), # TX Austin
+    (40.7608, -111.8910),# UT Salt Lake City
+    (44.2601, -72.5754), # VT Montpelier
+    (37.5407, -77.4360), # VA Richmond
+    (47.0379, -122.9007),# WA Olympia
+    (38.3362, -81.6123), # WV Charleston
+    (43.0747, -89.3842), # WI Madison
+    (41.1400, -104.8202),# WY Cheyenne
+]
+BIG_METROS = [
+    (40.7128, -74.0060),   # NYC
+    (34.0522, -118.2437),  # Los Angeles
+    (41.8781, -87.6298),   # Chicago
+    (47.6062, -122.3321),  # Seattle
+    (37.7749, -122.4194),  # San Francisco
+    (32.7157, -117.1611),  # San Diego
+    (25.7617, -80.1918),   # Miami
+    (29.7604, -95.3698),   # Houston
+    (33.4484, -112.0740),  # Phoenix
+    (39.9526, -75.1652),   # Philadelphia
+    (38.9072, -77.0369),   # DC
 ]
 
-# =========  LOWER-48 GRID (coarse & wide)  =========
-def lower48_grid(step_deg: float = 0.5) -> Iterable[Tuple[float, float, str]]:
-    """
-    Coarse sweep over the continental US only (excludes Alaska/Hawaii/Puerto Rico).
-    Increase 'step_deg' for faster/looser, decrease for slower/tighter.
-    """
-    min_lat, max_lat = 24.0, 49.6
-    min_lng, max_lng = -125.5, -66.9
-    lat = min_lat
-    while lat <= max_lat + 1e-9:
-        lng = min_lng
-        while lng <= max_lng + 1e-9:
-            yield (round(lat, 2), round(lng, 2), "lower48")
-            lng += step_deg
-        lat += step_deg
+EXCLUDE_STATES = {"AK", "HI", "PR"}  # if you want to drop these
 
-# =========  API CALL  =========
 session = requests.Session()
 session.headers.update(HEADERS)
 
-def fetch_near(lat: float, lng: float, limit: int = 50) -> List[Dict[str, Any]]:
-    """
-    Starbucks endpoint generally likes: lat, lng, place (any string is fine),
-    and limit. We avoid 'radius' because it often triggers 400s.
-    """
+def fetch_near(lat, lon, limit=50):
     params = {
         "lat": f"{lat:.6f}",
-        "lng": f"{lng:.6f}",
+        "lng": f"{lon:.6f}",
         "place": "United States",
         "limit": str(limit),
     }
     r = session.get(BASE_URL, params=params, timeout=20)
     if r.status_code != 200:
-        # Bubble the error for logging upstream
         raise requests.HTTPError(f"{r.status_code} {r.text[:200]}")
     return r.json()
 
-# =========  NORMALIZE & FILTER  =========
-EXCLUDE_STATES = {"AK", "HI", "PR"}  # drop Alaska, Hawaii, Puerto Rico
-
-def extract_rows(payload: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    out: List[Dict[str, Any]] = []
-    for item in payload:
+def extract_rows(batch):
+    out = []
+    for item in batch or []:
         s = (item or {}).get("store") or {}
         addr = s.get("address") or {}
         tz = s.get("timeZone") or {}
         coords = s.get("coordinates") or {}
         state = addr.get("countrySubdivisionCode")
-        # filter out AK/HI/PR
+        country = addr.get("countryCode")
+
+        # keep only U.S.; optionally drop AK/HI/PR
+        if country != "US":
+            continue
         if state in EXCLUDE_STATES:
             continue
-        row = {
+
+        out.append({
             "id": s.get("id"),
             "storeNumber": s.get("storeNumber"),
             "name": s.get("name"),
@@ -117,76 +134,91 @@ def extract_rows(payload: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             "city": addr.get("city"),
             "region": state,
             "postalCode": (addr.get("postalCode") or "")[:10],
-            "country": addr.get("countryCode"),
+            "country": country,
             "lat": coords.get("latitude"),
-            "lng": coords.get("longitude"),
+            "lon": coords.get("longitude"),
             "timezone": tz.get("timeZoneId"),
             "slug": s.get("slug"),
             "ownershipType": s.get("ownershipTypeCode"),
-        }
-        out.append(row)
+        })
     return out
 
-# =========  CRAWLER  =========
-def crawl_us(step_deg: float = 0.5, rate_sec: float = 0.20) -> List[Dict[str, Any]]:
-    seen: Set[str] = set()
-    rows: List[Dict[str, Any]] = []
+# Make a coarse “cell id” so we don't re-query the same area forever.
+def cell_key(lat, lon, gran=0.20):
+    return (round(lat / gran) * gran, round(lon / gran) * gran)
 
-    def add_batch(batch: List[Dict[str, Any]]) -> int:
+# Generate a small ring of offsets (~10–25 km) around a point
+def ring_offsets_km():
+    # ~0.15 degrees ≈ 15–17km depending on latitude
+    ds = [0.12, 0.18]  # inner and outer ring
+    dirs = [(1,0),(-1,0),(0,1),(0,-1),(1,1),(-1,1),(1,-1),(-1,-1)]
+    for d in ds:
+        for dx, dy in dirs:
+            yield (dx * d, dy * d)
+
+def crawl(rate_sec=0.15):
+    rows, seen_ids = [], set()
+    visited_cells = set()
+    q = deque()
+
+    # enqueue seeds
+    for lat, lon in (STATE_CAPS + BIG_METROS):
+        q.append((lat, lon))
+
+    def add_batch(batch):
         new = 0
         for r in batch:
             k = str(r.get("id") or r.get("storeNumber"))
-            if not k:
+            if not k or k in seen_ids:
                 continue
-            if k in seen:
-                continue
-            seen.add(k)
+            seen_ids.add(k)
             rows.append(r)
             new += 1
         return new
 
-    # 1) Dense metros first
-    for i, (lat, lng, label) in enumerate(SEEDS, 1):
-        try:
-            data = fetch_near(lat, lng, limit=50)
-            added = add_batch(extract_rows(data))
-            print(f"[seeds]    {i:04d}/{len(SEEDS):<4} [{label:<9}] @ {lat:6.2f},{lng:7.2f}  +{added:<2}  (total {len(rows)})")
-        except Exception as e:
-            print(f"[seeds]    {i:04d}/{len(SEEDS):<4} [{label:<9}] @ {lat:6.2f},{lng:7.2f}  ERROR: {e}")
-        time.sleep(rate_sec)
+    i = 0
+    while q:
+        lat, lon = q.popleft()
+        ckey = cell_key(lat, lon, gran=0.20)
+        if ckey in visited_cells:
+            continue
+        visited_cells.add(ckey)
 
-    # 2) Continental grid (coarse)
-    grid_pts = list(lower48_grid(step_deg=step_deg))
-    n = len(grid_pts)
-    for i, (lat, lng, label) in enumerate(grid_pts, 1):
         try:
-            data = fetch_near(lat, lng, limit=50)
-            added = add_batch(extract_rows(data))
+            data = fetch_near(lat, lon, limit=50)
+            batch = extract_rows(data)
+            added = add_batch(batch)
+            i += 1
+            print(f"[{i:05d}] @ {lat:6.2f},{lon:7.2f}  +{added:<2}  (total {len(rows)})")
+
+            # expand around any newly discovered stores
             if added:
-                print(f"[grid]     {i:04d}/{n:<5} [{label:<9}] @ {lat:6.2f},{lng:7.2f}  +{added:<2}  (total {len(rows)})")
-            elif i % 250 == 0:
-                # periodic heartbeat when nothing new found
-                print(f"[grid]     {i:04d}/{n:<5} [{label:<9}] @ {lat:6.2f},{lng:7.2f}  +0  (total {len(rows)})")
+                for store in batch:
+                    slat = store.get("lat")
+                    slon = store.get("lon")
+                    if slat is None or slon is None:
+                        continue
+                    for dx, dy in ring_offsets_km():
+                        q.append((slat + dy, slon + dx))
+
         except Exception as e:
-            print(f"[grid]     {i:04d}/{n:<5} [{label:<9}] @ {lat:6.2f},{lng:7.2f}  ERROR: {e}")
+            i += 1
+            print(f"[{i:05d}] @ {lat:6.2f},{lon:7.2f}  ERROR {e}")
+
         time.sleep(rate_sec)
 
     return rows
 
-# =========  MAIN  =========
 if __name__ == "__main__":
-    # You can make the grid coarser/faster (0.6–0.8) or finer/slower (0.4–0.3)
-    rows = crawl_us(step_deg=0.35, rate_sec=0.18)
-
+    rows = crawl(rate_sec=0.15)
     if not rows:
-        print("No rows collected. Try a larger step_deg (slower) or confirm headers/cookie.")
+        print("No rows collected.")
         raise SystemExit(1)
 
-    # Save CSV
-    out = "starbucks_us_locations.csv"
+    # Save
+    out = "starbucks_us_locations_expand.csv"
     with open(out, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         w.writeheader()
         w.writerows(rows)
-
     print(f"Saved {len(rows)} rows → {out}")
