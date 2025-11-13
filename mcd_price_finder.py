@@ -1,21 +1,19 @@
-import csv
-import json
-import re
+from playwright.sync_api import sync_playwright
+import json, csv, re
 from pathlib import Path
+from datetime import datetime
 
-import requests
-
-STORE_ID = "837625"   # McDonald's Islandia, NY in your example
+STORE_ID = "837625"
+STORE_URL = f"https://mcdonalds.order.online/store/{STORE_ID}?delivery=true&hideModal=true"
+OUT_JSON = Path("storepageFeed.json")
 OUT_CSV  = Path("mcdonalds_menu_prices.csv")
-
-# --- Helpers ---------------------------------------------------------------
 
 MONEY_RE = re.compile(r"[-+]?\$?\s*([0-9]+(?:\.[0-9]{1,2})?)")
 
-def to_float(maybe_price_str):
-    if not maybe_price_str:
+def to_float(s):
+    if not s:
         return None
-    m = MONEY_RE.search(maybe_price_str)
+    m = MONEY_RE.search(s)
     return float(m.group(1)) if m else None
 
 def add_row(rows, category, item_name, variant_name, display_price, strike_price=None, rating=None, item_id=None):
@@ -31,63 +29,46 @@ def add_row(rows, category, item_name, variant_name, display_price, strike_price
     })
 
 def walk_items_from_section(section, rows, category_hint=None):
-    """
-    Handles a variety of section shapes we've seen on DoorDash-powered menus:
-    - item_carousel: { items: [ { name, displayPrice, ... } ] }
-    - category: { name, items: [ ... ] }
-    - nested sections under "sections" or "children"
-    - variant/size options under "optionGroups"/"options" (when present)
-    """
     if not isinstance(section, dict):
         return
 
-    sec_type = section.get("type") or section.get("__typename")
     category_name = section.get("name") or category_hint
 
-    # 1) Flat carousels with items
     if "items" in section and isinstance(section["items"], list):
         for it in section["items"]:
             if not isinstance(it, dict):
                 continue
-            name = it.get("name")
-            price = it.get("displayPrice")
+            name   = it.get("name")
+            price  = it.get("displayPrice") or it.get("priceDisplay") or it.get("price")
             strike = it.get("displayStrikethroughPrice")
             rating = it.get("ratingDisplayString")
-            item_id = it.get("id")
+            item_id= it.get("id")
 
-            # Base item row
-            if name and (price or it.get("price")):
-                add_row(rows, category_name, name, "", price or str(it.get("price")), strike, rating, item_id)
+            if name and price:
+                add_row(rows, category_name, name, "", str(price), strike, rating, item_id)
 
-            # 2) If there are variants (common on some stores), record each
-            # These show up under different keys; try a few common shapes:
-            # item -> optionGroups -> options -> { name, displayPrice }
+            # capture variant-like options if present
             for og_key in ("optionGroups", "option_groups", "groups"):
                 if isinstance(it.get(og_key), list):
                     for group in it[og_key]:
                         opts = group.get("options") if isinstance(group, dict) else None
                         if isinstance(opts, list):
                             for opt in opts:
-                                vname = opt.get("name")
-                                vprice = opt.get("displayPrice") or opt.get("priceDisplay")
+                                vname  = opt.get("name")
+                                vprice = opt.get("displayPrice") or opt.get("priceDisplay") or opt.get("price")
                                 if vname and vprice:
-                                    add_row(rows, category_name, name, vname, vprice, None, rating, item_id)
+                                    add_row(rows, category_name, name, vname, str(vprice), None, rating, item_id)
 
-    # 3) Some feeds have "children" or "sections" that contain more items
     for child_key in ("children", "sections", "cards"):
         if isinstance(section.get(child_key), list):
             for child in section[child_key]:
                 walk_items_from_section(child, rows, category_name)
 
 def extract_all_items(feed_json):
-    """
-    Looks for the storepageFeed payload and iterates through sections/tiles.
-    """
     rows = []
     data = feed_json.get("data", {})
-    spp = data.get("storepageFeed") or data.get("storePageFeed") or {}
+    spp  = data.get("storepageFeed") or data.get("storePageFeed") or {}
 
-    # Many pages expose items under "storeSections" or "tiles" or "feed"
     for root_key in ("storeSections", "tiles", "feed", "sections", "cards"):
         root = spp.get(root_key)
         if isinstance(root, list):
@@ -96,85 +77,87 @@ def extract_all_items(feed_json):
         elif isinstance(root, dict):
             walk_items_from_section(root, rows)
 
-    # As a safety net, walk any dict that looks like a section
     if not rows:
         for v in spp.values():
             if isinstance(v, (list, dict)):
                 walk_items_from_section(v, rows)
-
     return rows
 
-# --- Networking ------------------------------------------------------------
-
-def fetch_storepage_feed(store_id):
-    """
-    Replays the GraphQL call your browser makes.
-    If the site ever tightens headers, copy the request as cURL in DevTools and
-    port over headers (notably user-agent, dd-geo headers, etc).
-    """
-    url = "https://mcdonalds.order.online/graphql/storepageFeed?operation=storepageFeed"
-    headers = {
-        "content-type": "application/json",
-        "accept": "*/*",
-        "origin": "https://mcdonalds.order.online",
-        "referer": f"https://mcdonalds.order.online/store/{store_id}?delivery=true&hideModal=true",
-        "user-agent": "Mozilla/5.0",
-    }
-
-    # The GraphQL payload structure matches what the app sends.
-    # The exact query isn't required because DoorDash’s endpoint accepts a persisted query by operation name,
-    # as long as variables are shaped correctly. These usually include storeId and a few flags.
-    # Below variables are minimal but typically work; if you see errors, copy variables from DevTools.
-    payload = {
-        "operationName": "storepageFeed",
-        "variables": {
-            "storeId": str(store_id),
-            # These flags are commonly present; they can help tailor the feed:
-            "isDeviceMobile": False,
-            "isFromDeepLink": False,
-            "isStorefront": True,
-            "shouldFetchFeedV2": True
-        },
-        "query": None  # persisted queries don't require inline query text
-    }
-
-    r = requests.post(url, headers=headers, data=json.dumps(payload), timeout=30)
-    r.raise_for_status()
-    return r.json()
-
 def main():
-    feed = fetch_storepage_feed(STORE_ID)
-    rows = extract_all_items(feed)
+    captured = {}
 
-    # De-dup by (item_name, variant) to keep CSV tidy
-    seen = set()
-    deduped = []
-    for row in rows:
-        key = (row["item_name"], row["variant"], row["category"])
-        if key not in seen:
-            seen.add(key)
-            deduped.append(row)
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=False, args=["--disable-blink-features=AutomationControlled"])
+        context = p.chromium.launch_persistent_context(
+            user_data_dir=".playwright_profile",  # persist cookies/tokens between runs
+            headless=False,
+            viewport={"width": 1280, "height": 900},
+            locale="en-US",
+            user_agent=("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                        "(KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"),
+        )
+        page = context.pages[0] if context.pages else context.new_page()
 
-    # Sort nicely
-    deduped.sort(key=lambda r: (r["category"].lower(), r["item_name"].lower(), r["variant"].lower()))
+        def on_response(resp):
+            url = resp.url
+            if "graphql/storepageFeed" in url and resp.request.method == "POST":
+                try:
+                    captured["json"] = resp.json()
+                except Exception:
+                    pass
 
-    # Write CSV
-    fieldnames = [
-        "category",
-        "item_id",
-        "item_name",
-        "variant",
-        "display_price",
-        "price_value",
-        "display_strike_price",
-        "rating",
-    ]
-    with OUT_CSV.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(deduped)
+        page.on("response", on_response)
 
-    print(f"Wrote {len(deduped)} rows to {OUT_CSV.resolve()}")
+        page.goto(STORE_URL, wait_until="domcontentloaded")
+        # Give time for any bot challenge + app bootstrapping to fire the GraphQL request
+        page.wait_for_timeout(8000)
+
+        # If not captured yet, try a reload which often refires the feed request
+        if "json" not in captured:
+            page.reload(wait_until="networkidle")
+            page.wait_for_timeout(4000)
+
+        # Extra nudge: scroll to bottom to trigger lazy loads
+        if "json" not in captured:
+            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            page.wait_for_timeout(3000)
+
+        if "json" not in captured:
+            raise RuntimeError("Did not capture storepageFeed response. The page may have changed its load flow.")
+
+        feed = captured["json"]
+
+        # Save raw JSON for inspection
+        OUT_JSON.write_text(json.dumps(feed, indent=2), encoding="utf-8")
+
+        # Parse items -> CSV
+        rows = extract_all_items(feed)
+
+        # De-dup and sort
+        seen, deduped = set(), []
+        for r in rows:
+            key = (r["category"], r["item_name"], r["variant"])
+            if key not in seen:
+                seen.add(key)
+                deduped.append(r)
+
+        deduped.sort(key=lambda r: (r["category"].lower(), r["item_name"].lower(), r["variant"].lower()))
+
+        with OUT_CSV.open("w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=list(deduped[0].keys()) if deduped else
+                                    ["category","item_id","item_name","variant","display_price","price_value","display_strike_price","rating"])
+            writer.writeheader()
+            writer.writerows(deduped)
+
+        print(f"Captured {len(deduped)} rows -> {OUT_CSV.resolve()}")
+        print(f"Also saved raw JSON -> {OUT_JSON.resolve()}")
+
+        # keep the context around so future runs reuse cookies/tokens
+        # (Close pages only)
+        for pg in context.pages:
+            try: pg.close()
+            except: pass
+        browser.close()
 
 if __name__ == "__main__":
     main()
