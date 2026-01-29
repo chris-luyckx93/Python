@@ -1,7 +1,6 @@
 import requests
 import pandas as pd
 import time
-import json
 from typing import List, Dict, Tuple
 import itertools
 
@@ -79,7 +78,7 @@ def extract_store_details(store_wrapper: Dict) -> Dict:
         'current_status': store.get('openStatusFormatted', ''),
         'hours_status': store.get('hoursStatusFormatted', ''),
         'slug': store.get('slug'),
-        'timezone': store.get('timeZone', {}).get('timeZoneId'),
+        'timezone': store.get('timeZone', {}).get('timeZoneId') if store.get('timeZone') else None,
     }
     
     # Add distance and recommendation info if available
@@ -87,7 +86,7 @@ def extract_store_details(store_wrapper: Dict) -> Dict:
     store_info['is_nearby'] = store_wrapper.get('isNearby', None)
     
     # Extract amenities
-    amenities = store.get('amenities', [])
+    amenities = store.get('amenities', []) or []
     
     # Initialize amenity flags
     amenity_dict = {
@@ -102,13 +101,13 @@ def extract_store_details(store_wrapper: Dict) -> Dict:
         'has_wifi': False
     }
     
-    # Map amenity codes (updated based on actual API response)
+    # Map amenity codes
     for amenity in amenities:
         code = amenity.get('code', '')
         
         if code == 'DT':
             amenity_dict['has_drive_thru'] = True
-        elif code == 'XO':  # Mobile Order code is XO, not MO
+        elif code == 'XO':
             amenity_dict['has_mobile_order'] = True
         elif code == 'WA':
             amenity_dict['has_oven_warmed_food'] = True
@@ -116,19 +115,21 @@ def extract_store_details(store_wrapper: Dict) -> Dict:
             amenity_dict['has_nitro_cold_brew'] = True
         elif code == 'CS':
             amenity_dict['has_cafe_seating'] = True
-        elif code == 'DR':  # Redeem Rewards code is DR, not OR
+        elif code == 'DR':
             amenity_dict['has_redeem_rewards'] = True
         elif code == 'OS':
             amenity_dict['has_outdoor_seating'] = True
         elif code == '16':
             amenity_dict['has_in_store'] = True
-        elif code == 'GO':  # WiFi code is GO, not WF
+        elif code == 'GO':
             amenity_dict['has_wifi'] = True
     
     store_info.update(amenity_dict)
     
-    # Extract schedule (hours for each day)
+    # Extract schedule (hours for each day) - FIXED
     schedule = store.get('schedule', [])
+    if schedule is None:
+        schedule = []
     
     # Parse hours for each day of week
     days_map = {
@@ -160,7 +161,7 @@ def extract_store_details(store_wrapper: Dict) -> Dict:
                     pass
     
     # Extract mobile ordering availability
-    mobile_ordering = store.get('mobileOrdering', {})
+    mobile_ordering = store.get('mobileOrdering', {}) or {}
     store_info['mobile_ordering_availability'] = mobile_ordering.get('availability')
     store_info['guest_ordering'] = mobile_ordering.get('guestOrdering')
     
@@ -169,18 +170,60 @@ def extract_store_details(store_wrapper: Dict) -> Dict:
 def generate_us_grid_coordinates(grid_size: float = 0.75) -> List[Tuple[float, float]]:
     """
     Generate a grid of lat/lng coordinates covering the continental US
-    grid_size: degrees between each point (0.75 = ~50 miles)
     """
-    # Continental US approximate bounds
     lat_min, lat_max = 24.5, 49.5
     lng_min, lng_max = -125.0, -66.0
     
-    # Generate grid points
     lats = [lat_min + i * grid_size for i in range(int((lat_max - lat_min) / grid_size) + 1)]
     lngs = [lng_min + i * grid_size for i in range(int((lng_max - lng_min) / grid_size) + 1)]
     
     coords = list(itertools.product(lats, lngs))
     return coords
+
+def resume_scrape_from_checkpoint(checkpoint_file='checkpoint_800.csv', start_point=820):
+    """Resume scraping from the last checkpoint"""
+    
+    # Load existing data
+    df_existing = pd.read_csv(checkpoint_file)
+    seen_store_ids = set(df_existing['store_id'].dropna())
+    all_stores = df_existing.to_dict('records')
+    
+    print(f"Resuming from checkpoint with {len(seen_store_ids)} stores")
+    
+    # Generate all coordinates
+    coordinates = generate_us_grid_coordinates(grid_size=0.40)
+    
+    print(f"Starting from point {start_point}/{len(coordinates)}")
+    print(f"Estimated time remaining: {(len(coordinates) - start_point) * 1.2 / 60:.1f} minutes\n")
+    
+    for i, (lat, lng) in enumerate(coordinates[start_point:], start=start_point):
+        if (i + 1) % 20 == 0:
+            print(f"Progress: {i+1}/{len(coordinates)} points | {len(seen_store_ids)} unique stores found")
+        
+        stores = get_starbucks_stores_by_coords(lat, lng)
+        
+        for store_wrapper in stores:
+            store = store_wrapper.get('store', store_wrapper)
+            store_id = store.get('storeNumber')
+            
+            country = store.get('address', {}).get('countryCode', '')
+            if country != 'US':
+                continue
+            
+            if store_id and store_id not in seen_store_ids:
+                seen_store_ids.add(store_id)
+                store_info = extract_store_details(store_wrapper)
+                all_stores.append(store_info)
+        
+        time.sleep(1.2)
+        
+        if (i + 1) % 200 == 0 and all_stores:
+            checkpoint_df = pd.DataFrame(all_stores)
+            checkpoint_df.to_csv(f'checkpoint_{i+1}.csv', index=False)
+            print(f"✓ Checkpoint saved: {len(all_stores)} stores")
+    
+    df = pd.DataFrame(all_stores)
+    return df
 
 def scrape_all_starbucks_us() -> pd.DataFrame:
     """
@@ -189,7 +232,6 @@ def scrape_all_starbucks_us() -> pd.DataFrame:
     all_stores = []
     seen_store_ids = set()
     
-    # Generate coordinate grid covering the US
     coordinates = generate_us_grid_coordinates(grid_size=0.75)
     
     print(f"Generated {len(coordinates)} coordinate points to search")
@@ -205,21 +247,17 @@ def scrape_all_starbucks_us() -> pd.DataFrame:
             store = store_wrapper.get('store', store_wrapper)
             store_id = store.get('storeNumber')
             
-            # Filter for US stores only
             country = store.get('address', {}).get('countryCode', '')
             if country != 'US':
                 continue
             
-            # Avoid duplicates
             if store_id and store_id not in seen_store_ids:
                 seen_store_ids.add(store_id)
                 store_info = extract_store_details(store_wrapper)
                 all_stores.append(store_info)
         
-        # Rate limiting
         time.sleep(1.2)
         
-        # Save checkpoint every 200 points
         if (i + 1) % 200 == 0 and all_stores:
             checkpoint_df = pd.DataFrame(all_stores)
             checkpoint_df.to_csv(f'checkpoint_{i+1}.csv', index=False)
@@ -228,76 +266,18 @@ def scrape_all_starbucks_us() -> pd.DataFrame:
     df = pd.DataFrame(all_stores)
     return df
 
-def test_single_location():
-    """Test with the coordinates from your example"""
-    lat, lng = 32.38431, -99.76757
-    
-    print(f"Testing with coordinates: {lat}, {lng}")
-    print(f"Testing URL: https://www.starbucks.com/apiproxy/v1/locations?lat={lat}&lng={lng}\n")
-    
-    stores = get_starbucks_stores_by_coords(lat, lng)
-    print(f"✓ Found {len(stores)} stores")
-    
-    if stores:
-        print("\n" + "="*80)
-        print("SAMPLE STORE DATA:")
-        print("="*80)
-        
-        sample = extract_store_details(stores[0])
-        for key, value in sample.items():
-            print(f"{key:35} {value}")
-        
-        # Show amenity summary
-        print("\n" + "="*80)
-        print("AMENITY SUMMARY (from all stores in this search):")
-        print("="*80)
-        
-        df_test = pd.DataFrame([extract_store_details(s) for s in stores])
-        amenity_cols = [col for col in df_test.columns if col.startswith('has_')]
-        for col in amenity_cols:
-            count = df_test[col].sum()
-            pct = (count / len(stores)) * 100
-            print(f"{col:35} {count:3}/{len(stores)} ({pct:5.1f}%)")
-        
-        # Show hours for first store
-        print("\n" + "="*80)
-        print("SAMPLE HOURS (First Store):")
-        print("="*80)
-        hour_cols = [col for col in sample.keys() if '_hours' in col or '_open' in col or '_close' in col]
-        for col in sorted(hour_cols):
-            print(f"{col:35} {sample.get(col)}")
-        
-        return stores
-    
-    return []
-
 if __name__ == "__main__":
-    # Run test first
-    print("Running test with sample coordinates...\n")
-    test_stores = test_single_location()
+    import sys
     
-    if test_stores:
-        print("\n" + "="*80)
-        response = input("\n✓ Test successful! Run full scrape? (yes/no): ")
-        
-        if response.lower() in ['yes', 'y']:
-            print("\nStarting full US scrape...")
-            df = scrape_all_starbucks_us()
-            
-            # Save final results
-            df.to_csv('starbucks_us_stores_complete.csv', index=False)
-            print(f"\n✓ Complete! Scraped {len(df)} unique US Starbucks stores")
-            print(f"✓ Saved to: starbucks_us_stores_complete.csv")
-            
-            # Summary statistics
-            print("\n" + "="*80)
-            print("SUMMARY:")
-            print("="*80)
-            print(f"Total stores: {len(df)}")
-            print(f"Stores with drive-thru: {df['has_drive_thru'].sum()} ({df['has_drive_thru'].mean()*100:.1f}%)")
-            print(f"Stores with mobile order: {df['has_mobile_order'].sum()} ({df['has_mobile_order'].mean()*100:.1f}%)")
-            print(f"States covered: {df['state'].nunique()}")
-            print(f"\nTop 10 states by store count:")
-            print(df['state'].value_counts().head(10))
+    # Check if we should resume from checkpoint
+    if len(sys.argv) > 1 and sys.argv[1] == 'resume':
+        print("Resuming from last checkpoint...\n")
+        df = resume_scrape_from_checkpoint('checkpoint_800.csv', start_point=820)
+        df.to_csv('starbucks_us_stores_complete.csv', index=False)
+        print(f"\n✓ Complete! Scraped {len(df)} unique US Starbucks stores")
+        print(f"✓ Saved to: starbucks_us_stores_complete.csv")
     else:
-        print("\n❌ Test failed. Check the error messages above.")
+        print("Starting fresh scrape...\n")
+        df = scrape_all_starbucks_us()
+        df.to_csv('starbucks_us_stores_complete.csv', index=False)
+        print(f"\n✓ Complete! Scraped {len(df)} unique US Starbucks stores")
