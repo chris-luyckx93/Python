@@ -1,0 +1,501 @@
+Category,Chain Name,2024 U.S. Sales ($000),Market_Share_in_Category_%,2024 U.S. Units
+All Other,Cava,954000,21.790772042028323,367
+All Other,Sweetgreen,677000,15.463682046596618,246
+All Other,Captain D's Seafood Kitchen,548000,12.517131110095933,530
+All Other,Playa Bowls,296000,6.761078117862038,290
+All Other,Long John Silver's,268000,6.121516674280493,482
+All Other,Dickey's Barbecue Pit,264000,6.030150753768844,386
+All Other,Salad and Go,256000,5.847418912745546,146
+All Other,City Barbeque,233000,5.3220648698035635,75
+All Other,Just Salad,181000,4.134307903152124,90
+All Other,Taziki's Mediterranean Cafe,180000,4.111466423024212,102
+All Other,Chopt,177000,4.0429419826404756,94
+All Other,Mission BBQ,172000,3.9287345820009136,144
+All Other,Bill Miller Bar-B-Q,172000,3.9287345820009136,75
+All Other,Crisp & Green,0,0.0,0
+All Other,Nick the Greek,0,0.0,0
+All Other,California Fish Grill,0,0.0,0
+All Other,Piada Italian Street Food,0,0.0,0
+All Other,"Halal Guys, The",0,0.0,0
+All Other,Salata,0,0.0,0
+All Other,Rudy's Texas Bar-B-Q,0,0.0,0
+All Other,Skyline Chili,0,0.0,0
+All Other,Saladworks,0,0.0,0
+All Other,Luna Grill,0,0.0,0
+All Other,Moe's Original BBQ,0,0.0,0
+All Other,Gold Star Chili,0,0.0,0
+All Other,RibCrib BBQ,0,0.0,0
+All Other,Tender Greens,0,0.0,0
+Asian,P.F. Chang's,965000,28.763040238450078,221
+Asian,Benihana,523000,15.588673621460506,81
+Asian,Din Tai Fung,412000,12.280178837555887,16
+Asian,KPOT Korean BBQ & Hot Pot,398000,11.8628912071535,95
+Asian,Kura Sushi,238000,7.093889716840536,64
+Asian,Nobu Restaurants,233000,6.944858420268256,24
+Asian,Gen Korean BBQ,208000,6.199701937406855,43
+Asian,Bonchon,207000,6.1698956780923995,147
+Asian,Jinya Ramen Bar,171000,5.096870342771982,68
+Asian,Hawkers Asian Street Food,0,0.0,0
+Asian,Rock N Roll Sushi,0,0.0,0
+Asian,Blue Sushi Sake Grill,0,0.0,0
+Asian,Gyu-Kaku,0,0.0,0
+Asian,Kona Grill,0,0.0,0
+Asian,Boiling Point,0,0.0,0
+Asian,HuHot Mongolian Grill,0,0.0,0
+Asian/Noodle,Panda Express,6199000,79.27109974424552,2505
+Asian/Noodle,Noodles & Company,599000,7.659846547314578,463
+Asian/Noodle,Ono Hawaiian BBQ,242000,3.0946291560102304,114
+Asian/Noodle,L&L Hawaiian Barbecue,237000,3.030690537084399,227
+Asian/Noodle,Pei Wei,211000,2.6982097186700766,121
+Asian/Noodle,WaBa Grill,173000,2.21227621483376,193
+Asian/Noodle,Teriyaki Madness,159000,2.0332480818414322,158
+Asian/Noodle,Hawaiian Bros Island Grill,0,0.0,0
+Asian/Noodle,Mo'Bettahs,0,0.0,0
+Asian/Noodle,Honeygrow,0,0.0,0
+Asian/Noodle,Pokeworks,0,0.0,0
+Asian/Noodle,Bibibop Asian Grill,0,0.0,0
+Asian/Noodle,Yoshinoya,0,0.0,0
+Asian/Noodle,Flame Broiler,0,0.0,0
+Asian/Noodle,Sarku Japan,0,0.0,0
+Burger,McDonald's,53469000,48.494586775539155,13557
+Burger,Wendy's,12554000,11.386056264005658,5933
+Burger,Burger King,10980000,9.958491140575285,6701
+Burger,Sonic Drive-In,5384000,4.883107131225622,3461
+Burger,Jack in the Box,4396000,3.9870243218550963,2191
+Burger,Whataburger,4122000,3.738515526543837,1085
+Burger,Culver's,3823000,3.46733257107644,997
+Burger,Five Guys,2270000,2.058813742177222,1488
+Burger,In-N-Out Burger,1831000,1.6606554898354597,415
+Burger,Hardee's,1831000,1.6606554898354597,1574
+Burger,Carl's Jr.,1523000,1.3813098367118544,1033
+Burger,Shake Shack,1304000,1.1826841937440957,373
+Burger,Freddy's Frozen Custard & Steakburgers,988000,0.8960828093705266,550
+Burger,Steak 'n Shake,761000,0.6902014351528044,406
+Burger,Habit Burger & Grill,713000,0.6466670476530217,377
+Burger,White Castle,651000,0.5904351304658024,340
+Burger,Jack's Family Restaurants,590000,0.5351101796848287,267
+Burger,Checkers,549000,0.49792455702876426,484
+Burger,Cook Out,370000,0.33557757031082475,363
+Burger,Rally's,309000,0.2802526195298509,277
+Burger,Krystal Company,294000,0.26664812343616884,279
+Burger,A&W All American Food,261000,0.23671823203006825,429
+Burger,Farmer Boys,241000,0.2185789039051588,102
+Burger,Smashburger,233000,0.211323172655195,194
+Burger,Wayback Burgers,181000,0.1641609195304305,145
+Burger,Hopdoddy Burger Bar,127000,0.11518473359317498,48
+Burger,BurgerFi,103500,0.09387102304640638,68
+Burger,P. Terry's Burger Stand,95000,0.08616180859331987,35
+Burger,Burgerville,82000,0.07437124531212873,39
+Burger,Mooyah,75667,0.06862742706137615,90
+Burger,Hat Creek Burger Co.,61500,0.05577843398409654,26
+Burger,Fuddruckers,50000,0.04534832031227361,55
+Burger,Wahlburgers,35000,0.03174382421859153,40
+Burger,Pal's Sudden Service,0,0.0,0
+Burger,Fatburger,0,0.0,0
+Chicken,Chick-fil-A,22746000,43.30426836233484,3109
+Chicken,Popeyes,5726000,10.90126794349465,3148
+Chicken,Raising Cane's,4960000,9.442942542740738,828
+Chicken,KFC,4907000,9.342040132505806,3669
+Chicken,Wingstop,4392000,8.361573316072041,2204
+Chicken,Zaxby's,2588000,4.9270837299623045,960
+Chicken,Bojangles,1881000,3.581083653809542,840
+Chicken,El Pollo Loco,1096000,2.0865856908959373,498
+Chicken,Church's Texas Chicken,847000,1.612534744697864,761
+Chicken,Dave's Hot Chicken,617000,1.1746563606594829,245
+Chicken,Slim Chickens,460000,0.8757567680767621,206
+Chicken,Chicken Salad Chick,398000,0.7577199862925027,289
+Chicken,Pollo Tropical,342000,0.6511061188744621,123
+Chicken,Pollo Campero,334000,0.6358755663861707,120
+Chicken,Jollibee,333000,0.6339717473251343,75
+Chicken,Golden Chick,306000,0.5825686326771504,228
+Chicken,bb.q Chicken,242000,0.46072421277081826,216
+Chicken,Lee's Famous Recipe Chicken,230000,0.43787838403838103,126
+Chicken,PDQ Chicken,121000,0.23036210638540913,58
+Chicken,Huey Magoo's,0,0.0,0
+Chicken,Super Chix,0,0.0,0
+Chicken,WNB Factory,0,0.0,0
+Chicken,Gus's Fried Chicken,0,0.0,0
+Chicken,Epic Wings,0,0.0,0
+Chicken,Nando's,0,0.0,0
+Chicken,Chicken Express,0,0.0,0
+Chicken,Boston Market,0,0.0,0
+Coffee Cafe,Starbucks,31462000,62.262749674378206,16941
+Coffee Cafe,Dunkin',12468000,24.67395470536353,9768
+Coffee Cafe,Dutch Bros Coffee,1819000,3.5997692981277085,982
+Coffee Cafe,Tim Hortons,776000,1.5356904757268288,653
+Coffee Cafe,Scooter's Coffee,723000,1.4308043994207438,849
+Coffee Cafe,7 Brew Drive Thru Coffee,502000,0.9934492510500877,321
+Coffee Cafe,Paris Baguette,462000,0.9142899481775707,197
+Coffee Cafe,Caribou Coffee,386000,0.7638872727197886,487
+Coffee Cafe,Biggby Coffee,320000,0.6332744229801356,420
+Coffee Cafe,Peet's Coffee,303000,0.5996317192593159,255
+Coffee Cafe,Coffee Bean & Tea Leaf,224000,0.4432920960860949,196
+Coffee Cafe,Tous Les Jours,220000,0.4353761657988432,150
+Coffee Cafe,Black Rock Coffee Bar,165000,0.3265321243491324,145
+Coffee Cafe,"Human Bean, The",152000,0.3008053509155644,184
+Coffee Cafe,Aroma Joe's,99716,0.19733622613089752,115
+Coffee Cafe,Philz Coffee,79200,0.15673541968758356,70
+Coffee Cafe,Blue Bottle Coffee,77902,0.15416670030937038,78
+Coffee Cafe,PJ's Coffee of New Orleans,77450,0.15327220018691096,185
+Coffee Cafe,Ziggi's Coffee,74000,0.14644471031415637,100
+Coffee Cafe,Bluestone Lane,73859,0.14616567377153075,78
+Coffee Cafe,Au Bon Pain,66889,0.13237216524599466,35
+Family Style,IHOP,3348000,20.83255553481426,1694
+Family Style,Cracker Barrel,2767000,17.217348018169375,657
+Family Style,Denny's,2652000,16.501773380623483,1334
+Family Style,Golden Corral,1631000,10.148715076846495,351
+Family Style,Waffle House,1418000,8.823346400348454,2010
+Family Style,First Watch,1184000,7.367307572646381,572
+Family Style,Bob Evans,761000,4.735237384108021,430
+Family Style,Perkins American Food Co.,519000,3.2294194511853647,260
+Family Style,Black Bear Diner,445000,2.768962727894966,162
+Family Style,Huddle House,210000,1.3067015120403211,268
+Family Style,Sizzler,207000,1.2880343475826022,74
+Family Style,"Snooze, an A.M. Eatery",201000,1.2507000186671644,71
+Family Style,Another Broken Egg Cafe,200000,1.2444776305145915,101
+Family Style,"Original Pancake House, The",198000,1.2320328542094456,147
+Family Style,Village Inn,168000,1.0453612096322569,112
+Family Style,Metro Diner,162000,1.0080268807168191,62
+Family Style,Huckleberry's,0,0.0,0
+Family Style,Eggs Up Grill,0,0.0,0
+Family Style,"Toasted Yolk Cafe, The",0,0.0,0
+Family Style,Ruby Slipper Cafe,0,0.0,0
+Family Style,Silver Diner,0,0.0,0
+Family Style,Broken Yolk Cafe,0,0.0,0
+Family Style,Keke's Breakfast Cafe,0,0.0,0
+Family Style,Elmer's Restaurants,0,0.0,0
+Family Style,Eat'n Park,0,0.0,0
+Family Style,Frisch's Big Boy,0,0.0,0
+Family Style,Big Boy Restaurants,0,0.0,0
+Family Style,Shari's Cafe and Pies,0,0.0,0
+Family Style,Shoney's,0,0.0,0
+Family Style,Friendly's,0,0.0,0
+Family Style,Luby's,0,0.0,0
+Frozen Desserts,Dairy Queen,4909000,69.76975554292211,4212
+Frozen Desserts,Baskin-Robbins,705000,10.019897669130188,2245
+Frozen Desserts,Cold Stone Creamery,574000,8.158044343376918,994
+Frozen Desserts,Braum's Ice Cream & Dairy Stores,282000,4.007959067652075,315
+Frozen Desserts,Andy's Frozen Custard,208000,2.956225127913587,169
+Frozen Desserts,Rita's Ice,197000,2.799886299033542,575
+Frozen Desserts,Carvel Ice Cream,161000,2.2882319499715744,336
+Frozen Desserts,Jeremiah's Italian Ice,0,0.0,0
+Frozen Desserts,Handel's Homemade Ice Cream,0,0.0,0
+Frozen Desserts,Bruster's Real Ice Cream,0,0.0,0
+Frozen Desserts,Jeni's Splendid Ice Creams,0,0.0,0
+Frozen Desserts,Kilwins,0,0.0,0
+Frozen Desserts,Bahama Buck's,0,0.0,0
+Frozen Desserts,Marble Slab Creamery,0,0.0,0
+Frozen Desserts,Haagen-Dazs,0,0.0,0
+Frozen Desserts,Ben & Jerry's Scoop Shops,0,0.0,0
+Frozen Desserts,Yogurtland,0,0.0,0
+Frozen Desserts,Menchie's Frozen Yogurt,0,0.0,0
+Frozen Desserts,SweetFrog,0,0.0,0
+Italian/Pizza,Olive Garden,5152000,64.59082552014608,923
+Italian/Pizza,Carrabba's Italian Grill,736000,9.227260788592298,210
+Italian/Pizza,Maggiano's Little Italy,522000,6.544334417996167,53
+Italian/Pizza,California Pizza Kitchen,406000,5.090037880663686,131
+Italian/Pizza,Mellow Mushroom,381000,4.7766119027903065,161
+Italian/Pizza,North Italia,300000,3.761111734480556,43
+Italian/Pizza,LaRosa's Pizzeria,166000,2.081148493079241,60
+Italian/Pizza,Buca di Beppo,158365,1.9854281994367107,44
+Italian/Pizza,Old Chicago Pizza + Taproom,155000,1.943241062814954,59
+Italian/Pizza,Johnny's New York Style Pizza,0,0.0,0
+Italian/Pizza,Emmy Squared Pizza,0,0.0,0
+Italian/Pizza,Lou Malnati's,0,0.0,0
+Italian/Pizza,Dion's Pizza,0,0.0,0
+Italian/Pizza,Grimaldi's Pizzeria,0,0.0,0
+Italian/Pizza,Serafina,0,0.0,0
+Italian/Pizza,"Old Spaghetti Factory, The",0,0.0,0
+Italian/Pizza,Giordano's,0,0.0,0
+Italian/Pizza,Il Fornaio,0,0.0,0
+Italian/Pizza,Anthony's Coal Fired Pizza,0,0.0,0
+Italian/Pizza,Uno Pizzeria & Grill,0,0.0,0
+Italian/Pizza,Johnny Carino's,0,0.0,0
+Italian/Pizza,Bravo! Italian Kitchen,0,0.0,0
+Italian/Pizza,Brio Italian Grille,0,0.0,0
+Italian/Pizza,Romano's Macaroni Grill,0,0.0,0
+Mexican,Taco Bell,16197000,48.107995722941666,7604
+Mexican,Chipotle Mexican Grill,11247000,33.405607698705005,3644
+Mexican,Qdoba Mexican Eats,1202000,3.570155637400499,777
+Mexican,Del Taco,957000,2.842461684685755,594
+Mexican,Moe's Southwest Grill,721000,2.1414993465605323,596
+Mexican,Torchy's Tacos,530000,1.5741950813829155,131
+Mexican,Chuy's,488000,1.4494475466318166,104
+Mexican,Taco John's,415000,1.2326244505168111,340
+Mexican,Cafe Rio Mexican Grill,382000,1.1346085303552336,160
+Mexican,On The Border,225000,0.6682903647380302,98
+Mexican,Taco Cabana,213000,0.6326482119520019,146
+Mexican,Costa Vida Fresh Mexican Grill,195000,0.5791849827729595,90
+Mexican,Lupe Tortilla,194000,0.5762148033741238,31
+Mexican,Fuzzy's Taco Shop,185000,0.5494831887846027,117
+Mexican,Bartaco,176000,0.5227515741950813,33
+Mexican,Condado Tacos,172000,0.5108708565997386,52
+Mexican,Rubio's,169000,0.5019603184032315,83
+Mexican,Bubbakoo's Burritos,0,0.0,0
+Mexican,Barrio Tacos,0,0.0,0
+Mexican,Velvet Taco,0,0.0,0
+Mexican,Pancheros Mexican Grill,0,0.0,0
+Mexican,Plaza Azteca,0,0.0,0
+Mexican,Hot Head Burritos,0,0.0,0
+Mexican,Taco Casa,0,0.0,0
+Mexican,Rosa's Cafe Tortilla Factory,0,0.0,0
+Mexican,Mi Cocina,0,0.0,0
+Mexican,Gloria's Latin Cuisine,0,0.0,0
+Mexican,Freebirds World Burrito,0,0.0,0
+Mexican,Uncle Julio's,0,0.0,0
+Mexican,Margaritas Mexican Restaurant,0,0.0,0
+Mexican,Pappasito's Cantina,0,0.0,0
+Mexican,TacoTime,0,0.0,0
+Mexican,Salsarita's Fresh Mexican Grill,0,0.0,0
+Mexican,El Torito,0,0.0,0
+Mexican,Taco Bueno,0,0.0,0
+Mexican,Tijuana Flats,0,0.0,0
+Mexican,Abuelo's Mexican Restaurant,0,0.0,0
+Mexican,Baja Fresh Mexican Grill,0,0.0,0
+Other Beverage/Snack,Tropical Smoothie Cafe,1420000,17.295980511571255,1515
+Other Beverage/Snack,Crumbl,1227000,14.945188794153472,1059
+Other Beverage/Snack,Nothing Bundt Cakes,850000,10.353227771010962,660
+Other Beverage/Snack,Auntie Anne's,786000,9.573690621193666,1221
+Other Beverage/Snack,Smoothie King,763000,9.293544457978076,1201
+Other Beverage/Snack,Krispy Kreme,748000,9.110840438489646,361
+Other Beverage/Snack,Jamba,484000,5.895249695493301,727
+Other Beverage/Snack,Shipley Do-Nuts,320000,3.8976857490864796,366
+Other Beverage/Snack,Wetzel's Pretzels,286000,3.4835566382460414,425
+Other Beverage/Snack,Cinnabon,285000,3.4713763702801463,1034
+Other Beverage/Snack,85C Bakery Cafe,263000,3.203410475030451,80
+Other Beverage/Snack,Insomnia Cookies,245000,2.9841656516443362,302
+Other Beverage/Snack,Kung Fu Tea,211000,2.5700365408038977,412
+Other Beverage/Snack,Nekter Juice Bar,163000,1.9853836784409256,215
+Other Beverage/Snack,Great American Cookies,159000,1.9366626065773447,397
+Other Beverage/Snack,HTeaO,0,0.0,0
+Other Beverage/Snack,Swig,0,0.0,0
+Other Beverage/Snack,Gong Cha,0,0.0,0
+Other Beverage/Snack,Sharetea,0,0.0,0
+Other Beverage/Snack,Clean Juice,0,0.0,0
+Other Beverage/Snack,Red Ribbon Bakeshop,0,0.0,0
+Other Beverage/Snack,Duck Donuts,0,0.0,0
+Other Beverage/Snack,Yum Yum Donut Shops,0,0.0,0
+Other Beverage/Snack,Daylight Donuts,0,0.0,0
+Other Beverage/Snack,Philly Pretzel Factory,0,0.0,0
+Other Beverage/Snack,Smallcakes Cupcakery,0,0.0,0
+Other Beverage/Snack,Pretzelmaker,0,0.0,0
+Pizza,Domino's,9500000,32.32391970057843,7014
+Pizza,Pizza Hut,5550000,18.88397414086424,6557
+Pizza,Little Caesars,4420000,15.039128955427017,4285
+Pizza,Papa Johns,3663000,12.4634229329704,3291
+Pizza,Marco's Pizza,1051000,3.5760462742429397,1162
+Pizza,Papa Murphy's Pizza,728000,2.4770330044232733,1049
+Pizza,MOD Pizza,583000,1.9836679142565496,485
+Pizza,Jet's Pizza,550000,1.87138482477033,450
+Pizza,Hungry Howie's Pizza,436000,1.4834977883633889,509
+Pizza,Round Table Pizza,416000,1.4154474310990133,391
+Pizza,Chuck E. Cheese,412000,1.4018373596461382,472
+Pizza,Pizza Ranch,362000,1.231711466485199,218
+Pizza,Mountain Mike's Pizza,361000,1.2283089486219803,299
+Pizza,Blaze Pizza,357000,1.214698877169105,265
+Pizza,Godfather's Pizza,263000,0.8948621980265397,595
+Pizza,Sbarro,257000,0.8744470908472268,375
+Pizza,Cicis,254000,0.8642395372575705,269
+Pizza,Donatos Pizza,227000,0.7723715549506635,176
+Pizza,&pizza,0,0.0,0
+Pizza,Pizza Guys,0,0.0,0
+Pizza,Toppers Pizza,0,0.0,0
+Pizza,Mr. Gatti's Pizza,0,0.0,0
+Pizza,Ledo Pizza,0,0.0,0
+Pizza,Simple Simon's Pizza,0,0.0,0
+Pizza,Pizza Factory,0,0.0,0
+Pizza,Pizza Inn,0,0.0,0
+Pizza,Rosati's Pizza,0,0.0,0
+Pizza,Peter Piper Pizza,0,0.0,0
+Pizza,Imo's Pizza,0,0.0,0
+Pizza,Fox's Pizza Den,0,0.0,0
+Pizza,Mazzio's Italian Eatery,0,0.0,0
+Pizza,Shakey's Pizza Parlor,0,0.0,0
+Pizza,Papa Gino's Pizzeria,0,0.0,0
+Pizza,Pieology Pizzeria,0,0.0,0
+Sandwich,Subway,9511000,27.23420095638977,19502
+Sandwich,Panera Bread,6126000,17.541448329181343,2216
+Sandwich,Arby's,4325000,12.384388511868968,3365
+Sandwich,Jersey Mike's Subs,3731000,10.683503708157946,2997
+Sandwich,Jimmy John's,2599000,7.442086876843342,2689
+Sandwich,Firehouse Subs,1153000,3.301549122354895,1233
+Sandwich,McAlister's Deli,1018000,2.9149843942387537,560
+Sandwich,Charleys Cheesesteaks,745000,2.1332646107150013,813
+Sandwich,Portillo's,711000,2.035907568078344,94
+Sandwich,Jason's Deli,666000,1.9070526587062968,236
+Sandwich,Einstein Bros. Bagels,649000,1.8583741373879679,689
+Sandwich,Potbelly Sandwich Shop,560000,1.6035277610743637,442
+Sandwich,Honey Baked Ham Co.,402000,1.1511038570569538,439
+Sandwich,Wienerschnitzel,355000,1.0165220628239269,314
+Sandwich,Schlotzsky's,344000,0.9850241960885375,308
+Sandwich,Fazoli's,266000,0.7616756865103227,196
+Sandwich,Mendocino Farms,265000,0.7588122440798327,75
+Sandwich,Penn Station East Coast Subs,262000,0.750221916788363,322
+Sandwich,Newk's Eatery,213000,0.6099132376943561,95
+Sandwich,Corner Bakery,210000,0.6013229104028863,99
+Sandwich,La Madeleine,196000,0.5612347163760273,91
+Sandwich,Bruegger's Bagels,180000,0.5154196374881883,179
+Sandwich,Pret A Manger,164000,0.46960455860034933,68
+Sandwich,Runza,153000,0.43810669186496004,91
+Sandwich,American Deli,119000,0.3407496492283023,209
+Sandwich,Cheba Hut,0,0.0,0
+Sandwich,Clean Eatz,0,0.0,0
+Sandwich,Capriotti's Sandwich Shop,0,0.0,0
+Sandwich,Maple Street Biscuit Company,0,0.0,0
+Sandwich,Board & Brew,0,0.0,0
+Sandwich,Dog Haus,0,0.0,0
+Sandwich,Ike's Love & Sandwiches,0,0.0,0
+Sandwich,Flower Child,0,0.0,0
+Sandwich,Cousins Subs,0,0.0,0
+Sandwich,Kolache Factory,0,0.0,0
+Sandwich,Nathan's Famous,0,0.0,0
+Sandwich,Cafe Zupas,0,0.0,0
+Sandwich,Mr. Pickle's Sandwich Shop,0,0.0,0
+Sandwich,Urban Plates,0,0.0,0
+Sandwich,PrimoHoagies,0,0.0,0
+Sandwich,Noah's Bagels,0,0.0,0
+Sandwich,Biscuitville Fresh Southern,0,0.0,0
+Sandwich,Port of Subs,0,0.0,0
+Sandwich,Buona,0,0.0,0
+Sandwich,Modern Market Eatery,0,0.0,0
+Sandwich,Great Harvest Bakery Cafe,0,0.0,0
+Sandwich,Kneaders Bakery & Cafe,0,0.0,0
+Sandwich,Roy Rogers Restaurants,0,0.0,0
+Sandwich,Togo's Sandwiches,0,0.0,0
+Sandwich,Lemonade,0,0.0,0
+Sandwich,Which Wich,0,0.0,0
+Sandwich,Quiznos,0,0.0,0
+Sandwich,Le Pain Quotidien,0,0.0,0
+Seafood,Red Lobster,1681000,48.08352402745996,518
+Seafood,Bonefish Grill,533000,15.245995423340961,166
+Seafood,Eddie V's Prime Seafood,268000,7.665903890160183,30
+Seafood,Ocean Prime,228000,6.521739130434782,19
+Seafood,Hook & Reel,222000,6.350114416475973,68
+Seafood,Pappadeaux Seafood Kitchen,221000,6.321510297482838,38
+Seafood,Legal Sea Foods,175000,5.005720823798627,26
+Seafood,Boiling Crab,168000,4.805491990846682,26
+Seafood,Crafty Crab,0,0.0,0
+Seafood,"Hampton Social, The",0,0.0,0
+Seafood,"Juicy Crab, The",0,0.0,0
+Seafood,Angry Crab Shack,0,0.0,0
+Seafood,Flanigan's,0,0.0,0
+Seafood,Red Crab Juicy Seafood,0,0.0,0
+Seafood,Truluck's,0,0.0,0
+Seafood,Anthony's Restaurants,0,0.0,0
+Seafood,Chart House,0,0.0,0
+Seafood,Bubba Gump Shrimp Co.,0,0.0,0
+Seafood,McCormick & Schmick's,0,0.0,0
+Seafood,Joe's Crab Shack,0,0.0,0
+Sports Bar,Buffalo Wild Wings,4054000,50.79563964415487,1323
+Sports Bar,Hooters,678000,8.495176043102367,245
+Sports Bar,Dave & Buster's,599000,7.505325147224659,171
+Sports Bar,Miller's Ale House,595000,7.45520611452199,115
+Sports Bar,Twin Peaks,575000,7.204610951008646,108
+Sports Bar,Topgolf,456000,5.713569728104248,96
+Sports Bar,Walk-On's Sports Bistreaux,350000,4.385415361483523,78
+Sports Bar,Bubba's 33,298000,3.7338679363488287,49
+Sports Bar,Beef 'O' Brady's,216000,2.706427765944117,125
+Sports Bar,Roosters Wings,160000,2.0047613081067537,43
+Sports Bar,Bombshells,0,0.0,0
+Sports Bar,Main Event,0,0.0,0
+Sports Bar,Ojos Locos Sports Cantina,0,0.0,0
+Sports Bar,Thirsty Lion Gastropub,0,0.0,0
+Sports Bar,Pinstripes,0,0.0,0
+Sports Bar,"Brass Tap, The",0,0.0,0
+Sports Bar,Glory Days Grill,0,0.0,0
+Sports Bar,P.J. Whelihan's Pub & Restaurant,0,0.0,0
+Sports Bar,Wings Etc. Grill & Pub,0,0.0,0
+Sports Bar,Pluckers Wing Bar,0,0.0,0
+Sports Bar,Jefferson's Restaurant,0,0.0,0
+Sports Bar,Wings and Rings,0,0.0,0
+Sports Bar,Gator's Dockside,0,0.0,0
+Sports Bar,Fricker's,0,0.0,0
+Sports Bar,Duffy's Sports Grill,0,0.0,0
+Sports Bar,East Coast Wings + Grill,0,0.0,0
+Sports Bar,Carolina Ale House,0,0.0,0
+Sports Bar,Hurricane Grill & Wings,0,0.0,0
+Sports Bar,Greene Turtle Sports Bar & Grille,0,0.0,0
+Sports Bar,Quaker Steak & Lube,0,0.0,0
+Steak,Texas Roadhouse,5488000,33.80559319945793,664
+Steak,LongHorn Steakhouse,3011000,18.54749291610201,594
+Steak,Outback Steakhouse,2719000,16.748798817297033,675
+Steak,Ruth's Chris Steak House,805000,4.9587285943082415,133
+Steak,Fogo de Chao,651000,4.010102254527535,76
+Steak,"Capital Grille, The",582000,3.5850683750153998,66
+Steak,Saltgrass Steak House,491000,3.0245164469631636,95
+Steak,Texas de Brazil,411000,2.5317235431809784,55
+Steak,Logan's Roadhouse,375000,2.3099667364789944,125
+Steak,Fleming's Prime Steakhouse & Wine Bar,369000,2.2730072686953307,63
+Steak,Mastro's Restaurants,327000,2.0142909942096834,23
+Steak,Perry's Steakhouse & Grille,292000,1.7986940988049773,23
+Steak,Morton's The Steakhouse,258000,1.5892571146975485,54
+Steak,Del Frisco's Double Eagle Steak House,235000,1.44757915486017,17
+Steak,STK,220000,1.3551804854010103,21
+Steak,Rodizio Grill,0,0.0,0
+Steak,Sullivan's Steakhouse,0,0.0,0
+Steak,Rib & Chop House,0,0.0,0
+Steak,Bob's Steak & Chop House,0,0.0,0
+Steak,Colton's Steak House & Grill,0,0.0,0
+Steak,Eddie Merlot's,0,0.0,0
+Steak,Smith & Wollensky,0,0.0,0
+Steak,"Palm Restaurant, The",0,0.0,0
+Steak,Black Angus Steakhouse,0,0.0,0
+Varied Menu,Chili's Grill & Bar,4571000,21.9749050526417,1209
+Varied Menu,Applebee's,4105000,19.734628142877746,1501
+Varied Menu,"Cheesecake Factory, The",2622000,12.605163213307053,215
+Varied Menu,Red Robin,1499000,7.206384308446709,498
+Varied Menu,BJ's Restaurant & Brewhouse,1357000,6.52372482092207,218
+Varied Menu,Yard House,848000,4.076727080428825,88
+Varied Menu,Cheddar's Scratch Kitchen,766000,3.6825152636892455,184
+Varied Menu,Cooper's Hawk Winery & Restaurants,605000,2.9085140137493393,66
+Varied Menu,TGI Fridays,411000,1.97586654487765,135
+Varied Menu,Lazy Dog Restaurant & Bar,405000,1.9470217777991443,51
+Varied Menu,Firebirds Wood Fired Grill,375000,1.802797942406615,64
+Varied Menu,True Food Kitchen,326000,1.5672323445988174,46
+Varied Menu,Seasons 52,304000,1.461468198644296,44
+Varied Menu,Ninety Nine Restaurant & Pub,296000,1.423008509206288,93
+Varied Menu,Famous Dave's,294000,1.4133935868467862,109
+Varied Menu,Ruby Tuesday,288000,1.3845488197682805,212
+Varied Menu,J. Alexander's,265000,1.273977212634008,37
+Varied Menu,Bahama Breeze Island Grille,247000,1.1874429113984906,44
+Varied Menu,Melting Pot,196000,0.9422623912311908,91
+Varied Menu,Panini Kabob Grill,183000,0.8797653958944283,30
+Varied Menu,54th Street Restaurant & Drafthouse,180000,0.8653430123551752,30
+Varied Menu,Sonny's BBQ,180000,0.8653430123551752,89
+Varied Menu,Bar Louie,170000,0.8172684005576655,60
+Varied Menu,Smokey Bones,158000,0.7595788664006539,55
+Varied Menu,O'Charley's,150000,0.721119176962646,62
+Varied Menu,Ford's Garage,0,0.0,0
+Varied Menu,Postino WineCafe,0,0.0,0
+Varied Menu,Tupelo Honey Southern Kitchen & Bar,0,0.0,0
+Varied Menu,110 Grill,0,0.0,0
+Varied Menu,Culinary Dropout,0,0.0,0
+Varied Menu,Bricktown Brewery,0,0.0,0
+Varied Menu,Barcelona Wine Bar,0,0.0,0
+Varied Menu,Iron Hill Brewery & Restaurant,0,0.0,0
+Varied Menu,Burtons Grill & Bar,0,0.0,0
+Varied Menu,Bad Daddy's Burger Bar,0,0.0,0
+Varied Menu,Primanti Bros.,0,0.0,0
+Varied Menu,Eureka! Restaurants,0,0.0,0
+Varied Menu,Jim 'N Nick's Bar-B-Q,0,0.0,0
+Varied Menu,Rusty Bucket Restaurant and Tavern,0,0.0,0
+Varied Menu,Wood Ranch BBQ & Grill,0,0.0,0
+Varied Menu,Hillstone,0,0.0,0
+Varied Menu,Margaritaville Restaurants,0,0.0,0
+Varied Menu,Tommy Bahama Restaurants,0,0.0,0
+Varied Menu,Razzoo's Cajun Cafe,0,0.0,0
+Varied Menu,Cotton Patch Cafe,0,0.0,0
+Varied Menu,Rock & Brews,0,0.0,0
+Varied Menu,Ted's Montana Grill,0,0.0,0
+Varied Menu,Lucille's Smokehouse Bar-B-Que,0,0.0,0
+Varied Menu,Houston's,0,0.0,0
+Varied Menu,Bareburger,0,0.0,0
+Varied Menu,Rainforest Cafe,0,0.0,0
+Varied Menu,Johnny Rockets,0,0.0,0
+Varied Menu,Marlow's Tavern,0,0.0,0
+Varied Menu,Del Frisco's Grille,0,0.0,0
+Varied Menu,Islands Fine Burgers & Drinks,0,0.0,0
+Varied Menu,Hard Rock Cafe,0,0.0,0
+Varied Menu,Grand Lux Cafe,0,0.0,0
+Varied Menu,Houlihan's,0,0.0,0
+Varied Menu,Mimi's Bistro & Bakery,0,0.0,0

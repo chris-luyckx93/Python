@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant M&A Analysis</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial; 
+               max-width: 900px; margin: 40px auto; padding: 20px; 
+               background: #0d1117; color: #c9d1d9; }
+        h1 { color: #58a6ff; border-bottom: 1px solid #21262d; padding-bottom: 10px; }
+        h2 { color: #8b949e; margin-top: 30px; }
+        a { color: #58a6ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { list-style: none; padding: 0; }
+        li { padding: 8px 0; border-bottom: 1px solid #21262d; }
+        li:before { content: "📊 "; }
+        .data-link:before { content: "📈 "; }
+    </style>
+</head>
+<body>
+    <h1>🍽️ Restaurant M&A Analysis Dashboard</h1>
+    <p><strong>Dataset:</strong> 1,653 transactions (2000-2026) | <strong>Total Value:</strong> $129.2B</p>
+    
+    <h2>Interactive Charts</h2>
+    <ul>
+        <li><a href="chart1_deal_trends.html" target="_blank">Deal Volume & Value Trends (2000-2026)</a> - Market evolution with 3Y moving averages</li>
+        <li><a href="chart2_top_acquirers.html" target="_blank">Top 20 Acquirers</a> - Volume vs. value comparison</li>
+        <li><a href="chart3_deal_sizes.html" target="_blank">Deal Size Distribution</a> - Breakdown across $10M-$1B+ ranges</li>
+        <li><a href="chart4_multiples.html" target="_blank">EV/EBITDA Multiples Analysis</a> - Distribution & trends (2015-2025)</li>
+        <li><a href="chart5_quarterly_trends.html" target="_blank">Quarterly Activity (2020-2026)</a> - Recent deal flow dynamics</li>
+        <li><a href="chart6_deal_mix.html" target="_blank">Transaction & Target Mix</a> - Deal structures and subsectors</li>
+        <li><a href="chart7_heatmap.html" target="_blank">Activity Heatmap (2015-2026)</a> - Seasonal patterns by quarter</li>
+        <li><a href="chart8_mega_deals.html" target="_blank">Top 10 Mega Deals Timeline</a> - Billion-dollar transactions</li>
+    </ul>
+    
+    <h2>Summary Data Tables</h2>
+    <ul>
+        <li class="data-link"><a href="summary_statistics.csv" target="_blank">Summary Statistics</a> - Key metrics overview</li>
+        <li class="data-link"><a href="top_acquirers_volume.csv" target="_blank">Top Acquirers by Volume</a> - Top 30 by deal count</li>
+        <li class="data-link"><a href="top_acquirers_value.csv" target="_blank">Top Acquirers by Value</a> - Top 30 by transaction value</li>
+    </ul>
+    
+    <p style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #21262d; color: #8b949e; font-size: 0.9em;">
+        💡 <strong>Tip:</strong> All charts are fully interactive - hover for details, zoom, pan, and download as PNG for reports
+    </p>
+</body>
+</html>
