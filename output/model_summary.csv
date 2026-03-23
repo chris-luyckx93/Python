@@ -1,0 +1,9 @@
+model,label,N,R2,R2_adj,AIC,BIC
+m1_spend,Model 1: Real Restaurant Spend YoY (1993-2025 ex-COVID),365,0.25,0.237,-1501.8,-1474.5
+m2_qsr,Model 2a: QSR Traffic YoY (Black Box 2013-2025 ex-COVID),137,0.439,0.409,-733.5,-710.2
+m2_qsr_lag3,Model 2b: QSR Traffic YoY — Lag 3M Gas,137,0.436,0.405,-732.7,-709.4
+m3_shock,Model 3: QSR Traffic — Gas Shock Episodes Only,44,0.608,0.532,-230.6,-216.3
+m4_casual,Model 4: Casual Dining Traffic YoY (Black Box 2013-2025 ex-COVID),137,0.286,0.247,-470.0,-446.6
+m5_pre,Model 5 Pre-2022 (cum_inflation < ~115),89,0.352,0.313,-499.2,-484.2
+m5_post,Model 5 Post-2022 (cum_inflation > ~115),48,0.548,0.494,-242.3,-231.1
+m5_full,Model 5 Full (Chow base),137,0.411,0.389,-730.9,-713.3

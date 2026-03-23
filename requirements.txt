@@ -1,2 +1,7 @@
-requests
-pandas
+pandas>=2.0
+numpy>=1.24
+statsmodels>=0.14
+scipy>=1.11
+plotly>=5.18
+kaleido==0.2.1
+openpyxl>=3.1
